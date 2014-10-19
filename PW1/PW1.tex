@@ -93,7 +93,7 @@
 %\def\svgwidth{70mm}
 %\import{section1/}{nonne.eps_tex}
 %\end{figure}
-$\pm$
+%$\pm$
 %\includegraphics[scale=1,angle=-90]{Graph1.eps}[!h]
 \section{Pendel}	
 \subsection{Aufgabenstellung}
@@ -135,9 +135,8 @@ Damit:
 \Delta g_{Serie,genaehert} = 0.0376 \frac{m}{s^2}
 \end{equation}
 \begin{table}
+\caption{Messungen einzelner Schwingungen}
 \begin{center}
-Messungen einzelner Schwingungen\\
-
 \begin{tabular}{|c|c|}
 \hline \\
 Durchgang & Schwingungsdauer[($\pm$0.02s)]\\
@@ -154,13 +153,23 @@ Durchgang & Schwingungsdauer[($\pm$0.02s)]\\
 \hline
 
 \end{tabular} \\
+\vspace{1cm}
 Messung von 10 konsekutiven Schwingungen:\\
-19.36 $\pm$0.01s
+\vspace{1cm}
+$T_{Serie}$=(19.36 $\pm$0.01)s
 \end{center}
 \end{table}
 
 Wir verwenden die genauesten Paare von Pendellänge und Schwingungsdauer von allen drei Gruppen, plus einem Paar, das uns die Praktikumsleiterin zur Verfügung stellte, um eine lineare Regression über die Pendellängen durch die Quadrate der Schwingungsdauern zu fitten. Wir verwendeten QtiPlot 0.9.8.9 für die Berechnung und die Darstellung. \\
-\includegraphics[scale=0.8,angle=-90]{LinearReg.eps}
+\begin{figure}
+
+
+\centering
+\includegraphics[scale=0.8,angle=-90]{LinearReg.eps} \\
+\includegraphics[scale=0.5,angle=0]{regressiondata.eps}
+\caption{Lineare Regression}
+
+\end{figure}
 \subsection{Diskussion}
 \section{Mechanische Messungen}
 \subsection{Aufgabenstellung}
@@ -169,15 +178,13 @@ Ferner sollen 3 Winkel eines Metall-Dreiecks mit einer Winkellehre gemessen werd
 
 \subsection{Grundlagen zum Experiment}
 \subsubsection*{Schublehre}
-Mit der Schublehre können Längen mit einer Genauigkeit von 0,05mm gemessen werden. Es gibt eine Hauptskala in Millimeter sowie einen Nonius auf einem beweglichen Schieber. Auf der verwendeten Schublehre sind 20 Teile der Noniusskala auf 39mm der Hauptskala aufgeteilt. Das bedeutet, dass 1mm durch 20 geteilt wird und wir somit die besagte Genauigkeit von 0,05mm erhalten.\\
-Um die Ableseregel zu erläutern übernehmen wir eine Abbildung aus dem Anleitungstext, die wir als sehr gut verständlich empfunden haben:\\
-(Abbildung!!)
-
+Mit der Schublehre können Längen mit einer Genauigkeit von 0,05mm gemessen werden. Es gibt eine Hauptskala in Millimeter sowie einen Nonius auf einem beweglichen Schieber. Auf der verwendeten Schublehre sind 20 Teile der Noniusskala auf 39mm der Hauptskala aufgeteilt. Das bedeutet, dass 1mm durch 20 geteilt wird und wir somit die besagte Genauigkeit von $\pm$0,05mm erhalten.\\
+%Das hast du so gut beschrieben, Vero, dass ich den Ruf nach einer Abbildung im Äther verhallen lasse.
 \subsubsection*{Mikrometerschraube}
-Mit der Mikrometerschraube können Längen mit einer Genauigkeit von 0,01mm gemessen werden.
+Mit der Mikrometerschraube können Längen mit einer Genauigkeit von $\pm$0,01mm gemessen werden.
 
 \subsubsection*{Mikroskop}
-
+Am Mikroskop verwenden wir das OBJEKTIV?? und einen geeichten Maßstab von 2mm Länge mit Genauigkeit $\pm$0.01mm um die Dicke des Drahtes noch genauer messen zu können. 
 \subsubsection*{Winkellehre}
 Um mit der Winkellehre zu messen legt man das zu messende Objekt zwischen die beiden Mess-Schenkel und passt die Schenkel an die Größe an. Das Ergebnis ist wie bei der Schublehre an einer Hauptskala mit Nonius abzulesen.
 
@@ -187,15 +194,63 @@ Um mit der Winkellehre zu messen legt man das zu messende Objekt zwischen die be
 
 \subsection{Ergebnisse}
 
-\subsection{Diskussion}
+\begin{table}
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+n&$l_1$[mm]&$l_2$[mm]\\
+\hline
+\hline
+1&0.25&0.2\\
+2&0.2&0.21\\
+3&0.25&0.2\\
+4&0.2&0.2\\
+5&0.25&0.2\\
+\hline 
+$\bar{l}$&0.23&0.20\\
+\hline
+\end{tabular}
+\caption{Messungen mit der Schublehre und der Mikrometerschraube}
+\end{table}
 
+Wir messen die Dicke des Kupferdrahtes an verschiedenen Stellen  fünf Mal mit der Schublehre, fünf Mal mit der Mikrometerschraube und ein Mal mit dem Mikroskop.  Die Messungenauigkeit der Schublehre liegt mit 0.05mm über dem Standardfehler von 0.012mm, darum ist die Länge hier
+
+\begin{equation}
+l_1=(0.23\pm0.05)mm
+\end{equation}
+\\
+Bei der Mikrometerschraube ist die Messungenauigkeit mit 0.1mm ebenfalls größer als der Standardfehler der Messungen von 0.001mm, also ist hier \\ 
+\begin{equation}
+l_2=(0.2\pm0.1)mm. 
+\end{equation}
+Die Messung mit dem Mikroskop ergab eine Länge $l_3$ von
+\begin{equation}
+l_3=(0.19 \pm 0.01) mm
+\end{equation}
+Nachdem wir mit drei verschiedenen Instrumenten in unseren Augen gut gemessen haben, wollen wir noch ein gewichtetes Mittel aus diesen drei Ergebnissen ermitteln um all unsere Messungen in das Endergebnis einfließen zu lassen. Dabei verwenden wir für die Gewichtungsfaktoren:
+\begin{equation}
+\frac{1}{\Delta l_1}+\frac{1}{\Delta l_2}+\frac{1}{\Delta l_3}=g_1:g_2:g_3=20:10:100=2:1:10
+\end{equation}
+Nun:
+\begin{gather*}
+\bar{l_g}=\frac{\bar{l_1}g_1+\bar{l_2}g_2+\bar{l_3}g_3}{g_1+g_2+g_3} \\
+\bar{l_g}=\frac{0.23\cdot2+0.2\cdot1+0.19\cdot10}{2+1+10} \\
+\bar{l_g}=0.197mm \\
+\Delta l_g= \sqrt{\frac{\Sigma^k_{j=1}( \bar{l_j} -\bar{l_g} )^2 \cdot g_j}{(k-1)\Sigma^k_{j=1}g_j} } \\
+\Delta l_g= \sqrt{\frac{(0.23-0.197)^2\cdot2+(0.20-0.197)^2\cdot1+(0.19-0.197)^2\cdot10}{(3-1)(2+1+10)}}\\ = 0.014mm \\
+\end{gather*}\\
+Unser Endergebnis ist demnach:\\
+\begin{equation}
+l_g=\bar{l_g}\pm\Delta l_g = (0.197\pm0.014)mm
+\end{equation}\\
+\subsection{Diskussion}
+Die Messergebnisse mit den immer genaueren Instrumenten der Mikrometerschraube, der Schublehre und des geeichten Maßstabs am Mikroskop liegen in schöner Übereinstimmung miteinander, die Mittelwerte der Messergebnisse liegen innerhalb der Konfidenzintervalle der Messungenauigkeiten aller Instrumente. Wir können also mit hoher Wahrscheinlichkeit davon ausgehen dass wir genau gemessen haben.
 \section{Elektrische Messungen}
 \subsection{Aufgabenstellung}
 Im Gleichstrom messen Ströme und Spannungen in verschiedenen Schaltungen, mal spannungsrichtig, mal stromrichtig, um mit Augenmerk auf die Fehlergrenzen unserer Messgeräte zu sehen, ob wir unsere Messungen wegen der Innenwiderstände der Messgeräte überhaupt korrigieren müssen oder nicht.\\
 Weiters messen wir in Parallel- und Serienschaltungen Widerstände und vergleichen sie mit den berechneten Werten.\\
-\\
 Im Wechselstrom bauen wir einen Spannungsteiler und berechnen Spannungen und Ströme auch in einer modifizierten Schaltung mit einem Kondensator.
-
+\\
 \subsection{Grundlagen zum Experiment}
 Spannung U: [U]=V (Volt)\\
 Stromstärke I: [I]=A (Ampère)\\
