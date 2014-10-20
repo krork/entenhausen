@@ -101,7 +101,7 @@ Es soll die Erdbeschleunigung aus Messungen der Periodendauer eines einfachen Fa
 \subsection{Grundlagen zum Experiment}
 Das Fadenpendel stellt die experimentelle Näherung an ein mathematisches Pendel dar. Bei einem mathematischen Pendel ist die gesamte Masse im Schwerpunkt, die Aufhängung ist starr und reibungsfrei, sowie masselos.
 \subsubsection*{Berechnung der Erdbeschleunigung}
-Aus der Schwingungsdauer des Pendels können wir uns die lokale Erdbeschleunigung g näherungsweise berechnen. Wir verwenden für kleine Auslenkungswinkel $\alpha$ die Näherung Sin[$\alpha$] $\approx$ $\alpha$. 
+Aus der Schwingungsdauer des Pendels können wir die lokale Erdbeschleunigung g näherungsweise berechnen. Wir verwenden für kleine Auslenkungswinkel $\alpha$ die Näherung Sin[$\alpha$] $\approx$ $\alpha$. 
 Für die Schwingungsdauer T, die Frequenz f und die Pendellänge l gilt:
 
 \begin{align}
@@ -109,9 +109,12 @@ T=\frac{1}{f}=2 \pi\sqrt{\frac{l}{g}} \\
 g=4\pi^2\frac{l}{T^2}
 \end{align}
 \subsection{Material und Methoden / Versuchsaufbau}
-
+Wir arbeiten in drei Gruppen mit drei verschiedenen Pendeln, die aus einer kleinen, schweren Kugel an einem langen Faden bestehen. Die Gruppen arbeiten mit verschieden langen Fäden, damit wir später unsere Ergebnisse für $T^2$ durch eine lineare Regression verbinden und eine genauere Näherung für den Faktor 
+\begin{equation*}[!h]
+\frac{4}{\pi^2 \cdot g} 
+\end{equation*} erhalten. 
 \subsection{Durchführung des Experiments}
-
+Wir messen die Länge des Fadens von der Mitte der Stange, an der der Faden hängt, bis zur Mitte der Kugel, die wir als ihren Schwerpunkt idealisieren.
 \subsection{Ergebnisse}
 Wir berechnen die Unsicherheit der Erdbeschleunigung $\Delta g$ in Abhängigkeit von den gemessenen Größen laut dem Gaußschen Fehlerfortpflanzungsgesetz. Wir berechnen diese 2 Mal, nachdem wir unterschiedliche Näherungswerte und Unsicherheiten für die Schwingungsdauer erhalten wenn wir sie 10 Mal einzeln oder 10 Mal in Folge messen.
 \begin{align}
@@ -189,9 +192,9 @@ Am Mikroskop verwenden wir das OBJEKTIV?? und einen geeichten Maßstab von 2mm L
 Um mit der Winkellehre zu messen legt man das zu messende Objekt zwischen die beiden Mess-Schenkel und passt die Schenkel an die Größe an. Das Ergebnis ist wie bei der Schublehre an einer Hauptskala mit Nonius abzulesen.
 
 \subsection{Material und Methoden / Versuchsaufbau}
-
+Wir messen einen gespannten Kupferdraht mit den verschiedenen erwähnten Instrumenten. Zu diesem einfachen Aufbau gibt es wohl nicht mehr zu sagen.
 \subsection{Durchführung des Experiments}
-
+Bei unserer ersten Messung mit der Schublehre messen wir 0.45mm, was von den folgenden Messungen stark abweicht - wir haben wohl beim ersten Kontakt mit dem Instrument gepfuscht und verwerfen den Messwert! Die restlichen Messungen verlaufen problemlos.
 \subsection{Ergebnisse}
 
 \begin{table}
@@ -247,7 +250,7 @@ l_g=\bar{l_g}\pm\Delta l_g = (0.197\pm0.014)mm
 Die Messergebnisse mit den immer genaueren Instrumenten der Mikrometerschraube, der Schublehre und des geeichten Maßstabs am Mikroskop liegen in schöner Übereinstimmung miteinander, die Mittelwerte der Messergebnisse liegen innerhalb der Konfidenzintervalle der Messungenauigkeiten aller Instrumente. Wir können also mit hoher Wahrscheinlichkeit davon ausgehen dass wir genau gemessen haben.
 \section{Elektrische Messungen}
 \subsection{Aufgabenstellung}
-Im Gleichstrom messen Ströme und Spannungen in verschiedenen Schaltungen, mal spannungsrichtig, mal stromrichtig, um mit Augenmerk auf die Fehlergrenzen unserer Messgeräte zu sehen, ob wir unsere Messungen wegen der Innenwiderstände der Messgeräte überhaupt korrigieren müssen oder nicht.\\
+Im Gleichstrom messen wir Ströme und Spannungen in verschiedenen Schaltungen, mal spannungsrichtig, mal stromrichtig, um mit Augenmerk auf die Fehlergrenzen unserer Messgeräte zu sehen, ob wir unsere Messungen wegen der Innenwiderstände der Messgeräte überhaupt korrigieren müssen oder nicht.\\
 Weiters messen wir in Parallel- und Serienschaltungen Widerstände und vergleichen sie mit den berechneten Werten.\\
 Im Wechselstrom bauen wir einen Spannungsteiler und berechnen Spannungen und Ströme auch in einer modifizierten Schaltung mit einem Kondensator.
 \\
@@ -256,15 +259,203 @@ Spannung U: [U]=V (Volt)\\
 Stromstärke I: [I]=A (Ampère)\\
 Widerstand R: [R]=$\Omega$ (Ohm)\\
 
-Das Ohm'sche Gesetz: U=RI
+\subsubsection*{Gleichstrom}
+Das Ohm'sche Gesetz: U=RI\\
+\\
+Für die Messung werden ein Ampèremeter (Stromstärke) und ein Voltmeter (Spannung) benötigt, wobei das Ampèremeter in Serie und das Voltmeter parallel zum Widerstand geschaltet wird. Der Grund dafür ist, dass a) das Ampèremeter einen kleinen Innenwiderstand hat, und bei Parallelschaltung ein zu großer Strom durch das Gerät fließen und es zerstören könnte; b) das Voltmeter einen hohen Innenwiderstand hat und bei Serienschaltung daher kaum noch Strom fließen würde.\\
+\\
+Man kann eine stromrichtige und eine spannungsrichtige Schaltung bauen. \\
+Stromrichtigen Schaltung: Durch das Ampéremeter fließt derselbe Strom wie durch den Widerstand und die Spannung wird aufgeteilt, sodass das Voltmeter die Summe von zwei (verschiedenen) Spannungen misst.\\
+Spannungsrichtige Schaltung: Das Voltmeter misst dieselbe Spannung wie am Widerstand und der Strom wird aufgeteilt, sodass das Ampéremeter den Gesamtstrom misst, anstatt des Stroms am Widerstand.
+
+\subsubsection*{Wechselstrom}
+Eine Spannungsquelle für Wechselstrom gibt eine zeitlich wechselnde Spannung U(t) aus. Zusätzlich zum Ohm'schen Widerstand (die sich idealerweise wie im Gleichstrom verhalten sollten) treten auch kapazitive und induktive Widerstände auf, wobei wir in diesem Fall nur einen zusätzlichen kapazitiven Widerstand betrachten.\\
+Kapazitive Widerstände sind im Gegensatz zu Ohm'schen Widerständen frequenzabhängig und verursachen eine Phasenverschiebung zwischen Strom und Spannung. \\
+Die Berechnung erfolgt mithilfe von komplexen Größen. Die gemessenen reellen Wechselstromgrößen sind dann die Beträge dieser komplexen Größen.
+
 
 \subsection{Material und Methoden / Versuchsaufbau}
-\includegraphics[scale=0.8,angle=-180]{1stromrichtig.eps}
-
-\subsection{Durchführung des Experiments}
+Als Ampèremeter wurde das Gerät FLUKE 175 verwendet; als Voltmeter das Gerät FLUKE 179.\\
+\\
+Spannungsrichtige Schaltung:\\
+\includegraphics[scale=0.8]{1spannungsrichtig.eps}\\
+\\
+Stromrichtige Schaltung:\\
+\includegraphics[scale=0.8]{1stromrichtig.eps}\\
+\\
+Parallelschaltung:\\
+\includegraphics[scale=0.8]{parallelschaltung.eps}\\
+\\
+Serienschaltung:\\
+\includegraphics[scale=0.8]{serienschaltung.eps}\\
+\\
+Wechselstrom:\\
+\includegraphics[scale=0.8]{wechselstrom.eps}\\
 
 \subsection{Ergebnisse}
+\textbf{Spannungsrichtige Messung:}\\
+$U_V$=(23.97 $\pm$ (0.15\%+2))V = (23.97 $\pm$ 0.06)V\\
+$I_V$=(8.88 $\pm$ (1\%+3))mA = (8.88 $\pm$ 0.11)mA\\
+
+\textbf{Stromrichtige Messung:}\\
+$U_A$ =(24.00 $\pm$ (0.15\%+2))V = (24.00 $\pm$ 0.06)V\\
+$I_A$ =(8.88m $\pm$ (1\%+3))mA = (8.88 $\pm$ 0.11)mA\\
+
+\textbf{Die daraus errechneten Widerstände:}
+$R_V$=$\frac{U_V}{I_V}$ = $\frac{24}{8.88*10^{-3}}$ =2.70k$\Omega$\\
+$R_A$=$\frac{U_A}{I_A}$ = $\frac{24}{8.88*10^{-3}}$ =2.70k$\Omega$\\
+\\
+\textbf{Relativer Fehler:}\\
+$\frac{\Delta U}{U}$=0.0025=0.25\%\\
+$\frac{\Delta I}{I}$=0.0124=1.24\%\\
+\\
+\textbf{Relativer Fehler von R:}\\
+\begin{gather}
+\sqrt{(\frac{\Delta U}{U})^2+(\frac{\Delta I}{I})^2 }=\sqrt{0.0025^2+0.0124^2}=0.01264=1.27\%
+\end{gather}
+\\
+\textbf{Widerstand R=(2.7 $\pm$ 0.04)k$\Omega$}\\
+\\
+Da unsere Resultate für den Widerstand in spannungsrichtiger und stromrichtiger Schaltung kaum einen Unterschied aufweisen, sind sie innerhalb der Fehlergrenze gleich.\\
+\\
+\textbf{Innenwiderstandskorrektur:}\\
+In spannungsrichtiger Schaltung wurde U=23.97V und I=8.88mA gemessen.\\
+In der Betriebsanleitung des FLUKE 179 (Voltmeter) wird ein Innenwiderstand von $R_i$$ \le $10M
+$\Omega$ angegeben. Schon diese Zahl lässt darauf schließen, dass eine Innenwiderstandskorrektur nicht notwendig sein wird, wir wollen sie allerdings dennoch durchführen: \\
+\\
+Der Strom, der durch das Voltmeter fließt, ist: $\frac{23.97}{10^6}$=23.97$\mu$A\\
+Der korrigierte Wert für den Strom: $I_{korr}$=(8.88-0.023)mA=8.86mA\\
+Der korrigierte Wert für den Widerstand: $R_{korr}$=2.705k$\Omega$\\
+\\
+Dieser ist (schon ohne Unsicherheit) nur an der 3. Nachkommastelle verschieden vom vorherigen Wert, daher kann die Innenwiderstandskorrektur tatsächlich vernachlässigt werden.\\
+\\
+\subsubsection*{Parallelschaltung}
+$U_P$=(23.92 $\pm$ (0.15\%+2))V=(23.92 $\pm$ 0.06)V\\
+$I_P$=(17.83 $\pm$ (1\%+3))mA=(17.83 $\pm$ 0.21)mA\\
+\\
+$R_{P-Gesamt}$=$\frac{U_P}{I_P}$=$\frac{23.92}{17.83*10^{-3}}$=1.34k$\Omega$\\
+\\
+\textbf{Relativer Fehler:}\\
+$\frac{\Delta U_P}{U_P}$=0.0025=0.25\%\\
+$\frac{\Delta I_P}{I_P}$=0.0118=1.18\%\\
+\\
+\textbf{Relativer Fehler von $R_{P-Gesamt}$:}\\
+\begin{gather}
+\sqrt{(\frac{\Delta U_P}{U_P})^2+(\frac{\Delta I_P}{I_P})^2 }=\\
+\sqrt{0.0025^2+0.0118^2}=0.01206=1.21%\\
+\end{gather} \\
+\textbf{Widerstand $R_P$=(1.34 $\pm$ 0.02)k$\Omega$}\\
+
+\subsubsection*{Serienschaltung}
+
+$U_S$=(23.99 $\pm$ (0.15\%+2))V=(23.92 $\pm$ 0.06)V\\
+$I_S$=(4.45 $\pm$ (1\%+3))mA=(4.45 $\pm$ 0.08)mA\\
+\\
+$R_{S-Gesamt}$=$\frac{U_S}{I_S}$=$\frac{23.99}{4.45*10^{-3}}$=5.49k$\Omega$\\
+\\
+\textbf{Relativer Fehler:}\\
+$\frac{\Delta U_S}{U_S}$=0.0025=0.25\%\\
+$\frac{\Delta I_S}{I_S}$=0.0180=1.80\%\\
+\\
+\textbf{Relativer Fehler von $R_{S-Gesamt}$:}\\
+\begin{gather}
+\sqrt{(\frac{\Delta U_S}{U_S})^2+(\frac{\Delta I_S}{I_S})^2 }=\\
+\sqrt{0.0025^2+0.0180^2}=0.01817=1.82\%
+\end{gather}
+\textbf{Widerstand $R_S$=(5.49 $\pm$ 0.10)k$\Omega$}\\
+\\
+\textbf{Innenwiderstandskorrektur:}\\
+Der Strom, der durch das Voltmeter fließt, ist: $\frac{23.99}{10^6}$=23.99$\mu$A\\
+korrigierter Wert für den Strom: $I_{korr}$=(4.45-0.024)mA=4.43mA\\
+korrigierter Wert für den Widerstand: $R_{korr}$=5.41k$\Omega$\\
+\\
+Durch die Unsicherheit von 0.10k$\Omega$ ist auch hier die Innenwiderstandskorrektur vernachlässigbar.\\
+
+\subsubsection*{Teilspannungen}
+$U_{Rbekannt}$=(11.94 $\pm$ (0.15\%+2))V=(11.94 $\pm$ 0.04)V\\
+$U_{Rx}$=(12.05 $\pm$ (0.15\%+2))V=(12.05 $\pm$ 0.04)V\\
+\\
+$R_{bekannt}$=2.7k$\Omega$\\
+\\
+Der Strom ist in beiden Fällen gleich. \\
+I=$\frac{U_{Rbekannt}}{R_{bekannt}}$ = $\frac{U_Rx}{R_x}$\\
+$R_x$ = $R_{bekannt}$$\frac{U_{Rx}}{U_{Rbekannt}}$ = 2.7 $\frac{12.05}{11.94}$ = 2.72k$\Omega$\\
+\\
+\textbf{Relativer Fehler der Teilspannungen:}\\
+$U_{Rbekannt-Rel}$ = 0.0034=0.34\%\\
+$U_{Rx-Rel}$ = 0.0034=0.34\%\\
+\\
+\textbf{Relativer Fehler von $R_x$:}\\
+\begin{gather}	
+\sqrt{(U_{Rbekannt-Rel})^2+(U_{Rx-Rel})^2)}=\sqrt{(2)*0.0034}=0.0048=0.48\%
+\end{gather}
+\textbf{Widerstand $R_x$=(2.72 $\pm$ 0.02)k$\Omega$}
+
+\subsection*{Wechselstrom}
+$I_{Gesamt}$=(5.07 $\pm$ (1.5\% + 3))mA = (5.07 $\pm$ 0.11)mA\\
+$U_{Gesamt}$=(27.06 $\pm$ (1\%+3))V = (27.06 $\pm$ 0.30)V\\
+$U_{Rx}$=(13.63 $\pm$ (1\%+3))V = (13.63 $\pm$ 0.17)V\\
+$U_{Rbekannt}$=(13.49 $\pm$ (1\%+3))V = (13.49 $\pm$ 0.17)V\\
+$R_{bekannt}$=2.7k$\Omega$\\
+\\
+\textbf{Aus den Teilspannungen:}\\
+$R_x$=$R_{bekannt}$ * $\frac{U_{Rx}}{U_{Rbekannt}}$ = 2.7 * $\frac{13.63}{13.49}$ = 2.73k$\Omega$\\
+$R_{Gesamt}$=$R_{bekannt}$ + $R_x$ = 5.43k$\Omega$\\
+\\
+\textbf{Aus Spannung und Strom:}\\
+$R_{Gesamt-berechnet}$=$\frac{U_{Gesamt}}{I_{Gesamt}}$=$\frac{27.06}{5.07*10{^-3}}$=5.34k$\Omega$\\
+\\
+
+$I_{Gesamt}$=(3.57 $\pm$ (1.5\% + 3))mA = (3.57 $\pm$ 0.09)mA\\
+$U_{Gesamt}$=(27.07 $\pm$ (1\%+3))V = (27.07 $\pm$ 0.30)V\\
+$U_{Rbekannt}$=(9.57 $\pm$ (1\%+3))V = (9.57 $\pm$ 0.13)V\\
+$U_C$=(25.43 $\pm$ (1\%+3))V = (25.43 $\pm$0.29)V\\
+$R_{bekannt}$=2.7k$\Omega$\\
+\\
+Wir betrachten folgende Formeln:\\
+$Z_{Gesamt}$ = $Z_R$ + $Z_C$ = R - $\frac{i}{\Omega C}$ = R - i$X_C$\\
+$U_C$=I*$X_C$\\
+\\
+\textbf{Aus den Teilspannungen:}\\
+$X_C$=$R_{bekannt}$ $\frac{U_C}{U_{Rbekannt}}$ = 2.7 $\frac{25.43}{9.57}$ = 7.17k$\Omega$\\
+\\
+\textbf{Relativer Fehler:}\\
+$U_{Rbekannt-Rel}$=0.0136=1.36\%\\
+$U_{C-Rel}$=0.0114=1.14\%\\
+\\
+\textbf{Relativer Fehler von $X_C$:}\\
+\begin{gather}
+\sqrt{(U_{Rbekannt-Rel})^2+(U_{C-Rel})^2}=\\
+\sqrt{(0.0136^2+0.0114^2)}=0.0177=1.77\% \\
+X_C=(7.17 \pm 0.13)k\Omega
+\end{gather} 
+Aus den Teilspannungen ermittelter Wert für die Gesamtimpedanz:\\
+$\lvert$ $Z_{Gesamt}$ $\rvert$ = sqrt($R^2$ + $X_C^2$) = sqrt($2.68^2$ + $7.12^2$) = 7.61k$\Omega$\\
+\\
+Aus Gesamtspannung und Gesamtstrom berechneter Wert für die Gesamtimpedanz:\\
+$Z_{berechnet}$ = $\frac{U_{Gesamt}}{I_{Gesamt}}$ = $\frac{27.07}{3.57}$ = 7.58k$\Omega$\\
+
+\textbf{Relativer Fehler der Teilspannungen:}\\
+$U_{Gesamt-Rel}$ = 0.0111=1.11\%\\
+$I_{Gesamt-Rel}$ = 0.0217=2.17\%\\
+\\
+\textbf{Relativer Fehler von $R_x$:}\\
+\begin{gather}	
+\sqrt{(U_{Gesamt-Rel})^2+(I_{Gesamt-Rel})^2)}=\sqrt{0.0111^2+0.0217^2}=0.0244=2.44\%
+\end{gather}
+\textbf{Impedanz $Z_{berechnet}$=(7.58 $\pm$ 0.19)k$\Omega$}\\
+\\
+Die Netzspannung beträt 230V, das bedeutet für die Frequenz f=50Hz. Daraus $\Omega$=2$\pi$f=314.16$s^{-1}$\\
+\\
+Aus X C=1/$\Omega$*C\\
+\textbf{C=$\frac{1}{\Omega X_C}$ = $\frac{1}{314.16*7.12*10^3}$ = 22.66 F}
+
+\subsubsection*{Grafische Darstellung}
+\includegraphics[scale=0.8]{gaussebene.eps}
 
 \subsection{Diskussion}
+Unsere Messergebnisse stimmen sehr gut mit den berechneten Werten überein.\\
+Die Innenwiderstandskorrekturen waren nicht notwendig.\\
+Die Grafik der Gaußschen Zahlenebene zeigt, dass auch die Messergebnisse für die Spannungen beim Wechselstrom richtig waren.\\
 
 \end{document}
