@@ -8,4 +8,5 @@ Ein guter nächster Befehl ist "git config --global user.name 'Vero'" , gefolgt
 von "git config --global user.email 'deine mail adresse'".
 
 QUAAAAAAAAAAAAAAAAACK
-die spinnen die eriks die römer
+die spinnen die eriks die römer.
+ich bin bald viiiiiel besser als du! :D
