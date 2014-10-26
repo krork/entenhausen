@@ -5,6 +5,7 @@
 \usepackage{epsfig,graphicx}
 \usepackage{xcolor,import}
 \usepackage[german]{babel}
+\usepackage{textcomp}
 
 \begin{document}
 
@@ -110,13 +111,52 @@ g=4\pi^2\frac{l}{T^2}
 \end{align}
 \subsection{Material und Methoden / Versuchsaufbau}
 Wir arbeiten in drei Gruppen mit drei verschiedenen Pendeln, die aus einer kleinen, schweren Kugel an einem langen Faden bestehen. Die Gruppen arbeiten mit verschieden langen Fäden, damit wir später unsere Ergebnisse für $T^2$ durch eine lineare Regression verbinden und eine genauere Näherung für den Faktor 
-\begin{equation*}[!h]
+\begin{equation*}
 \frac{4}{\pi^2 \cdot g} 
 \end{equation*} erhalten. 
+Wir verwenden eine Stoppuhr, die auf 0.01s genau messen kann.\\
+Wir messen die Länge des Fadens von der Mitte der Stange, an der der Faden hängt, bis zur Mitte der Kugel, die wir als ihren Schwerpunkt idealisieren. Wir erhalten \\
+ \begin{center}
+ l=(0.928$\pm$0.001)m
+ \end{center}
+ mit der Unsicherheit $\Delta$l=0.001m als der kleinsten Einzeichnung auf dem Maßband.
+
 \subsection{Durchführung des Experiments}
-Wir messen die Länge des Fadens von der Mitte der Stange, an der der Faden hängt, bis zur Mitte der Kugel, die wir als ihren Schwerpunkt idealisieren.
+Wir messen zehn Mal immer neu ausgeführte Schwingungen des Pendels und ein Mal zehn aufeinanderfolgende Schwingungen mit einer Stoppuhr der Unsicherheit $\pm$0.01s. Dabei verwenden wir nur kleine Auslenkungen damit wir nachher in der Lösung der Schwingungsgleichung den Sinus mit dem kleinen Winkel nähern können. Die größte Unsicherheit stellen natürlich die Experimentatoren selbst dar, da sie ohne automatische Hilfsmittel, nur mit ihren Augen die Messungen starten und stoppen. Um diese Unsicherheit zu minimieren machen wir ein mal viele Messungen und messen einmal viele Schwingungen.
 \subsection{Ergebnisse}
-Wir berechnen die Unsicherheit der Erdbeschleunigung $\Delta g$ in Abhängigkeit von den gemessenen Größen laut dem Gaußschen Fehlerfortpflanzungsgesetz. Wir berechnen diese 2 Mal, nachdem wir unterschiedliche Näherungswerte und Unsicherheiten für die Schwingungsdauer erhalten wenn wir sie 10 Mal einzeln oder 10 Mal in Folge messen.
+\begin{table} [H]
+\caption{Messungen einzelner Schwingungen}
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline \\
+Durchgang & Schwingungsdauer[($\pm$0.02s)]\\
+\hline
+ 1&1.96\\
+2&1.93\\
+3&1.87\\
+4&1.95\\
+5&1.82\\
+ 6&1.93\\
+7&1.92\\
+ 8&1.99\\
+ 9&1.9\\
+ 10&1.97\\
+\hline $\Bar{T_{Einzel}}$ & 1.93 \\
+\hline
+
+
+\end{tabular} \\
+\vspace{1cm}
+Messung von 10 konsekutiven Schwingungen:\\
+\vspace{1cm}
+$T_{Serie}$=(19.36 $\pm$0.01)s
+\end{center}
+\end{table}
+
+
+Wir berechnen die Unsicherheit der Erdbeschleunigung $\Delta g$ laut dem Gaußschen Fehlerfortpflanzungsgesetz. Wir berechnen diese 2 Mal, nachdem wir unterschiedliche Näherungswerte und Unsicherheiten für die Schwingungsdauer erhalten wenn wir sie 10 Mal einzeln oder 10 Mal in Folge messen.
+Die Standardabweichung der Messserie von 10 Einzelschwingungen ist größer als die Auflösung der Stopuhr, also verwenden wir sie dort $\sigma$ = $\Delta$T=0.02s
+
 \begin{align}
 \Delta g=\sqrt{(\frac{\delta g}{\delta l})^2\Delta l^2 + (\frac{\delta g}{\delta T})^2\Delta T^2}
 \end{align} \\
@@ -128,42 +168,44 @@ Damit:
 \begin{equation}
 \Delta g_{Einzel,genaehert} = 0.067 \frac{m}{s^2}
 \end{equation}
+ Schließlich:
+ \begin{equation}
+ g{Einzel}=(9.84\pm0.07)\frac{m}{s^2}
+ \end{equation}
+
 
 
 \begin{equation}
 T_{Serie,genaehert} = (1.94 \pm 0.01)s
 \end{equation}
 Damit:
-\begin{equation}
-\Delta g_{Serie,genaehert} = 0.0376 \frac{m}{s^2}
-\end{equation}
-\begin{table}
-\caption{Messungen einzelner Schwingungen}
-\begin{center}
-\begin{tabular}{|c|c|}
-\hline \\
-Durchgang & Schwingungsdauer[($\pm$0.02s)]\\
-\hline 1&1.96\\
-\hline 2&1.93\\
-\hline 3&1.87\\
-\hline 4&1.95\\
-\hline 5&1.82\\
-\hline 6&1.93\\
-\hline 7&1.92\\
-\hline 8&1.99\\
-\hline 9&1.9\\
-\hline 10&1.97\\
-\hline
+\begin{gather}
+\Delta g_{Serie,genaehert} = 0.0376 \frac{m}{s^2} \\
+ g_{Serie} = (9.73\pm0.04)\frac{m}{s^2}
+\end{gather}
 
-\end{tabular} \\
-\vspace{1cm}
-Messung von 10 konsekutiven Schwingungen:\\
-\vspace{1cm}
-$T_{Serie}$=(19.36 $\pm$0.01)s
-\end{center}
-\end{table}
+Wir berechnen noch einen gewichteten Mittelwert aus den Einzelmessungen und der Messserie:
+ \begin{gather}
+ \frac{1}{\Delta T_{Einzel}}:\frac{1}{\Delta T_{Serie}}=g_1:g_2 \\
+ \frac{1}{0.02}:\frac{1}{0.01}=50:100=1:2=g_1:g_2 \\
+ T_g=\frac{T_{Einzel}g_1+T_{Serie}g_2}{g_1+g_2}=\frac{1.93+1.94\cdot2}{1+2} \\
+ T_g=1.937s \\
+ g_g=9.77 \\
+ \Delta g_g= \sqrt{\frac{\Sigma^k_{j=1}( \bar{g_j} \bar{g_g} )^2 \cdot g_j}{(k1)\Sigma^k_{j=1}g_j} } \\
+ \Delta g_g=0.053 \frac{m}{s^2}
+ \end{gather}
+ Unser Endergebnis:
+ \begin{equation}
+ g=g_g\pm \Delta g_g = (9.77 \pm 0.053)\frac{m}{s^2}
+ \end{equation}
 
-Wir verwenden die genauesten Paare von Pendellänge und Schwingungsdauer von allen drei Gruppen, plus einem Paar, das uns die Praktikumsleiterin zur Verfügung stellte, um eine lineare Regression über die Pendellängen durch die Quadrate der Schwingungsdauern zu fitten. Wir verwendeten QtiPlot 0.9.8.9 für die Berechnung und die Darstellung. \\
+Schließlich verwenden wir die genauesten Paare von Pendellänge und Schwingungsdauer von allen drei Gruppen, plus einem Paar, das uns die Praktikumsleiterin zur Verfügung stellte, um eine lineare Regression über die Pendellängen durch die Quadrate der Schwingungsdauern zu fitten. Wir verwendeten QtiPlot 0.9.8.9 für die Berechnung und die Darstellung. \\
+
+ Die Steigung der gefitteten Gerade ist 4.1558, daraus:
+ \begin{equation}
+ g=9.5 \frac{m}{s^2}
+ \end{equation}
+ Wir vermuten, dass die anderen Gruppen schlecht gemessen haben und der Wert darum so weit vom Literaturwert abweicht.
 \begin{figure}
 
 
@@ -174,6 +216,7 @@ Wir verwenden die genauesten Paare von Pendellänge und Schwingungsdauer von all
 
 \end{figure}
 \subsection{Diskussion}
+Unsere ermittelten Ergebnisse für die Erdbeschleunigung liegen mit ihren Unsicherheiten erstens sehr schön beieinander, im 1$\sigma$Intervall der jeweils anderen, also können wir beiden Messungen vertrauen, und weiter liegen beide sehr nah am erwarteten Wert von 9.81$\frac{m}{s^2}$. Unbeachtet blieben systematischen Fehler, die wir unvermeidlich begangen haben, wie die Unsicherheit durch das menschliche Auge, die Näherung des Sinus durch den Winkel, die Eigenschwingungen des Pendelapparats und andere missachtete Fehler. Da sich die 1$\sigma$ Bereiche der unterschiedlichen Messungen aber überlappen, können wir nicht sagen, welche Methode ein signifkant besseres Ergebnis liefert.
 \section{Mechanische Messungen}
 \subsection{Aufgabenstellung}
 Es soll der Durchmesser eines Kupferdrahtes mit verschiedenen Methoden gemessen werden. Verwendet werden eine Schublehre, eine Mikrometerschraube und ein Mikroskop mit Okularmaßstab.\\
@@ -187,12 +230,12 @@ Mit der Schublehre können Längen mit einer Genauigkeit von 0,05mm gemessen wer
 Mit der Mikrometerschraube können Längen mit einer Genauigkeit von $\pm$0,01mm gemessen werden.
 
 \subsubsection*{Mikroskop}
-Am Mikroskop verwenden wir das OBJEKTIV?? und einen geeichten Maßstab von 2mm Länge mit Genauigkeit $\pm$0.01mm um die Dicke des Drahtes noch genauer messen zu können. 
+Am Mikroskop verwenden wir das gelbe Objektiv mit der Vergrößerung von 10x0.25 und einen geeichten Maßstab von 2mm Länge mit Genauigkeit $\pm$0.01mm um die Dicke des Drahtes noch genauer messen zu können. 
 \subsubsection*{Winkellehre}
 Um mit der Winkellehre zu messen legt man das zu messende Objekt zwischen die beiden Mess-Schenkel und passt die Schenkel an die Größe an. Das Ergebnis ist wie bei der Schublehre an einer Hauptskala mit Nonius abzulesen.
 
 \subsection{Material und Methoden / Versuchsaufbau}
-Wir messen einen gespannten Kupferdraht mit den verschiedenen erwähnten Instrumenten. Zu diesem einfachen Aufbau gibt es wohl nicht mehr zu sagen.
+Wir messen einen gespannten Kupferdraht mit den verschiedenen erwähnten Instrumenten. Zu diesem einfachen Aufbau gibt es wohl nicht mehr zu sagen. Wir messen auch ein metallenes Dreieck mit einem Goniometer.
 \subsection{Durchführung des Experiments}
 Bei unserer ersten Messung mit der Schublehre messen wir 0.45mm, was von den folgenden Messungen stark abweicht - wir haben wohl beim ersten Kontakt mit dem Instrument gepfuscht und verwerfen den Messwert! Die restlichen Messungen verlaufen problemlos.
 \subsection{Ergebnisse}
@@ -230,9 +273,9 @@ Die Messung mit dem Mikroskop ergab eine Länge $l_3$ von
 \begin{equation}
 l_3=(0.19 \pm 0.01) mm
 \end{equation}
-Nachdem wir mit drei verschiedenen Instrumenten in unseren Augen gut gemessen haben, wollen wir noch ein gewichtetes Mittel aus diesen drei Ergebnissen ermitteln um all unsere Messungen in das Endergebnis einfließen zu lassen. Dabei verwenden wir für die Gewichtungsfaktoren:
+Nachdem wir mit drei verschiedenen Instrumenten gemessen haben, wollen wir noch ein gewichtetes Mittel aus diesen drei Ergebnissen ermitteln um all unsere Messungen in das Endergebnis einfließen zu lassen. Dabei verwenden wir für die Gewichtungsfaktoren:
 \begin{equation}
-\frac{1}{\Delta l_1}+\frac{1}{\Delta l_2}+\frac{1}{\Delta l_3}=g_1:g_2:g_3=20:10:100=2:1:10
+\frac{1}{\Delta l_1}:\frac{1}{\Delta l_2}:\frac{1}{\Delta l_3}=g_1:g_2:g_3=20:10:100=2:1:10
 \end{equation}
 Nun:
 \begin{gather*}
@@ -246,8 +289,14 @@ Unser Endergebnis ist demnach:\\
 \begin{equation}
 l_g=\bar{l_g}\pm\Delta l_g = (0.197\pm0.014)mm
 \end{equation}\\
+
+Wir messen die drei Winkel am Dreieck als 45°15, 30°40' und 103°35', mit einer Unsicherheit, gegeben durch die Noniusskala am Goniometer, von $\pm$5'. Addiert ergeben die Winkel 179°30', was als unser Endergebnis stehen bleibt.
+\begin{equation}
+Winkelsumme=179^{\circ}30'\pm15'
+\end{equation}
 \subsection{Diskussion}
-Die Messergebnisse mit den immer genaueren Instrumenten der Mikrometerschraube, der Schublehre und des geeichten Maßstabs am Mikroskop liegen in schöner Übereinstimmung miteinander, die Mittelwerte der Messergebnisse liegen innerhalb der Konfidenzintervalle der Messungenauigkeiten aller Instrumente. Wir können also mit hoher Wahrscheinlichkeit davon ausgehen dass wir genau gemessen haben.
+Die Messergebnisse mit den immer genaueren Instrumenten der Mikrometerschraube, der Schublehre und des geeichten Maßstabs am Mikroskop liegen in schöner Übereinstimmung miteinander, die Mittelwerte der Messergebnisse liegen innerhalb der Konfidenzintervalle der Messungenauigkeiten aller Instrumente. Wir können also mit hoher Wahrscheinlichkeit davon ausgehen dass wir genau gemessen haben. \\
+Die Winkelsumme des Dreiecks ist zwar nicht die von der Mathematik geforderte Summe von 180°, aber es handelt sich schließlich um ein physikalisches Objekt und fehlerbehaftete Menschen, die zum ersten Mal mit solchen Instrumenten gemessen haben.
 \section{Elektrische Messungen}
 \subsection{Aufgabenstellung}
 Im Gleichstrom messen wir Ströme und Spannungen in verschiedenen Schaltungen, mal spannungsrichtig, mal stromrichtig, um mit Augenmerk auf die Fehlergrenzen unserer Messgeräte zu sehen, ob wir unsere Messungen wegen der Innenwiderstände der Messgeräte überhaupt korrigieren müssen oder nicht.\\
@@ -413,7 +462,7 @@ $U_C$=(25.43 $\pm$ (1\%+3))V = (25.43 $\pm$0.29)V\\
 $R_{bekannt}$=2.7k$\Omega$\\
 \\
 Wir betrachten folgende Formeln:\\
-$Z_{Gesamt}$ = $Z_R$ + $Z_C$ = R - $\frac{i}{\Omega C}$ = R - i$X_C$\\
+$Z_{Gesamt}$ = $Z_R$ + $Z_C$ = R - $\frac{i}{\omega C}$ = R - i$X_C$\\
 $U_C$=I*$X_C$\\
 \\
 \textbf{Aus den Teilspannungen:}\\
