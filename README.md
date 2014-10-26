@@ -7,3 +7,4 @@ arbeiten.
 Ein guter nächster Befehl ist "git config --global user.name 'Vero'" , gefolgt
 von "git config --global user.email 'deine mail adresse'".
 
+QUAAAAAAAAAAAAAAAAACK
