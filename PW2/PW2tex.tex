@@ -199,7 +199,7 @@ Im Anfang eine gleichmäßig beschleunigte Bewegung; dann eine kräftefreie Bewe
 
 \subsection{Grundlagen und Methoden}
 
-Auf einem Luftkissentisch lassen sich Gleitkörper, die auf einem Luftkissen sitzen, nahezu reibungsfrei bewegen. Diese zeichnen Striche auf ein darunterliegendes Papier, mithilfe derer ihre Bewegung im Nachhinein analysiert werden kann. 
+Auf einem Luftkissentisch lassen sich Gleitkörper, die auf einem Luftkissen sitzen, nahezu reibungsfrei bewegen. Diese zeichnen in regelmäßigen Intervalle Striche auf ein darunterliegendes Papier, mithilfe derer ihre Bewegung im Nachhinein analysiert werden kann. Dabei zeichnen wir ein Koordinatenssystem auf einer Kopie des Papiers ein, und ermitteln mit seiner Hilfe, einem Geodreieck und einem Bleistift die Vektoren der Bewegungen der Gleiter.
 
 
 % ______________________________________Teil 2: Ergebnisse_____________________________________________
@@ -255,17 +255,56 @@ m_G=(1078.0 \pm18.5)g
 \end{equation}
 Weil wir vergessen haben ihn zu wiegen nehmen wir an, der Gleiter habe die Masse m=1000g (verschiedene Leute glauben, er habe ungefähr diese Masse.) Dann ist der Quotient aus der scheinbaren Masse, die er durch die Gleitreibung besitzt, und seiner schweren Masse der Gleitreibungskoeffizient $\mu_G$:
 \begin{equation}
-\frac{m_G}{m}=1.078\pm0.0185
+\mu_G=\frac{m_G}{m}=1.078\pm0.0185
 \end{equation}
 
 
 \subsection{Ergebnisse für die kräftefreie Bewegung}
 
 \textbf{Schwerpunktgeschwindigkeit}
+Der Schwerpunkt bewegt sich schön konstant und geradlinig.
+\begin{equation}
+\vec{v_S}=
+\begin{pmatrix*}[r]
+0.3 \\ 0
+\end{pmatrix*}\frac{m}{s}
+\end{equation}
 
 \textbf{Winkelgeschwindigkeit}
+\begin{figure}[H]
+\caption{Rotationsbewegung}
+\begin{center}
+\includegraphics[scale=0.7,angle=-90]{winkel.eps}
+\end{center}
+\end{figure}
+Mittels linearer Regression haben wir die Winkelgeschwindigkeit in rad/s ermittelt:
+\begin{figure}[H]
+\caption{Winkelgeschwindigkeit}
+\begin{center}
+\includegraphics[scale=0.7,angle=-90]{winkelgeschw.eps}
+\end{center}
+\end{figure}
+Die rote Gerade stellt dabei anschaulich die ermittelte Geschwindigkeit dar. 
+$\omega$= (6.147 $\pm$ 0.115) $\frac{rad}{s}$
 
 \textbf{Peripherie-Geschwindigkeitsvektor}
+\begin{gather*}
+\vec{v}=\vec{v_S}+\vec{\omega}\times \vec{r} =\\
+\begin{pmatrix*}[r]
+0.3 \\ 0 \\ 0
+\end{pmatrix*}\frac{m}{s}
++ \begin{pmatrix*}[r]
+0 \\ 0 \\ 6.147	
+\end{pmatrix*}\frac{rad}{s}
+\times
+\begin{pmatrix*}[r]
+0.53 \\ 0.33 \\ 0	
+\end{pmatrix*}\frac{m}{s}
+=
+\begin{pmatrix*}[r]
+-2.3285 \\ 3.2579 \\ 0	
+\end{pmatrix*}\frac{m}{s}
+\end{gather*}
 
 
 \subsection{Ergebnisse für den elastischen Stoß}
@@ -273,7 +312,8 @@ Weil wir vergessen haben ihn zu wiegen nehmen wir an, der Gleiter habe die Masse
 Wir beschweren Gleiter 1 mit einem Gewicht von $\Delta$m=54.6g und führen die Stoßbewegung aus. Die beiden Gleiter bewegen sich gegeneinander und leicht dezentral, mit annähernd konstanten Geschwindigkeiten. \\
 
 \textbf{Geschwindigkeitsvektoren}
-Wir bezeichnen alle Vektoren vor dem Stoß mit x, alle Vektoren nach dem Stoß mit x'.
+Wir bezeichnen alle Vektoren vor dem Stoß mit x, alle Vektoren nach dem Stoß mit x'. \\
+Für die Komponenten aller hier angegeben Vektoren gilt die Unsicherheit von $\pm$0.001$\frac{m}{s}$, für ihre Beträge daraus mit Gaußschem Fehlerfortpflanzungsgesetz: $\pm$0.0007$\frac{m}{s}$.
 \begin{gather}
 |\vec{v_1}|=0.390 \pm 0.0005 \frac{m}{s} \hspace{0.4cm}
 |\vec{v_1'}|=0.475 \pm 0.0005 \frac{m}{s}
@@ -284,36 +324,40 @@ Wir bezeichnen alle Vektoren vor dem Stoß mit x, alle Vektoren nach dem Stoß m
 \textbf{Impulsvektoren}
 Wir bezeichnen die Masse eines Gleiters (wir nehmen an, dass beide Gleiter die gleiche Masse haben) mit $m_G$. \\
 Durch Einzeichnung eines Koordinatensystems und Abtragung der Komponenten der Geschwindigkeitsvektoren auf dieses konnten wir folgende Vektoren ermitteln:
+\begin{center}
+
+
 \begin{gather*}
-\vec{p_1}=m_G+\Delta M
+\vec{p_1}=(m_G+\Delta M)
 \begin{pmatrix*}[r]
-3.9 \\ 0
-\end{pmatrix*} \hspace{0.4cm}
+0.39 \\ 0
+\end{pmatrix*}\frac{m}{s} \hspace{0.4cm}
 , \vec{p_2}= 
 m_G\begin{pmatrix*}[r]
--1.8 \\ 3.3
-\end{pmatrix*}\hspace{0.4cm}
+-0.18 \\ 0.33
+\end{pmatrix*}\frac{m}{s}\hspace{0.4cm}
+\\
 \vec{p_1'}=
-m_G+\Delta M\begin{pmatrix*}[r]
--0.5 \\ 4.8
-\end{pmatrix*}\hspace{0.4cm}
+(m_G+\Delta M)\begin{pmatrix*}[r]
+-0.05 \\ 0.48
+\end{pmatrix*} \frac{m}{s}\hspace{0.4cm}
 \vec{p_2'}=m_G\begin{pmatrix*}[r]
-2.8 \\ -1.6
-\end{pmatrix*} 
+0.28 \\ -0.16
+\end{pmatrix*} \frac{m}{s}
 \end{gather*}
-
+\end{center}
 \textbf{Überprüfung des Impulssatzes}
 Wenn wir $\vec{p_1}$ und $\vec{p_2}$ sowie $\vec{p_1'}$ und $\vec{p_2'}$ addieren, erhalten wir:
 \begin{equation}\label{impuls1}
 \vec{p_1}+\vec{p_2}=(2m_G+\Delta M )\begin{pmatrix}
-2.1 \\ 3.3 
-\end{pmatrix} 
+0.21 \\ 0.33 
+\end{pmatrix} \frac{m}{s}
 \end{equation}
 \begin{equation}\label{impuls2}
 \vec{p_1'} + \vec{p_2'} =(2m_G +\Delta M )\begin{pmatrix}
-2.3 \\
-3.2
-\end{pmatrix} 
+0.23 \\
+0.32
+\end{pmatrix}  \frac{m}{s}
 \end{equation}
 
 Aus dem Vergleich von \ref{impuls1} und \ref{impuls2} erahnen wir, dass der Impuls im elastischen Stoß nahezu erhalten geblieben ist. Die Beträge der beiden Vektoren ähneln sich noch mehr als die Vektoren selbst (3.91 und 3.94), also gehen wir davon aus, dass ihre Abweichung voneinander hauptsächlich durch die Ungenauigkeit unserer Messung und durch die Ungenauigkeit unserer Auswertung, die aus Arbeit mit Geodreieck, Bleistift und müden Augen besteht, entsteht. Allerdings ist der Stoß natürlich nicht perfekt elastisch, es ist etwas Bewegungsenergie durch die Verformung der Federn und durch die Gleitreibung verloren gegangen. \\
@@ -322,7 +366,7 @@ Die Energieerhaltung für den elastischen Stoß besagt, dass die kinetische Ener
 \begin{equation}
 \frac{Mv^2}{2} \text{vor Stoß} = \frac{Mv^2}{2}  \text{nach Stoß} 
 \end{equation}
-Der Betrag der Geschwindigkeit des Schwerpunkts hat sich von vor dem Stoß: 0.391m/s zu 0.394m/s nach dem Stoß verändert. Es ist natürlich nicht zu erwarten, dass die Geschwindigkeit zugenommen hat. Aber wenn wir uns mit dem Gaußschen Fehlerfortpflanzungsgesetz die Unsicherheiten der Beträge der Geschwindigkeiten anschauen, kommen wir der Wahrheit schon ein Stückchen näher, sie ergibt sich nämlich zu 
+Der Betrag der Geschwindigkeit des Schwerpunkts hat sich von vor dem Stoß: 0.391m/s zu 0.394m/s nach dem Stoß verändert. Es ist natürlich nicht zu erwarten, dass die Geschwindigkeit zugenommen hat. Aber wenn wir uns mit dem Gaußschen Fehlerfortpflanzungsgesetz die Unsicherheiten der Beträge der Geschwindigkeiten anschauen, kommen wir der Wahrheit schon ein Stückchen näher, sie ergibt sich nämlich leicht aufgerundet von 0.0007 zu 
 \begin{equation}
 \Delta v=\pm 0.001 \frac{m}{s}
 \end{equation}
@@ -332,19 +376,56 @@ v_{vorher}=(0.391 \pm 0.001) \frac{m}{s} \\
 v_{nachher}=( 0.394 \pm 0.001) \frac{m}{s}
 \end{gather*}
 \textbf{Schwerpunkt}
-
-
+Der Geschwindigkeitsvektor des Schwerpunkts hat folgende Werte, abgelesen aus dem aufgetragenen Koordinatensystem: 
+\begin{equation}
+\begin{pmatrix*}
+0.13 \\ 0.09 
+\end{pmatrix*}\frac{m}{s} 
+\end{equation}
+Wie zu erwarten ist sein Betrag vor, nach und während dem Stoß annähernd konstant, genau so wie seine Richtung.
 \subsection{Ergebnisse für den inelastischen Stoß}
-Wir beschweren Gleiter 1 mit einem Gewicht von $\Delta$m=54.6g und führen die Stoßbewegung aus.
-\textbf{Geschwindigkeitsvektoren}
+Wir beschweren Gleiter 1 mit einem Gewicht von $\Delta$m=54.6g und führen die Stoßbewegung aus. \\
+\textbf{Impulsvektoren}\\
+Wir ermitteln gleich die Impulsvektoren, die einfach die Geschwindigkeitsvektoren multipliziert mit den Massen der Gleiter sind. \\
+$\vec{p_2}$ ist vor dem Stoß $\vec{0}$, weil Gleiter 2 in Ruhe ist, und der um $\Delta$M beschwerte Gleiter rast unaufhaltsam auf ihn zu.
+\begin{gather*}
+\vec{p_1}=(m_G+\Delta M)
+\begin{pmatrix*}[r]
+0.39 \\ 0
+\end{pmatrix*}\frac{m}{s} \hspace{0.4cm}
+\vec{p_2}=\vec{0} \\
+\vec{p_1'}=
+(m_G+\Delta M)\begin{pmatrix*}[r]
+0.24 \\ 0.04
+\end{pmatrix*} \frac{m}{s}\hspace{0.4cm}
+\vec{p_2'}=m_G\begin{pmatrix*}[r]
+0.12 \\ 0.07
+\end{pmatrix*} \frac{m}{s}
+\end{gather*}
 
-\textbf{Impulsvektoren}
-
-\textbf{Überprüfung des Impulssatzes}
-
+\textbf{Überprüfung des Impulssatzes} \\
+Addiert man die Impulse vor und nach dem Stoß erhält man:
+\begin{gather*}
+\vec{p_1}+\vec{p_2}=\vec{p_1} \\
+\vec{p_1'}+\vec{p_2'}=(2m_G+\Delta M)
+\begin{pmatrix*}[r]
+0.36 \\ 0.11
+\end{pmatrix*} \frac{m}{s}
+\end{gather*}
 \textbf{Schwerpunkt}
-
+\begin{gather*}
+\vec{S}=
+\begin{pmatrix*}[r]
+0.16 \\ 0.03
+\end{pmatrix*} \frac{m}{s}
+\end{gather*}
 \textbf{Kinetische Energie}
+\begin{gather*}
+\frac{m|\vec{v_1}|^2}{2}=(m_G+\Delta M)0.07605\frac{m^2}{s^2}=0.08020233J \\
+\frac{m|\vec{v_1'}|^2}{2}+\frac{m|\vec{v_2'}|^2}{2}=(m_G+\Delta M)0.0296\frac{m^2}{s^2} + m_G0.00965\frac{m^2}{s^2}=0.06081616J \\
+\Delta E_{Kin} absolut=0.01938617J \\
+\Delta E_{Kin}relativ=24.17\%
+\end{gather*}
 
 
 % ______________________________________Teil 2: Diskussion_____________________________________________
@@ -355,6 +436,8 @@ Wir beschweren Gleiter 1 mit einem Gewicht von $\Delta$m=54.6g und führen die S
 
 
 \textbf{Kräftefreie Bewegung: }
+
+Die Unsicherheit bei der Winkelmessung mit dem Geodreieck beträgt $\pm$ 0.5 Grad, das sind 0.0087rad. Allerdings ist die Unsicherheit aus dem linearen Fit, die qtiplot angibt, mit 0.115 viel größer als diese. Darum verwenden wir sie als Unsicherheit für die Winkelgeschwindigkeit.
 
 
 \textbf{Elastischer Stoß: Diskussion der kinetischen Energie}
