@@ -246,8 +246,7 @@ a=A\pm Err=2\cdot 455.84 \pm 7.60=(455.84\pm 7.60)\frac{mm}{s^2}= \\
 Aus dieser Beschleunigung, die der Gleiter erfuhr, können wir uns jetzt über die bekannte Masse $m_1$=50.0g des Senkgewichts und die Erdbeschleunigung die scheinbare Masse $m_G$ berechnen, die der Gleiter besitzt. Scheinbar deswegen, weil in ihr noch die Gleitreibungskraft enthalten ist, die der Beschleunigung entgegenwirkte.
 \begin{gather}
 F=m_1*a_g=m_G*a=50.0g*9.81\frac{m}{s^2}=m_G*0.46\frac{m}{s^2} \\
-m_G=\frac{50.0g*9.81\frac{m}{s^2}}{0.46\frac{m}{s^2}} \\
-m_G=1078.0g
+m_G=\frac{50.0g*9.81\frac{m}{s^2}}{0.46\frac{m}{s^2}}=1078.0g \\
 \end{gather}
 Mit Gaußschem Fehlerfortpflanzungsgesetz:
 \begin{equation}
@@ -267,7 +266,7 @@ Der Schwerpunkt bewegt sich schön konstant und geradlinig.
 \vec{v_S}=
 \begin{pmatrix*}[r]
 0.3 \\ 0
-\end{pmatrix*}\frac{m}{s}
+\end{pmatrix*}\pm 0.0005 \frac{m}{s}
 \end{equation}
 
 \textbf{Winkelgeschwindigkeit}
@@ -291,19 +290,20 @@ $\omega$= (6.147 $\pm$ 0.115) $\frac{rad}{s}$
 \begin{gather*}
 \vec{v}=\vec{v_S}+\vec{\omega}\times \vec{r} =\\
 \begin{pmatrix*}[r]
-0.3 \\ 0 \\ 0
+-0.3 \\ 0 \\ 0
 \end{pmatrix*}\frac{m}{s}
 + \begin{pmatrix*}[r]
 0 \\ 0 \\ 6.147	
 \end{pmatrix*}\frac{rad}{s}
 \times
 \begin{pmatrix*}[r]
-0.53 \\ 0.33 \\ 0	
+0.053 \\ 0.033 \\ 0	
 \end{pmatrix*}\frac{m}{s}
 =
-\begin{pmatrix*}[r]
--2.3285 \\ 3.2579 \\ 0	
-\end{pmatrix*}\frac{m}{s}
+\\
+\vec{v}=\begin{pmatrix*}[r]
+-0.24 \\ -0.33 \\ 0	
+\end{pmatrix*} \pm 0.007 \frac{m}{s}
 \end{gather*}
 
 
@@ -313,13 +313,13 @@ Wir beschweren Gleiter 1 mit einem Gewicht von $\Delta$m=54.6g und führen die S
 
 \textbf{Geschwindigkeitsvektoren}
 Wir bezeichnen alle Vektoren vor dem Stoß mit x, alle Vektoren nach dem Stoß mit x'. \\
-Für die Komponenten aller hier angegeben Vektoren gilt die Unsicherheit von $\pm$0.001$\frac{m}{s}$, für ihre Beträge daraus mit Gaußschem Fehlerfortpflanzungsgesetz: $\pm$0.0007$\frac{m}{s}$.
+Für die Komponenten aller hier angegeben Vektoren gilt die Unsicherheit von $\pm$0.0005$\frac{m}{s}$, für ihre Beträge daraus mit Gaußschem Fehlerfortpflanzungsgesetz: $\pm$0.0004$\frac{m}{s}$.
 \begin{gather}
-|\vec{v_1}|=0.390 \pm 0.0005 \frac{m}{s} \hspace{0.4cm}
-|\vec{v_1'}|=0.475 \pm 0.0005 \frac{m}{s}
+|\vec{v_1}|=0.390 \pm 0.0004 \frac{m}{s} \hspace{0.4cm}
+|\vec{v_1'}|=0.475 \pm 0.0004 \frac{m}{s}
 \\
-|\vec{v_2}|=0.378 \pm 0.0005 \frac{m}{s} \hspace{0.4cm}
-|\vec{v_2'}|=3.19 \pm 0.0005 \frac{m}{s}
+|\vec{v_2}|=0.378 \pm 0.0004 \frac{m}{s} \hspace{0.4cm}
+|\vec{v_2'}|=0.319 \pm 0.0004 \frac{m}{s}
 \end{gather}
 \textbf{Impulsvektoren}
 Wir bezeichnen die Masse eines Gleiters (wir nehmen an, dass beide Gleiter die gleiche Masse haben) mit $m_G$. \\
@@ -331,19 +331,19 @@ Durch Einzeichnung eines Koordinatensystems und Abtragung der Komponenten der Ge
 \vec{p_1}=(m_G+\Delta M)
 \begin{pmatrix*}[r]
 0.39 \\ 0
-\end{pmatrix*}\frac{m}{s} \hspace{0.4cm}
+\end{pmatrix*}\pm 0.0004 \frac{m}{s} \hspace{0.4cm}
 , \vec{p_2}= 
 m_G\begin{pmatrix*}[r]
 -0.18 \\ 0.33
-\end{pmatrix*}\frac{m}{s}\hspace{0.4cm}
+\end{pmatrix*}\pm 0.0004 \frac{m}{s}\hspace{0.4cm}
 \\
 \vec{p_1'}=
 (m_G+\Delta M)\begin{pmatrix*}[r]
 -0.05 \\ 0.48
-\end{pmatrix*} \frac{m}{s}\hspace{0.4cm}
+\end{pmatrix*}\pm 0.0004  \frac{m}{s}\hspace{0.4cm}
 \vec{p_2'}=m_G\begin{pmatrix*}[r]
 0.28 \\ -0.16
-\end{pmatrix*} \frac{m}{s}
+\end{pmatrix*} \pm 0.0004 \frac{m}{s}
 \end{gather*}
 \end{center}
 \textbf{Überprüfung des Impulssatzes}
@@ -351,38 +351,31 @@ Wenn wir $\vec{p_1}$ und $\vec{p_2}$ sowie $\vec{p_1'}$ und $\vec{p_2'}$ addiere
 \begin{equation}\label{impuls1}
 \vec{p_1}+\vec{p_2}=(2m_G+\Delta M )\begin{pmatrix}
 0.21 \\ 0.33 
-\end{pmatrix} \frac{m}{s}
+\end{pmatrix} \pm 0.0008  \frac{m}{s}
 \end{equation}
 \begin{equation}\label{impuls2}
 \vec{p_1'} + \vec{p_2'} =(2m_G +\Delta M )\begin{pmatrix}
 0.23 \\
 0.32
-\end{pmatrix}  \frac{m}{s}
+\end{pmatrix} \pm 0.0008  \frac{m}{s}
 \end{equation}
 
-Aus dem Vergleich von \ref{impuls1} und \ref{impuls2} erahnen wir, dass der Impuls im elastischen Stoß nahezu erhalten geblieben ist. Die Beträge der beiden Vektoren ähneln sich noch mehr als die Vektoren selbst (3.91 und 3.94), also gehen wir davon aus, dass ihre Abweichung voneinander hauptsächlich durch die Ungenauigkeit unserer Messung und durch die Ungenauigkeit unserer Auswertung, die aus Arbeit mit Geodreieck, Bleistift und müden Augen besteht, entsteht. Allerdings ist der Stoß natürlich nicht perfekt elastisch, es ist etwas Bewegungsenergie durch die Verformung der Federn und durch die Gleitreibung verloren gegangen. \\
+
 \textbf{Kinetische Energie}\\
 Die Energieerhaltung für den elastischen Stoß besagt, dass die kinetische Energie vor dem Stoß und nach dem Stoß die gleiche ist:
 \begin{equation}
 \frac{Mv^2}{2} \text{vor Stoß} = \frac{Mv^2}{2}  \text{nach Stoß} 
 \end{equation}
-Der Betrag der Geschwindigkeit des Schwerpunkts hat sich von vor dem Stoß: 0.391m/s zu 0.394m/s nach dem Stoß verändert. Es ist natürlich nicht zu erwarten, dass die Geschwindigkeit zugenommen hat. Aber wenn wir uns mit dem Gaußschen Fehlerfortpflanzungsgesetz die Unsicherheiten der Beträge der Geschwindigkeiten anschauen, kommen wir der Wahrheit schon ein Stückchen näher, sie ergibt sich nämlich leicht aufgerundet von 0.0007 zu 
-\begin{equation}
-\Delta v=\pm 0.001 \frac{m}{s}
-\end{equation}
-Für diese Unsicherheiten haben wir allerdings nur die Unsicherheit in unseren Längenmessungen verwendet, die Unsicherheit in der Zeit, die durch die Maschine und durch die Auftragung auf dem Papier gegeben ist, wurde noch nicht berücksichtigt. Auf jeden Fall liegen zusammen mit der menschlichen Unsicherheit die beiden Vertrauensbereiche der Geschwindigkeiten, zu denen die kinetischen Energien direkt proportional sind (die Massen haben sich sicher nicht messbar geändert), schön nahe beieinander:
-\begin{gather*}
-v_{vorher}=(0.391 \pm 0.001) \frac{m}{s} \\
-v_{nachher}=( 0.394 \pm 0.001) \frac{m}{s}
-\end{gather*}
+
+
 \textbf{Schwerpunkt}
 Der Geschwindigkeitsvektor des Schwerpunkts hat folgende Werte, abgelesen aus dem aufgetragenen Koordinatensystem: 
 \begin{equation}
 \begin{pmatrix*}
 0.13 \\ 0.09 
-\end{pmatrix*}\frac{m}{s} 
+\end{pmatrix*} \pm 0.0005 \frac{m}{s} 
 \end{equation}
-Wie zu erwarten ist sein Betrag vor, nach und während dem Stoß annähernd konstant, genau so wie seine Richtung.
+
 \subsection{Ergebnisse für den inelastischen Stoß}
 Wir beschweren Gleiter 1 mit einem Gewicht von $\Delta$m=54.6g und führen die Stoßbewegung aus. \\
 \textbf{Impulsvektoren}\\
@@ -438,12 +431,27 @@ Addiert man die Impulse vor und nach dem Stoß erhält man:
 \textbf{Kräftefreie Bewegung: }
 
 Die Unsicherheit bei der Winkelmessung mit dem Geodreieck beträgt $\pm$ 0.5 Grad, das sind 0.0087rad. Allerdings ist die Unsicherheit aus dem linearen Fit, die qtiplot angibt, mit 0.115 viel größer als diese. Darum verwenden wir sie als Unsicherheit für die Winkelgeschwindigkeit.
-
-
-\textbf{Elastischer Stoß: Diskussion der kinetischen Energie}
-
+\\
+\textbf{Elastischer Stoß: Impulserhaltung} \\
+Aus dem Vergleich von \ref{impuls1} und \ref{impuls2} erahnen wir, dass der Impuls im elastischen Stoß nahezu erhalten geblieben ist. Die Beträge der beiden Vektoren ähneln sich noch mehr als die Vektoren selbst (3.91 und 3.94), also gehen wir davon aus, dass ihre Abweichung voneinander hauptsächlich durch die Ungenauigkeit unserer Messung und durch die Ungenauigkeit unserer Auswertung, die aus Arbeit mit Geodreieck, Bleistift und müden Augen besteht, entsteht. Allerdings ist der Stoß natürlich nicht perfekt elastisch, es ist etwas Bewegungsenergie durch die Verformung der Federn und durch die Gleitreibung verloren gegangen. \\
+\\
+\textbf{Elastischer Stoß: Energieerhaltung} \\
+Die Energieerhaltung für den elastischen Stoß besagt, dass die kinetische Energie vor dem Stoß und nach dem Stoß die gleiche ist. Wir betrachten die Geschwindigkeiten der Gleiter vor und nach dem Stoß, die einzigen veränderlichen Größen im Experiment zu denen die Energie direkt proportional ist (die Massen haben sich sicher nicht messbar geändert:) \\
+Der Betrag der Geschwindigkeit des Schwerpunkts hat sich von vor dem Stoß: 0.391m/s zu 0.394m/s nach dem Stoß verändert. Es ist natürlich nicht zu erwarten, dass die Geschwindigkeit zugenommen hat. Aber wenn wir uns mit dem Gaußschen Fehlerfortpflanzungsgesetz die Unsicherheiten der Beträge der Geschwindigkeiten anschauen, kommen wir der Wahrheit schon ein Stückchen näher, sie ergibt sich nämlich leicht aufgerundet von 0.0007 zu 0.001 m/s.\\
+\begin{equation}
+\Delta v=\pm 0.001 \frac{m}{s}
+\end{equation}
+Für diese Unsicherheiten haben wir allerdings nur die Unsicherheit in unseren Längenmessungen verwendet, die Unsicherheit in der Zeit, die durch die Maschine und durch die Auftragung auf dem Papier gegeben ist, wurde noch nicht berücksichtigt. Auf jeden Fall liegen zusammen mit der menschlichen Unsicherheit die beiden Vertrauensbereiche der Geschwindigkeiten, zu denen die kinetischen Energien direkt proportional sind, schön nahe beieinander:
+\begin{equation}
+\frac{Mv^2}{2} \text{vor Stoß} = \frac{Mv^2}{2}  \text{nach Stoß} 
+\end{equation}
+\begin{gather*}
+v_{vorher}=(0.391 \pm 0.001) \frac{m}{s} \\
+v_{nachher}=( 0.394 \pm 0.001) \frac{m}{s}
+\end{gather*}\\
 \textbf{Elastischer Stoß: Diskussion der Bahnkurve des Schwerpunktes}
 
+Wie zu erwarten ist der Geschwindigkeitsvektor des Schwerpunktes nach und während dem Stoß annähernd konstant im Betrag, genau so wie in der Richtung. Natürlich ging etwas Energie in die Verformung der Federn und durch die Gleitreibung verloren, aber es ist so wenig dass es innerhalb unserer Messunsicherheit nicht auffällt.
 
 \textbf{Inelastischer Stoß: Diskussion der Bahnkurve des Schwerpunktes}
 
