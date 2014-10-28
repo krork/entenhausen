@@ -205,6 +205,13 @@ Auf einem Luftkissentisch lassen sich Gleitkörper, die auf einem Luftkissen sit
 % ______________________________________Teil 2: Ergebnisse_____________________________________________
 
 \subsection{Ergebnisse für die gleichmäßig beschleunigte Bewegung}
+\begin{figure}[H]
+\caption{Alle Bahnen}
+\begin{center}
+\includegraphics[scale=0.15,angle=0]{whole.eps}
+\end{center}
+\end{figure}
+
  Wir befestigen eine Masse von $m_g$=50.0g über eine Rolle an einem der Gleiter und lassen sie über den Tischrand hängen, so dass sie von der Schwerkraft beschleunigt wird und eine annähernd gleichmäßige Beschleunigung auf den Gleiter ausübt.
 
 \textbf{Bewegungsgleichungen}
@@ -243,7 +250,7 @@ A (slope) $\pm$ Err = 455.84 $\pm$ 7.6
 a=A\pm Err=2\cdot 455.84 \pm 7.60=(455.84\pm 7.60)\frac{mm}{s^2}= \\
 =(460\pm8)\frac{mm}{s^2}=(0.46\pm0.008)\frac{m}{s^2}
 \end{gather*}
-Aus dieser Beschleunigung, die der Gleiter erfuhr, können wir uns jetzt über die bekannte Masse $m_1$=50.0g des Senkgewichts und die Erdbeschleunigung die scheinbare Masse $m_G$ berechnen, die der Gleiter besitzt. Scheinbar deswegen, weil in ihr noch die Gleitreibungskraft enthalten ist, die der Beschleunigung entgegenwirkte.
+Aus dieser Beschleunigung, die der Gleiter erfuhr, können wir uns jetzt über die bekannte Masse $m_1$=50.0g des Senkgewichts und die Erdbeschleunigung die scheinbare Masse $m_G$ berechnen, die der Gleiter besitzt. Scheinbar deswegen, weil in ihr noch die Gleitreibungskraft enthalten ist, die der Beschleunigung entgegenwirkte. Wir erläutern unser Vorgehen näher in der Diskussion.
 \begin{gather}
 F=m_1*a_g=m_G*a=50.0g*9.81\frac{m}{s^2}=m_G*0.46\frac{m}{s^2} \\
 m_G=\frac{50.0g*9.81\frac{m}{s^2}}{0.46\frac{m}{s^2}}=1078.0g \\
@@ -259,13 +266,18 @@ Weil wir vergessen haben ihn zu wiegen nehmen wir an, der Gleiter habe die Masse
 
 
 \subsection{Ergebnisse für die kräftefreie Bewegung}
-
+\begin{figure}[H]
+\caption{Kräftefreie Bewegung}
+\begin{center}
+\includegraphics[scale=0.1,angle=0	]{vero.eps}
+\end{center}
+\end{figure}
 \textbf{Schwerpunktgeschwindigkeit}
 Der Schwerpunkt bewegt sich schön konstant und geradlinig.
 \begin{equation}
 \vec{v_S}=
 \begin{pmatrix*}[r]
-0.3 \\ 0
+-0.3 \\ 0
 \end{pmatrix*}\pm 0.0005 \frac{m}{s}
 \end{equation}
 
@@ -305,7 +317,12 @@ $\omega$= (6.147 $\pm$ 0.115) $\frac{rad}{s}$
 -0.24 \\ -0.33 \\ 0	
 \end{pmatrix*} \pm 0.007 \frac{m}{s}
 \end{gather*}
-
+\begin{figure}[H]
+\caption{Bahngeschwindigkeit}
+\begin{center}
+\includegraphics[scale=0.1,angle=-90]{bahngeschw.eps}
+\end{center}
+\end{figure}
 
 \subsection{Ergebnisse für den elastischen Stoß}
 
@@ -359,6 +376,12 @@ Wenn wir $\vec{p_1}$ und $\vec{p_2}$ sowie $\vec{p_1'}$ und $\vec{p_2'}$ addiere
 0.32
 \end{pmatrix} \pm 0.0008  \frac{m}{s}
 \end{equation}
+\begin{figure}[H]
+\caption{Die fett eingezeichneten Gesamtimpulsvektoren ähneln sich, sind aber unterschiedlich}
+\begin{center}
+\includegraphics[scale=0.1,angle=-90]{impulsvektoren.eps}
+\end{center}
+\end{figure}
 
 
 \textbf{Kinetische Energie}\\
@@ -366,8 +389,10 @@ Die Energieerhaltung für den elastischen Stoß besagt, dass die kinetische Ener
 \begin{equation}
 \frac{Mv^2}{2} \text{vor Stoß} = \frac{Mv^2}{2}  \text{nach Stoß} 
 \end{equation}
-
-
+\begin{gather}
+\frac{1}{2}(m_g+\Delta M)\vec{p_1}^2+\frac{1}{2}m_g \vec{p_2}^2=0.1516 \pm 0.0008 J \\
+\frac{1}{2}(m_g+\Delta M)\vec{p_1'}^2+\frac{1}{2}m_g\vec{p_2'}^2=0.1697J \pm 0.0008 J \\
+\end{gather}
 \textbf{Schwerpunkt}
 Der Geschwindigkeitsvektor des Schwerpunkts hat folgende Werte, abgelesen aus dem aufgetragenen Koordinatensystem: 
 \begin{equation}
@@ -375,7 +400,12 @@ Der Geschwindigkeitsvektor des Schwerpunkts hat folgende Werte, abgelesen aus de
 0.13 \\ 0.09 
 \end{pmatrix*} \pm 0.0005 \frac{m}{s} 
 \end{equation}
-
+\begin{figure}[H]
+\caption{Schwerpunkte, elastischer Stoß: fein gezeichnet, inelastischer Stoß: fett gezeichnet}
+\begin{center}
+\includegraphics[scale=0.1,angle=-90]{schwerpunkte.eps}
+\end{center}
+\end{figure}
 \subsection{Ergebnisse für den inelastischen Stoß}
 Wir beschweren Gleiter 1 mit einem Gewicht von $\Delta$m=54.6g und führen die Stoßbewegung aus. \\
 \textbf{Impulsvektoren}\\
@@ -385,38 +415,41 @@ $\vec{p_2}$ ist vor dem Stoß $\vec{0}$, weil Gleiter 2 in Ruhe ist, und der um 
 \vec{p_1}=(m_G+\Delta M)
 \begin{pmatrix*}[r]
 0.39 \\ 0
-\end{pmatrix*}\frac{m}{s} \hspace{0.4cm}
+\end{pmatrix*}\pm 0.0004 \frac{m}{s} \hspace{0.4cm}
 \vec{p_2}=\vec{0} \\
 \vec{p_1'}=
 (m_G+\Delta M)\begin{pmatrix*}[r]
 0.24 \\ 0.04
-\end{pmatrix*} \frac{m}{s}\hspace{0.4cm}
+\end{pmatrix*} \pm 0.0004  \frac{m}{s}\hspace{0.4cm}
 \vec{p_2'}=m_G\begin{pmatrix*}[r]
 0.12 \\ 0.07
-\end{pmatrix*} \frac{m}{s}
+\end{pmatrix*} \pm 0.0004  \frac{m}{s}
 \end{gather*}
 
 \textbf{Überprüfung des Impulssatzes} \\
 Addiert man die Impulse vor und nach dem Stoß erhält man:
 \begin{gather*}
-\vec{p_1}+\vec{p_2}=\vec{p_1} \\
+\vec{p_1}+\vec{p_2}=(m_G+\Delta M)
+\begin{pmatrix*}[r]
+0.39 \\ 0
+\end{pmatrix*}\pm 0.0004 \frac{m}{s} \\
 \vec{p_1'}+\vec{p_2'}=(2m_G+\Delta M)
 \begin{pmatrix*}[r]
 0.36 \\ 0.11
-\end{pmatrix*} \frac{m}{s}
+\end{pmatrix*}\pm 0.0004  \frac{m}{s}
 \end{gather*}
 \textbf{Schwerpunkt}
 \begin{gather*}
 \vec{S}=
 \begin{pmatrix*}[r]
 0.16 \\ 0.03
-\end{pmatrix*} \frac{m}{s}
+\end{pmatrix*} \pm 0.0004 \frac{m}{s}
 \end{gather*}
 \textbf{Kinetische Energie}
 \begin{gather*}
-\frac{m|\vec{v_1}|^2}{2}=(m_G+\Delta M)0.07605\frac{m^2}{s^2}=0.08020233J \\
-\frac{m|\vec{v_1'}|^2}{2}+\frac{m|\vec{v_2'}|^2}{2}=(m_G+\Delta M)0.0296\frac{m^2}{s^2} + m_G0.00965\frac{m^2}{s^2}=0.06081616J \\
-\Delta E_{Kin} absolut=0.01938617J \\
+\frac{m|\vec{v_1}|^2}{2}=(m_G+\Delta M)0.07605\frac{m^2}{s^2}=(0.0802 \pm 0.0004)J \\
+\frac{m|\vec{v_1'}|^2}{2}+\frac{m|\vec{v_2'}|^2}{2}=(m_G+\Delta M)0.0296\frac{m^2}{s^2} + m_G0.00965\frac{m^2}{s^2}=(0.06082 \pm 0.0008) J \\
+\Delta E_{Kin} absolut=(0.0194 \pm 0.0008) J \\
 \Delta E_{Kin}relativ=24.17\%
 \end{gather*}
 
@@ -427,34 +460,33 @@ Addiert man die Impulse vor und nach dem Stoß erhält man:
 \subsection{Diskussion}
 \textbf{Gleichmäßig beschleunigte Bewegung: Ermittelte und theoretisch wirkende Kraft}
 
+Die theoretisch wirkende Kraft am Gleiter, die durch das Fallgewicht und die Erdbeschleunigung verursacht wird, sollte den Gleiter zu einer gewissen Beschleunigung animieren - diese könnte man berechnen und mit der gemessenen vergleichen. Wir haben allerdings erst um eine unnötige Ecke gedacht und uns aus der gemessenen Beschleunigung die \textit{Masse} berechnet, die ein Gleiter haben müsste, um reibungsfrei derart beschleunigt zu werden. Aus dem Verhältnis dieser berechneten Masse und der tatsächlichen Masse des Gleiters konnten wir unser $\mu_G$ auch bestimmen. 
 
-\textbf{Kräftefreie Bewegung: }
-
+\textbf{Kräftefreie Bewegung: } \\
 Die Unsicherheit bei der Winkelmessung mit dem Geodreieck beträgt $\pm$ 0.5 Grad, das sind 0.0087rad. Allerdings ist die Unsicherheit aus dem linearen Fit, die qtiplot angibt, mit 0.115 viel größer als diese. Darum verwenden wir sie als Unsicherheit für die Winkelgeschwindigkeit.
 \\
+Der berechnete Peripheriegeschwindigkeitsvektor stimmt in Richtung und Betrag schön mit der eingezeichneten Rotationsbewegung überein. \\
 \textbf{Elastischer Stoß: Impulserhaltung} \\
 Aus dem Vergleich von \ref{impuls1} und \ref{impuls2} erahnen wir, dass der Impuls im elastischen Stoß nahezu erhalten geblieben ist. Die Beträge der beiden Vektoren ähneln sich noch mehr als die Vektoren selbst (3.91 und 3.94), also gehen wir davon aus, dass ihre Abweichung voneinander hauptsächlich durch die Ungenauigkeit unserer Messung und durch die Ungenauigkeit unserer Auswertung, die aus Arbeit mit Geodreieck, Bleistift und müden Augen besteht, entsteht. Allerdings ist der Stoß natürlich nicht perfekt elastisch, es ist etwas Bewegungsenergie durch die Verformung der Federn und durch die Gleitreibung verloren gegangen. \\
 \\
 \textbf{Elastischer Stoß: Energieerhaltung} \\
-Die Energieerhaltung für den elastischen Stoß besagt, dass die kinetische Energie vor dem Stoß und nach dem Stoß die gleiche ist. Wir betrachten die Geschwindigkeiten der Gleiter vor und nach dem Stoß, die einzigen veränderlichen Größen im Experiment zu denen die Energie direkt proportional ist (die Massen haben sich sicher nicht messbar geändert:) \\
+Die Energieerhaltung für den elastischen Stoß besagt, dass die kinetische Energie vor dem Stoß und nach dem Stoß die gleiche ist. Wir betrachten zuerst die Geschwindigkeiten der Gleiter vor und nach dem Stoß, die einzigen veränderlichen Größen im Experiment zu denen die Energie proportional ist (die Massen haben sich sicher nicht messbar geändert:) \\
 Der Betrag der Geschwindigkeit des Schwerpunkts hat sich von vor dem Stoß: 0.391m/s zu 0.394m/s nach dem Stoß verändert. Es ist natürlich nicht zu erwarten, dass die Geschwindigkeit zugenommen hat. Aber wenn wir uns mit dem Gaußschen Fehlerfortpflanzungsgesetz die Unsicherheiten der Beträge der Geschwindigkeiten anschauen, kommen wir der Wahrheit schon ein Stückchen näher, sie ergibt sich nämlich leicht aufgerundet von 0.0007 zu 0.001 m/s.\\
 \begin{equation}
 \Delta v=\pm 0.001 \frac{m}{s}
 \end{equation}
-Für diese Unsicherheiten haben wir allerdings nur die Unsicherheit in unseren Längenmessungen verwendet, die Unsicherheit in der Zeit, die durch die Maschine und durch die Auftragung auf dem Papier gegeben ist, wurde noch nicht berücksichtigt. Auf jeden Fall liegen zusammen mit der menschlichen Unsicherheit die beiden Vertrauensbereiche der Geschwindigkeiten, zu denen die kinetischen Energien direkt proportional sind, schön nahe beieinander:
-\begin{equation}
-\frac{Mv^2}{2} \text{vor Stoß} = \frac{Mv^2}{2}  \text{nach Stoß} 
-\end{equation}
+Für diese Unsicherheiten haben wir allerdings nur die Unsicherheit in unseren Längenmessungen verwendet, die Unsicherheit in der Zeit, die durch die Maschine und durch die Auftragung auf dem Papier gegeben ist, wurde noch nicht berücksichtigt. Auf jeden Fall liegen zusammen mit der menschlichen Unsicherheit die beiden Vertrauensbereiche der Geschwindigkeiten, zu denen die kinetischen Energien direkt proportional sind, zumindest noch fast beieinander, auch wenn die Geschwindigkeit nachher natürlich kleiner sein sollte:
+
 \begin{gather*}
 v_{vorher}=(0.391 \pm 0.001) \frac{m}{s} \\
 v_{nachher}=( 0.394 \pm 0.001) \frac{m}{s}
 \end{gather*}\\
-\textbf{Elastischer Stoß: Diskussion der Bahnkurve des Schwerpunktes}
-
-Wie zu erwarten ist der Geschwindigkeitsvektor des Schwerpunktes nach und während dem Stoß annähernd konstant im Betrag, genau so wie in der Richtung. Natürlich ging etwas Energie in die Verformung der Federn und durch die Gleitreibung verloren, aber es ist so wenig dass es innerhalb unserer Messunsicherheit nicht auffällt.
-
-\textbf{Inelastischer Stoß: Diskussion der Bahnkurve des Schwerpunktes}
-
-\textbf{Inelastischer Stoß: Kinetische Energie}
+Damit erklären sich auch die unterschiedlichen Energien, die wir erhalten, die nicht einmal mehr in ihren jeweiligen Unsicherheitsbereichen liegen: Die Geschwindigkeiten sind ungenau, vor allem die nach dem Stoß: daher die größere Energie nach dem Stoß, die  Unsicherheitsbereichs.\\
+\textbf{Elastischer Stoß: Diskussion der Bahnkurve des Schwerpunktes}\\
+Wie zu erwarten ist die Bahnkurve des Schwerpunktes nach und während dem Stoß gerade, seine Geschwindigkeit ist annähernd konstant im Betrag, genau so wie in der Richtung. Natürlich ging etwas Energie in die Verformung der Federn und durch die Gleitreibung verloren, aber es ist so wenig dass es innerhalb unserer Messunsicherheit nicht auffällt.\\
+\textbf{Inelastischer Stoß: Diskussion der Bahnkurve des Schwerpunktes}\\
+Wie beim elastischen Stoß ist die Bahnkurve des Schwerpunkts schön gerade, auch seine Geschwindigkeit hat sich nicht messbar geändert.\\
+\textbf{Inelastischer Stoß: Kinetische Energie}\\
+Hier gingen natürlich große Mengen Energien, rund 24\% der kinetischen Energie in andere Formen von Energien über, hauptsächlich vermutlich in die Verformung am Klettverschluss, in Wärme und in Vibration (die Gleiter trafen sich mit einem laut hörbaren "Klack", und auch Schallwellen wollen erst durch Energie angeregt werden.)
 
 \end{document}
