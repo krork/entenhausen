@@ -124,7 +124,7 @@ Allerdings ist darauf zu achten, dien Kolben zuerst einmal auszuspülen und erst
 
 % ______________________________________Teil 1: Ergebnisse_____________________________________________
 \subsection{Durchführung}
-Wir dachten, dass wir genau und ohne Ausreisser gemessen hatten - erst im Nachhinein fiel uns auf, dass wir einen Fehler gemacht haben mussten. Wir haben mit dem Pyknometer darauf geachtet, dass möglichst genau gleich viel von jeder Flüßigkeit im Pyknometer war, als wir sie wogen, indem wir überständige Flüßigkeit mit sehr saugfähigem und weichem Papier, auf dem auch eine Katze abgebildet war, absaugten. 
+Wir dachten, dass wir genau und ohne Ausreisser gemessen hatten - erst im Nachhinein fiel uns auf, dass wir einen Fehler mit dem Densitometer gemacht haben mussten. Mit dem Pyknometer darauf geachtet, dass möglichst genau gleich viel von jeder Flüßigkeit im Pyknometer war, als wir sie wogen, indem wir überständige Flüßigkeit mit sehr saugfähigem und weichem Papier, auf dem auch eine Katze abgebildet war, absaugten. Die verwendete Waage war eine Sartorius LC.
 \subsection{Ergebnisse}
 
 \textbf{Messung mit Pyknometer}
@@ -140,10 +140,13 @@ Die Dichte von destilliertem Wasser bei 23.2°C wurde der Tabelle im Anleitungst
 \begin{gather*}
 d=\frac{\rho_{probe}}{\rho_{dest}}=\frac{m_2 - m_0}{m_1 - m_0}\\
 \rho_{probe}=\rho_{dest}\cdot\frac{m_2 - m_0}{m_1 - m_0}= \\
-= \rho_{dest}\cdot\frac{m_o}{m_u}= 0.9975\cdot\frac{79.507 - 25.318}{77.501 - 25.318} \\
-\Delta \rho_{probe}=\sqrt{(\frac{\delta\rho}{\delta m_o})^2\Delta m_o^2+(\frac{\delta\rho}{\delta m_u})^2\Delta m_u^2} \\
-\Delta m_o = \Delta m_u = \Delta m_1 + \Delta m_0 = \Delta m_2 + \Delta m_0 = 0.002g \\
+m_a = m_2 - m_0 \\ m_b = m_1 - m_0 \\
+\vspace{0.3cm}
+= \rho_{dest}\cdot\frac{m_a}{m_b}= 0.9975\cdot\frac{79.507 - 25.318}{77.501 - 25.318} \\
+\Delta \rho_{probe}=\sqrt{(\frac{\delta\rho}{\delta m_a})^2\Delta m_a^2+(\frac{\delta\rho}{\delta m_b})^2\Delta m_b^2} \\
+\Delta m_a = \Delta m_b = \Delta m_1 + \Delta m_0 = \Delta m_2 + \Delta m_0 = 0.002g \\
 \Delta \rho_{probe}=\pm6\cdot10^{-5}\frac{g}{cm^3} \\
+\vspace{0.3cm}
 \rho_{probe}=(1.035846  \pm 0.00006 )\frac{g}{cm^3}
 \end{gather*}
 \textbf{Messung mit Waage}
@@ -162,11 +165,11 @@ m(a)=\rho(a) \cdot V=1.2\frac{kg}{m^3}10\cdot10^{-6}m^3=1.2\cdot 10^{-5}kg=1.2\c
 \end{equation}
 Nachdem unsere Waage auf $10^{-3}$g genau misst, ist die Korrektur von 1.2 $10^{-2}$g notwendig. Wir erhalten damit
 \begin{equation}
-m_{Fluid korr}=m_{Fluid}+m(a)=10.285g+1.2\cdot  10^{-2}g=(10.297 \pm 0.002)g 
+m_{Fluid korr}=m_{Fluid}+m(a)=10.285g+1.2\cdot  10^{-2}g=(10.297 \pm 0.001)g 
 \end{equation} 
 Der Senkkörper hat ein Volumen V von 10c$m^3$. Damit ist die Dichte der verdrängten Flüßigkeit:
 \begin{equation}
-\rho_{probe}=\frac{m_{Fluid korr}}{V}=(1.0297 \pm 0.002) \frac{g}{cm^3}
+\rho_{probe}=\frac{m_{Fluid korr}}{V}=(1.0297 \pm 0.001) \frac{g}{cm^3}
 \end{equation}
 \textbf{Messung mit digitalem Densitometer}
 \begin{gather*}
@@ -182,7 +185,7 @@ Wir verwendeten bei allen Berechnungen die in der Aufgabenstellung angegebenen W
 \textbf{Vergleich der Messergebnisse}
 \begin{gather}
 \text{Mit dem Pyknometer:}\hspace{0.3cm} \rho=(1.035846  \pm 0.00006 )\frac{g}{cm^3}\\
-\text{Mit der Waage:}\hspace{0.3cm} \rho=(1.0297 \pm 0.002) \frac{g}{cm^3} \\
+\text{Mit der Waage:}\hspace{0.3cm} \rho=(1.0297 \pm 0.001) \frac{g}{cm^3} \\
 \text{Mit dem Densitometer:}\hspace{0.3cm} \rho=(0.9773 \pm 0.0001 )\frac{g}{cm^3}
 \end{gather}
 Wir bemerken unterschiedliche Ergebnisse, die nicht in ihren jeweiligen Vertrauensbereichen liegen, vor allem fällt uns der stark abweichende Wert vom Densitometer auf. Wir könnten nun denken, dass, nachdem das Densitometer doch das genaueste Messgerät ist, dieser Wert der bessere sein sollte. Aber uns fällt auf, dass die am Densitometer gemessene Dichte \textbf{unter} der Dichte von Wasser bei dieser Temperatur liegt, wobei wir am Beginn klar gemessen haben, dass ein gewisses Volumen der Probeflüßigkeit \textbf{schwerer} als das gleiche Volumen Wasser ist, also muss ihre Dichte \textbf{höher} als die von Wasser sein. Wir haben wohl mit dem Gerät schlecht gemessen oder das Gerät hatte eine Fehlfunktion und es fiel uns leider nicht rechtzeitig auf. \\
@@ -318,7 +321,7 @@ $\omega$= (6.147 $\pm$ 0.115) $\frac{rad}{s}$
 \end{pmatrix*} \pm 0.007 \frac{m}{s}
 \end{gather*}
 \begin{figure}[H]
-\caption{Bahngeschwindigkeit}
+\caption{Bahngeschwindigkeit $\vec{v}$}
 \begin{center}
 \includegraphics[scale=0.1,angle=-90]{bahngeschw.eps}
 \end{center}
@@ -445,13 +448,18 @@ Addiert man die Impulse vor und nach dem Stoß erhält man:
 0.16 \\ 0.03
 \end{pmatrix*} \pm 0.0004 \frac{m}{s}
 \end{gather*}
-\textbf{Kinetische Energie}
+\textbf{Kinetische Energie} \\
+Die Unsicherheit von 0.0004J wurde aus Gauß für $\frac{mv^2}{2}$ gewonnen.\\
 \begin{gather*}
 \frac{m|\vec{v_1}|^2}{2}=(m_G+\Delta M)0.07605\frac{m^2}{s^2}=(0.0802 \pm 0.0004)J \\
 \frac{m|\vec{v_1'}|^2}{2}+\frac{m|\vec{v_2'}|^2}{2}=(m_G+\Delta M)0.0296\frac{m^2}{s^2} + m_G0.00965\frac{m^2}{s^2}=(0.06082 \pm 0.0008) J \\
+\end{gather*} 
+\begin{equation*}
 \Delta E_{Kin} absolut=(0.0194 \pm 0.0008) J \\
+\end{equation*}
+\begin{equation*}
 \Delta E_{Kin}relativ=24.17\%
-\end{gather*}
+\end{equation*}
 
 
 % ______________________________________Teil 2: Diskussion_____________________________________________
