@@ -103,6 +103,14 @@ $$ \epsilon= \frac{\Delta l}{l} $$ \\
 
 $$ E=\frac{\sigma}{\epsilon}$$
 
+Die Streckgrenze markiert den Übergang von der elastischen zur plastischen Verformung. Für sie brauchen wir auch die elastische Gerade, die durch den Bereich gefittet wird, in dem die Spannung linear mit der Dehnung ansteigt. Wir beschreiben vier Varianten der Streckgrenze:
+\begin{enumerate}
+\item \textbf{Elastizitätsgrenze} Erste sichtbare Abweichung von der elastischen Gerade.
+\item \textbf{0.05\%-Streckgrenze} Um $\Delta \varepsilon$=0.05\% parallelverschobene Gerade, geschnitten mit der Kurve.
+\item \textbf{0.2\%-Streckgrenze} Analog mit 0.2\%.
+\item \textbf{Rückextrapolierte Streckgrenze} Wir schneiden die elastische Gerade mit einer Geraden, die im plastischen Bereich gefittet wird, sofern der plastische Bereich wieder linear verläuft.
+\end{enumerate}
+
 Einheiten der Größen:
 $$[\sigma]=\frac{N}{m^2}$$
 $$[E]=\frac{N}{m^2}$$
@@ -114,15 +122,46 @@ $\epsilon$ ist das Verhältnis der Längenänderung, die die Maschine verursacht
 $$ \epsilon = \frac{v\cdot t}{L_0} \text{hier} = \frac{0.5\frac{mm}{min}}{100mm} = \frac{8.\bar{3}\cdot10^{-3}\frac{mm}{s}}{100mm}$$
 \subsection{Ergebnisse}
 Literaturwert [Tipler] zum E-Modul von Aluminum: 70 kN/mm²
+\subsection*{Querschnitt des Drahtes}
+$$\bar{q}=( \pm )mm$$
+\subsection*{Zugversuch}
+\subsubsection*{Bestimmung des E-Moduls}
+\subsubsection*{Bestimmung der Streckgrenze}
 \subsection{Diskussion}
 \section{Bestimmung des Schubmoduls von Aluminium mit dem Torsionspendel}
 \subsection{Aufgabenstellung}
 Wir befestigen zwei Gewichte an den Enden einer Querstange, hängen diese an ihrer Mitte an einen Aluminiumdraht und versetzen die Stange ihn Rotation. Aus ihrer Schwingungsdauer berechnen wir dann das Schubmodul, auch Torsionsmodul genannt, des Aluminiumdrahts.
 \subsection{Grundlagen}
-
+Abhängig von der Drehung der Stange $\phi$ entseht ein rückstellendes Moment M durch die Torsion des Drahtes:
+$$M=-D\phi$$
+D ist das Direktionsmoment. Lässt man die Querstange los, schwingt sie mit der Periodendauer T:
+$$T=2\pi \sqrt{\frac{J}{D}}$$
+wobei J das Trägheitsmoment der gesamten Anordnung ist. Wenn sich die Stange dreht, wird der Draht geschert, und nachdem Scherungen durch das Schubmodul beschrieben werden können, steht das Direktionsmoment in einem Zusammenhang mit dem Schubmodul G:
+\begin{equation} 
+\label{G}
+G = \frac{2LD}{\pi r^4}
+\end{equation}
+r ist der Radius des Drahtes, L seine Länge. \\
+Man verwendet ein Differenzverfahren um J zu bestimmen. $J_A$ sei das Trägheitsmoment ohne Zusatzgewichte, $J_Z$ mit Gewichten. Mit dem Satz von Steiner lässt sich $J_Z$ zu dem Trägheitsmoment bezüglich der Rotation um eine Schwerpunktachse, $J_S$, + m$l^2$ vereinfachen:
+\begin{equation} \label{J}
+J =  J_A + 2\cdot J_Z = J_A + 2 \cdot (J_S + ml^2)
+\end{equation} 
+Misst man nun die Periodendauern $T_1$,$T_2$ für zwei verschiedene Distanzen $l_1$,$l_2$ der Zusatzgewichte, so kann man die unbekannten Größen $J_A$ und $J_Z$ eliminieren. Dazu quadriert man die beiden Ausdrücke für $T_1$ und $T_2$ und substrahiert sie voneinander: 
+$$T_1^2-T_2^2 = 8 \pi^2m\frac{l_1^2-l_2^2}{D}$$
+Dies formt man nach D um und setzt in  \ref{G} ein:
+\begin{equation}
+\label{Gfinal}
+G=16\pi\frac{LM(l_1^2-l_2^2)}{r^4(T_1^2-T_2^2)}
+\end{equation} 
+Wir berechnen auch die Poissonzahl $\nu$, das Verhältnis der relativen Querkontraktion $\Delta d / d$, die bei der Verformung des Drahtes geschieht, und der relativen Längenänderung $\Delta l$ /l.
+$$\nu=\frac{\Delta d / d}{\Delta l / l} $$
+Für diesen Abschnitt wurde auf die Aufgabenstellung zurückgegriffen.
 \subsection{Versuchsaufbau und Methoden}
 \subsection{Ergebnisse}
-Literaturwert [Wikipedia] zum Schubmodul von Aluminium: 25.5 kN/mm² = GPa
+Literaturwert [Wikipedia] zum Schubmodul von Aluminium: 25.5 kN/mm² = GPa\\
+E-Modul
+Schubmodul G
+Poissonzahl $\nu$
 \subsection{Diskussion}
 \section{Physikalisches Pendel}
 \subsection{Aufgabenstellung}
