@@ -93,14 +93,103 @@
 \newpage
 \section{Physikalisches Pendel}
 \subsection{Aufgabenstellung}
-\subsection{Grundlagen und Versuchsaufbau}
+Wir führen Messungen mit einem Fahrradpendel durch. Dazu messen wir die Schwingungsdauer in Abhängigkeit des Auslenkwinkels über einen Bereich von 10° bis 100° dar und verarbeiten und diskutieren anschließend unsere Messwerte. 
+Daraus berechnen wir uns auch weitere Ergebnisse wie die Winkelrichtgröße des Pendels und die Trägheitsmomente von Pendel, Zusatzmasse und Rad. 
+
+\subsection{Grundlagen}
+Auslenkwinkel $\phi(t)$: [$\phi(t)$]=1(rad)\\
+Zeit t: $[t]=s$\\
+Masse m: $[m]=kg$\\
+Länge l: $[l]=m$\\
+Periodendauer T: $[T]=s$\\
+Winkelbeschleunigung $\ddot{\phi}$: [$\ddot{\phi}$]=$s^{-2}$\\
+Winkelrichtgröße D: $[D]=kg \frac{m^2}{s^2}$\\
+Erdbeschleunigung: $g=9.81ms^{-2}$\\
+\\
 \textbf{Mathematisches Pendel}\\
+Ein mathematische Pendel ist ein idealisiertes Objekt und besteht aus einem masselosen Faden und einer im Schwerpunkt konzentrierten Masse. Reibungs- und Strömungswiderstände werden vernachlässigt, sodass eine konstante Schwingungsdauer $T_0$ angenommen werden kann.\\
+\\
+Bewegungsgleichung:
+\begin{equation*}
+\ddot{\phi}(t)+\frac{g}{l}sin(\phi(t))=0
+\end{equation*}\\
+Lösung für kleine Winkel:
+\begin{equation*}
+\phi(t)=\phi_0cos(\sqrt{\frac{g}{l}}t+\Phi)
+\end{equation*}
+wobei $\phi_0$ der maximale Auslenkungswinkel und $\Phi$ die Anfangsphase bei t=0 ist. \\
+\\
+Periodendauer:
+\begin{equation*}
+T_0 = \frac{2\pi}{\omega} = 2\pi\sqrt{\frac{l}{g}}
+\end{equation*}\\
+\\
 \textbf{Physikalisches Pendel}\\
-\textbf{Winkelbeschleunigung}\\
-\textbf{Drehmoment}\\
-\textbf{Massenträgheitsmoment}\\
+Im Gegensatz zum mathematischen Pendel, schwingt beim physikalischen Pendel ein Körper um eine Achse, die \textit{nicht} durch den Schwerpunkt verläuft.\\
+Die Bewegungsgleichung muss jetzt anders bestimmt werden:
+\begin{equation*}
+J\ddot{\phi(t)} + D sin(\phi(t)) = 0
+\end{equation*}
+wobei die \textbf{Winkelrichtgröße D}=$mgl$\\
+\\
+Schwingungsdauer:
+\begin{equation*}
+T_0=\frac{2\pi}{\omega}=2\pi\sqrt{\frac{J}{D}}
+\end{equation*}\\
+\\
 \textbf{Steiner'scher Satz}\\
-\textbf{Winkelrichtgröße}\\
+\begin{equation*}
+J = J_S + m_{ges} d^2
+\end{equation*}
+wobei $J_S$ das Trägheitsmoment bezüglich einer Achse um den Schwerpunkt, J das Trägheitsmoment bezüglich einer parallelen Achse im Abstand d.
+\\
+\textbf{Fahrradpendel}\\
+Ein in Wirklichkeit realisiertes Pendel kann folgendermaßen aussehen:
+%\includegraphics[scale=0.1,angle=-90]{fahrradpendel.eps}
+Wir sehen hier, dass es sich hierbei um ein Speichenrad mit zylindrischer Zusatzmasse handelt.\\
+\\
+Winkelrichtgröße:
+\begin{equation*}
+D=m_Z g l_{AS}
+\end{equation*}
+wobei $l_{AS}=R_F + \frac{h_Z}{2}$, $R_F$ der Radius der Felge, $h_Z$ die Höhe der Zusatzmasse.\\
+\\
+Trägheitsmoment:
+\begin{equation*}
+J = J_Z + J_{Rad} = D (\frac{T_0}{2/pi})^2
+\end{equation*}
+\\
+wobei das Trägheitsmoment des Zylinders:
+\begin{equation*}
+J_Z = m_Z(\frac{1}{4}r^2_Z + \frac{1}{12}h^2_Z+l^2_{AS}
+\end{equation*}
+\\
+Das Trägheitsmoment des Rades wird rückschließend bestimmt durch Nutzung der Gleichung für das gesamte Trägeheitsmoment.
+
+\subsection{Versuchsaufbau und Methoden}
+Als Messgerät wird CASSY-Lab2 verwendet.\\
+\\
 \subsection{Ergebnisse}
+\textbf{Schwingungsdauer T}\\
+T als Funktion von $\phi_0$: \\
+Schwingungsdauer für sehr kleine Auslenkungen:\\
+\\
+\textbf{Winkelrichtgröße}\\
+\\
+\textbf{Trägheitsmoment des Pendels}\\
+\\
+\textbf{Trägheitsmoment der Zusatzmasse}\\
+\\
+\textbf{Trägheitsmoment des Rades}\\
+\\
+\textbf{Fehlerrechnung}\\
+Sensordaten:\\
+Frequenzauflösung: 0.001Hz\\
+Winkelauflösung: 0.18°\\
+Wegauflösung: 0.08mm\\
+Zeitauflösung: 0.001s\\
+$\boxed{Endergebnis}$ %command merken
 \subsection{Diskussion}
+Bis zu welchen Auslenkungswinkeln stimmt die Ausgleichskurve mit der experimentellen Kurve überein? 
+
 \end{document}
