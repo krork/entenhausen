@@ -9,4 +9,5 @@ von "git config --global user.email 'deine mail adresse'".
 
 QUAAAAAAAAAAAAAAAAACK
 die spinnen die eriks die römer.
-ich bin bald viiiiiel besser als du! :D
+
+finds grade genial, was du im protocol alles gemacht hast. das muss sauviel arbeit gewesen sein! 
