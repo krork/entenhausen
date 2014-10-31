@@ -1,0 +1,288 @@
+QtiPlot 0.9.8 project file
+<scripting-lang>	muParser
+<windows>	4
+<table>
+Table1	30	4	10/31/14 12:41 PM
+geometry	0	-39	445	220	
+header	1[X]	2[Y]	3[xEr]	4[yEr]
+ColWidth	100	100	100	100	
+<com>
+<col nr="2">
+2
+</col>
+<col nr="3">
+0.001
+</col>
+</com>
+ColType	0;0/13	0;0/13	0;0/13	0;0/13
+ReadOnlyColumn	0	0	0	0
+HiddenColumn	0	0	0	0
+Comments					
+WindowLabel		2
+<data>
+0	10	1.486	2	0.001
+1	20	1.498	2	0.001
+2	30	1.513	2	0.001
+3	40	1.536	2	0.001
+4	50	1.566	2	0.001
+5	60	1.603	2	0.001
+6	70	1.648	2	0.001
+7	80	1.705	2	0.001
+8	90	1.772	2	0.001
+9	100	1.853	2	0.001
+10			2	0.001
+11			2	0.001
+12			2	0.001
+13			2	0.001
+14			2	0.001
+15			2	0.001
+16			2	0.001
+17			2	0.001
+18			2	0.001
+19			2	0.001
+20			2	0.001
+21			2	0.001
+22			2	0.001
+23			2	0.001
+24			2	0.001
+25			2	0.001
+26			2	0.001
+27			2	0.001
+28			2	0.001
+29			2	0.001
+</data>
+</table>
+<multiLayer>
+Graph1	1	1	10/31/14 12:43 PM
+geometry	445	-39	555	472	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	537	409
+<PageGeometry>0.00914077	0.0117925	0.981718	0.964623</PageGeometry>
+PlotTitle	Title	#000000	4228
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>1</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	1	1	1	
+AxesTitles	%(?X)	%(?Y)		%(?Y)	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	5124	5124	5124
+AxesTitleDistance	2	2	2	2
+InvertedTitle	0	0	0	0
+TitleFont	Sans	13	75	0	0	0
+ScaleFont0	Sans	11	75	0	0	0
+ScaleFont1	Sans	11	75	0	0	0
+ScaleFont2	Sans	11	75	0	0	0
+ScaleFont3	Sans	11	75	0	0	0
+AxisFont0	Sans	11	50	0	0	0
+AxisFont1	Sans	11	50	0	0	0
+AxisFont2	Sans	11	50	0	0	0
+AxisFont3	Sans	11	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#1a1a1a	#1a1a1a	#1a1a1a	#1a1a1a
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	0
+curve	Table1_1	Table1_2	0	1	#ff0000	0	1	5	0	#ff0000	#ff0000	0	#000000	14	1	2	0	0	29	1
+scale	0	1.45	1.9	0	10	5	0	0
+scale	1	1.45	1.9	0	10	5	0	0
+scale	2	0	120	0	7	5	0	0
+scale	3	0	120	0	7	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1
+MinorTicks	1	1	1	1
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	1	1	1
+<Legend>
+<Frame>1</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>3.0075187969925</x>
+<y>1.8849498327759</y>
+<right>32.781954887218</right>
+<bottom>1.84130434782609</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+\l(1)%(1)
+</Text>
+<Font>Sans	11	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<table>
+Linear1	10	2	10/31/14 12:47 PM
+geometry	579	-84	445	220	hidden
+header	1[X]	2[Y]
+ColWidth	100	100	
+<com>
+</com>
+ColType	0;0/13	0;0/13
+ReadOnlyColumn	0	0
+HiddenColumn	0	0
+Comments			
+WindowLabel	Linear Regression of Table1_2	2
+<data>
+0	10	1.439254545455
+1	20	1.478975757576
+2	30	1.518696969697
+3	40	1.558418181818
+4	50	1.598139393939
+5	60	1.637860606061
+6	70	1.677581818182
+7	80	1.717303030303
+8	90	1.757024242424
+9	100	1.796745454545
+</data>
+</table>
+<multiLayer>
+Graph2	1	1	10/31/14 12:48 PM
+geometry	0	-39	555	472	active
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	537	409
+<PageGeometry>0.00914077	0.0117925	0.981718	0.964623</PageGeometry>
+PlotTitle	Polynomfit	#000000	4228
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>1</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	1	1	1	
+AxesTitles	Winkel in Grad	Zeit in s		%(?Y)	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	5124	5124	5124
+AxesTitleDistance	2	2	2	2
+InvertedTitle	0	0	0	0
+TitleFont	Sans	13	75	0	0	0
+ScaleFont0	Sans	11	75	0	0	0
+ScaleFont1	Sans	11	75	0	0	0
+ScaleFont2	Sans	11	75	0	0	0
+ScaleFont3	Sans	11	75	0	0	0
+AxisFont0	Sans	11	50	0	0	0
+AxisFont1	Sans	11	50	0	0	0
+AxisFont2	Sans	11	50	0	0	0
+AxisFont3	Sans	11	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#1a1a1a	#1a1a1a	#1a1a1a	#1a1a1a
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	0
+curve	Table1_1	Table1_2	0	1	#ff0000,0	0	1	5	0	#ff0000	#ff0000	0	#000000	14	1	2	0	0	29	1
+ErrorBars	0	Table1_1	Table1_2	Table1_3	1	8	#ff0000	1	1	1	0
+ErrorBars	1	Table1_1	Table1_2	Table1_4	1	8	#ff0000	1	1	1	0
+<Function>
+<Type>0</Type>
+<Title>NonLinearFit1</Title>
+<Expression>a0+a1*x^2+a2*x^4</Expression>
+<Variable>x</Variable>
+<Range>10	100</Range>
+<Points>100</Points>
+<Constant>a0	1.48495599323458</Constant>
+<Constant>a1	3.03701314732183e-05</Constant>
+<Constant>a2	6.36284711385474e-10</Constant>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#00ff00</Color>
+	<Style>0</Style>
+	<Width>1</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+scale	0	1.45	1.9	0	10	5	0	0
+scale	1	1.45	1.9	0	10	5	0	0
+scale	2	0	120	0	7	5	0	0
+scale	3	0	120	0	7	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1
+MinorTicks	1	1	1	1
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	1	1	1
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<open>1</open>
+<log>
+[10/31/14 12:47 PM	Plot: ''Graph2'']
+Linear Regression of dataset: Table1_2, using function: A*x+B
+Weighting Method: Instrumental, using error bars dataset: Table1_4
+From x = 1.000000000000000e+01 to x = 1.000000000000000e+02
+B (y-intercept) = 1.399533333333333e+00 +/- 6.831300510639733e-04
+A (slope) = 3.972121212121212e-03 +/- 1.100963765126361e-05
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1.218198484848485e+03
+R^2 = 0.930344874787096
+Adjusted R^2 = 0.910443410440552
+RMSE (Root Mean Squared Error) = 34.9027002515348
+RSS (Residual Sum of Squares) = 9,745.58787878788
+---------------------------------------------------------------------------------------
+[10/31/14 12:56 PM	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_2, using function: a0+a1*x^2+a2*x^4
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.0000000000000e+01 to x = 1.0000000000000e+02
+a0 = 1.4849559932346e+00 +/- 7.2819000012540e-04
+a1 = 3.0370131473218e-05 +/- 4.0483211759158e-07
+a2 = 6.3628471138547e-10 +/- 4.0785013174204e-11
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1.3015327133586e-06
+R^2 = 0.9999348824333
+Adjusted R^2 = 0.9999023236499
+RMSE (Root Mean Squared Error) = 0.001140847366372
+RSS (Residual Sum of Squares) = 9.11072899351e-06
+---------------------------------------------------------------------------------------
+Iterations = 3
+Status = success
+---------------------------------------------------------------------------------------
+</log>

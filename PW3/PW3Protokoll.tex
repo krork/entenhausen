@@ -122,9 +122,9 @@ $\epsilon$ ist das Verhältnis der Längenänderung, die die Maschine verursacht
 $$ \epsilon = \frac{v\cdot t}{L_0} \text{hier} = \frac{0.5\frac{mm}{min}}{100mm} = \frac{8.\bar{3}\cdot10^{-3}\frac{mm}{s}}{100mm}$$
 \subsection{Ergebnisse}
 Literaturwert [Tipler] zum E-Modul von Aluminum: 70 kN/mm²
-\subsection*{Querschnitt des Drahtes}
-$$\bar{q}=( \pm )mm$$
-\subsection*{Zugversuch}
+\subsubsection*{Querschnitt des Drahtes}
+$$\bar{q}=(2.00 \pm 0.05)mm$$ 
+\subsubsection*{Zugversuch}
 \subsubsection*{Bestimmung des E-Moduls}
 \subsubsection*{Bestimmung der Streckgrenze}
 \subsection{Diskussion}
@@ -169,8 +169,30 @@ Wir messen die Dauer mit einer Stoppuhr, die wir händisch auslösen. Die Auslen
 Wir verwenden zwei verschieden schwere Gewichtpaare die auf verschiedenen Längen der Querstange montiert sind.
 \subsection{Ergebnisse}
 \subsubsection*{Dicke des Drahtes}
+$$\bar{q}=(3.15 \pm 0.05)mm$$ 
 \subsubsection*{Massen der Gewichte}
+$$m_1=(349.5 \pm 0.5)g$$
+$$m_2=(230.5 \pm 0.5)g$$
+$$m_3=(17.0 \pm 0.5)g$$
+\subsubsection*{Abstand der Gewichte}
+\begin{gather*}
+l_{1a}=(200 \pm 1)mm
+l_{1b}=(130 \pm 1)mm
+l_{2a}=(170 \pm 1)mm
+l_{2b}=(70 \pm 1)mm
+\end{gather*}
 \subsubsection*{Schwingungsdauern}
+\begin{gather*}
+\bar{T_1a}=(1.99 \pm 0.03)s
+\bar{T_1b}=(1.45 \pm 0.05)s
+\bar{T_2a}=(1.46 \pm 0.03)s
+\bar{T_2b}=(0.99 \pm 0.08)s
+\end{gather*}
+\subsubsection*{Schubmodul}
+\begin{equation}
+\label{Gfinal}
+G=16\pi\frac{LM(l_{1a}^2-l_{1b}^2)}{r^4(T_{1a}^2-T_{1b}^2)}=16\pi\frac{627*0.366(200^2-130^2)}{(3.13/2)^4(1.99^2-1.45^2)}=2.39*10^{10} Pa
+\end{equation} 
 Literaturwert [Wikipedia] zum Schubmodul von Aluminium: 25.5 kN/mm² = GPa\\
 E-Modul
 Schubmodul G
@@ -259,6 +281,12 @@ Als Messgerät wird CASSY-Lab2 verwendet.\\
 T als Funktion von $\phi_0$: \\
 Schwingungsdauer für sehr kleine Auslenkungen:\\
 \\
+Polynomfit:
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.0000000000000e+01 to x = 1.0000000000000e+02
+a0 = 1.4849559932346e+00 +/- 7.2819000012540e-04
+a1 = 3.0370131473218e-05 +/- 4.0483211759158e-07
+a2 = 6.3628471138547e-10 +/- 4.0785013174204e-11
 \textbf{Winkelrichtgröße}\\
 \\
 \textbf{Trägheitsmoment des Pendels}\\
