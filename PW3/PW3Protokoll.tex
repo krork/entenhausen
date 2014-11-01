@@ -123,16 +123,41 @@ $$ \varepsilon = \frac{v\cdot t}{L_0} \text{hier} = \frac{0.5\frac{mm}{min}}{100
 \subsection{Durchführung}
 Wir schalten den alten Röhrenverstärker an und lassen ihn aufwärmen. Währenddessen führen wir das andere Experiment in unserer Serie durch, das Torsionspendel. Dann beginnen wir mit diesem Experiment: \\
 Wir kalibrieren den Verstärker indem wir per BALANCE regeln, bis unser angeschlossenes Voltmeter 0V anzeigt. Dann hängen wir 2kg an die Materialprüfmaschine und regeln per CALIBRATION, bis unser Messgerät 0.040V anzeigt.
-Wir messen den Durchmesser des Drahtes fünf Mal und bilden einen Mittelwert. Wir spannen ihn ein und verbiegen ihn sehr stark, weil wir mit zu viel Kraft rangegangen sind. Also nehmen wir einen neuen Draht, messen seinen Durchmesser und spannen ihn diesmal vorsichtiger ein.  
+Wir messen den Durchmesser des Drahtes fünf Mal und bilden einen Mittelwert. Wir spannen ihn ein und verbiegen ihn sehr stark, weil wir mit zu viel maskuliner Kraft rangegangen sind. Also nehmen wir einen neuen Draht, messen seinen Durchmesser und spannen ihn diesmal vorsichtiger ein. Dann dehnen wir den Draht gleichmäßig, während wir die dafür notwendige Kraft mit dem analogen Messverstärker messen und das Signal über einen Analog/Digitalwandler in einen Computer schicken und es dort mit einer dafür von der Universität zur Verfügung gestellten Software 'Zugversuch' aufzeichnen, um es später mit qtiplot zu analysieren.
 \subsection{Ergebnisse}
-Literaturwert [Tipler] zum E-Modul von Aluminum: 70 kN/mm²
+
 \subsubsection*{Querschnitt des Drahtes}
 $$\bar{q}=(2.00 \pm 0.05)mm$$ 
 \subsubsection*{Zugversuch}
+\begin{center}
+\begin{figure}
+\caption{Elektrische Spannung zu Zeit}
+\includegraphics[scale=0.8, angle=-90]{voltzeitkurve.eps}
+\end{figure}
+\end{center}
+\begin{center}
+\begin{figure}
+\caption{Kraft zu Zeit}
+\includegraphics[scale=0.8, angle=-90]{kraftzeitkurve.eps}
+\end{figure}
+\end{center}
+Die Steigung der gefitteten Gerade durch unseren ersten Andehnversuch: 
+$$ (41.15 \pm 487) \frac{kN}{mm^2} od. GPa $$
+
+Die Steigung der gefitteten Gerade durch unseren zweiten Andehnversuch:
+$$ (17.79 \pm 151) \frac{kN}{mm^2} od. GPa $$
+
+\begin{center}
+\begin{figure}
+\caption{Mechanische Spannung zu relativer Dehnung}
 \includegraphics[scale=0.7,angle=-90]{spannungsdehnungskurve.eps}
+\end{figure}
+\end{center}
 \subsubsection*{Bestimmung des E-Moduls}
 \subsubsection*{Bestimmung der Streckgrenze}
 \subsection{Diskussion}
+Uns fällt auf dass sogar unser zweiter, gemessener Wert stark des E-Moduls weit unter dem
+Literaturwert zum E-Modul von Aluminum von 70 kN/mm² [Tipler] liegt. Wir müssen daher leider davon ausgehen, dass wir schlecht gemessen haben. Womöglich hat sich unser zweiter, femininerer Einspannversuch doch als zu schwach erwiesen, wodurch der Draht rutschen konnte - oder vielleicht ist doch, etwas aufgeklärter, die Halterung des alten Geräts schon locker.
 \section{Bestimmung des Schubmoduls von Aluminium mit dem Torsionspendel}
 \subsection{Aufgabenstellung}
 Wir befestigen zwei Gewichte an den Enden einer Querstange, hängen diese an ihrer Mitte an einen Aluminiumdraht und versetzen die Stange ihn Rotation. Aus ihrer Schwingungsdauer berechnen wir dann das Schubmodul, auch Torsionsmodul genannt, des Aluminiumdrahts.
