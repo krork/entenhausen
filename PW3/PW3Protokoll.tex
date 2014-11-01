@@ -128,6 +128,7 @@ $$\bar{q}=(2.00 \pm 0.05)mm$$
 \subsubsection*{Bestimmung des E-Moduls}
 \subsubsection*{Bestimmung der Streckgrenze}
 \subsection{Diskussion}
+\newpage
 \section{Bestimmung des Schubmoduls von Aluminium mit dem Torsionspendel}
 \subsection{Aufgabenstellung}
 Wir befestigen zwei Gewichte an den Enden einer Querstange, hängen diese an ihrer Mitte an einen Aluminiumdraht und versetzen die Stange ihn Rotation. Aus ihrer Schwingungsdauer berechnen wir dann das Schubmodul, auch Torsionsmodul genannt, des Aluminiumdrahts.
@@ -173,31 +174,63 @@ $$\bar{q}=(3.15 \pm 0.05)mm$$
 \subsubsection*{Massen der Gewichte}
 $$m_1=(349.5 \pm 0.5)g$$
 $$m_2=(230.5 \pm 0.5)g$$
-$$m_3=(17.0 \pm 0.5)g$$
+$$m_{mount}=(17.0 \pm 0.5)g$$\\
+Wobei $m_{mount}$ die Masse der Aufhängung für die Gewichte ist. Daher ist die tatsächliche Masse:
+$$M_1=m_1+m_{mount}=(366.5 \pm 0.5)g$$
+$$M_2=m_2+m_{mount}=(247.5 \pm 0.5)g$$
 \subsubsection*{Abstand der Gewichte}
 \begin{gather*}
-l_{1a}=(200 \pm 1)mm
-l_{1b}=(130 \pm 1)mm
-l_{2a}=(170 \pm 1)mm
+l_{1a}=(200 \pm 1)mm\\
+l_{1b}=(130 \pm 1)mm\\
+l_{2a}=(170 \pm 1)mm\\
 l_{2b}=(70 \pm 1)mm
 \end{gather*}
+Außerdem die Länge des Pendels: L=$(627 \pm 1)mm$
 \subsubsection*{Schwingungsdauern}
 \begin{gather*}
-\bar{T_1a}=(1.99 \pm 0.03)s
-\bar{T_1b}=(1.45 \pm 0.05)s
-\bar{T_2a}=(1.46 \pm 0.03)s
-\bar{T_2b}=(0.99 \pm 0.08)s
+\bar{T_{1a}}=(1.99 \pm 0.03)s\\
+\bar{T_{1b}}=(1.45 \pm 0.05)s\\
+\bar{T_{2a}}=(1.46 \pm 0.03)s\\
+\bar{T_{2b}}=(0.99 \pm 0.08)s
 \end{gather*}
+Wobei es sich bei den Unsicherheiten um die Standardabweichungen der Mittelwerte handelt, die mit dem Taschenrechner berechnet wurden.
 \subsubsection*{Schubmodul}
-\begin{equation}
-\label{Gfinal}
-G=16\pi\frac{LM(l_{1a}^2-l_{1b}^2)}{r^4(T_{1a}^2-T_{1b}^2)}=16\pi\frac{627*0.366(200^2-130^2)}{(3.13/2)^4(1.99^2-1.45^2)}=2.39*10^{10} Pa
-\end{equation} 
-Literaturwert [Wikipedia] zum Schubmodul von Aluminium: 25.5 kN/mm² = GPa\\
-E-Modul
-Schubmodul G
-Poissonzahl $\nu$
+\begin{gather*}
+G_1=16\pi\frac{LM_1(l_{1a}^2-l_{1b}^2)}{r^4(T_{1a}^2-T_{1b}^2)}=2.334*10^{10} Pa\\
+G_2=16\pi\frac{LM_2(l_{2a}^2-l_{2b}^2)}{r^4(T_{2a}^2-T_{2b}^2)}=2.642*10^{10} Pa
+\end{gather*} 
+\subsubsection*{Fehlerrechnung zum Schubmodul:}
+Wir berechnen für $G_1$ sowie für $G_2$ unter Berücksichtigung der Unsicherheiten aller Werte den Größtfehler:
+\begin{gather*}
+G^{min}_1=2.204*10^{10} Pa\\
+G^{max}_1=2.479*10^{10} Pa\\
+G^{min}_2=2.625*10^{10} Pa\\
+G^{max}_2=2.697*10^{10} Pa
+\end{gather*}
+Daraus ergeben sich die Unsicherheiten: $Delta_1=1.38$ und $Delta_2=0.36$
+Da wir zwei Messungen mit verschiedenen Einstellungen haben, wollen wir aus beiden das gewogene Mittel:
+\begin{gather*}
+\delta_1=1/(1.38)^2=0.525\\
+\delta_2=1/(0.36)^2=7.716\\
+G_{gewichtet}=\frac{G_1*\delta_1 + G_2*\delta_2}{\delta_1 + \delta_2}=26.22 GPa\\
+\Delta G_{gewichtet}=\sqrt{\frac{0.525(23.34-26.22)^2+7.716(26.42-26.22)^2}{(2-1)*(0.525+7.716)}}=0.753
+\end{gather*}
+Daraus ergibt sich unser Endergebnis für das Schubmodul:\\
+$$\boxed{(G=26.22 \pm 0.76) GPa}$$\\
+\\
+Da unser Ergebnis für das Elastizitätsmodul aus dem ersten Experiment nicht den Literaturwerten entspricht, verwenden wir hier für die Berechnung der Poissonzahl den Literaturwert für E: $E=70GPa$\\
+Damit ist die Poissonzahl:\\
+$$\nu = \frac{E}{2G} -1  = \frac{70}{2*26.22} -1\\$$\\
+$$\boxed{\nu = 0.335 \pm 0.039}$$
 \subsection{Diskussion}
+Beim Berechnen der Werte ist immer sorgfältig darauf zu achten, die Größen mit den richtigen Einheiten einzusetzen.\\
+Das aus unserer Messung errechnete Schubmodul beträgt:\\
+$(G=26.22 \pm 0.76) GPa$\\
+Literaturwert [Wikipedia] zum Schubmodul von Aluminium: $25.5 kN/mm^2 = 25.5 GPa$\\
+Da dieser Wert in Ordnung ist und wir für das Elastizitätsmodul den Literaturwert verwendet haben, bekommen wir natürlich auch für die Poissonzahl ein gutes Ergebnis: $\nu = 0.335 \pm 0.039$\\
+Literaturwert [Wikipedia] zur Poissonzahl von Aluminium: 0.34\\
+Wir sind mit dieser Messung also zufrieden und wollen uns in Hinblick auf die Fehlerrechnung auch bei Captain Kirk  bedanken, der uns unermüdlich unterstützt hat.\footnote{Vergleiche Youtube: Captain Kirk is Climbing a Mountain (4 Hour Version)}
+\newpage
 \section{Physikalisches Pendel}
 \subsection{Aufgabenstellung}
 Wir führen Messungen mit einem Fahrradpendel durch. Dazu messen wir die Schwingungsdauer in Abhängigkeit des Auslenkwinkels über einen Bereich von 10° bis 100° dar und verarbeiten und diskutieren anschließend unsere Messwerte. 
@@ -281,7 +314,7 @@ Als Messgerät wird CASSY-Lab2 verwendet.\\
 T als Funktion von $\phi_0$: \\
 Schwingungsdauer für sehr kleine Auslenkungen:\\
 \\
-Polynomfit:
+Polynomfit:\\
 Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
 From x = 1.0000000000000e+01 to x = 1.0000000000000e+02
 a0 = 1.4849559932346e+00 +/- 7.2819000012540e-04
