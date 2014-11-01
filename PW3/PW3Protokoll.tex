@@ -97,11 +97,11 @@ Wir messen erst die Dicke eines Aluminiumdrahtes, dann spannen wir ihn zwischen 
 \subsection{Grundlagen}
 Wenn Kräfte auf Festkörper wirken, gibt es zwei physikalisch völlig unterschiedliche Arten der Verformung, die sie erleiden: Die \textit{elastische} und die \textit{plastische} Verformung. Die elastische Verformung basiert auf Kräften zwischen den Atomen selbst, während die plastische auf Deformierungen im Kristallgitter des Körpers beruht. \\
 \\Die Spannung $\sigma$ auf einen Körper ist die auf ihn wirkende Kraft pro der Fläche, auf der sie wirkt:  $$ \sigma = \frac{F}{A} $$ \\
-Die Dehnung  $\epsilon$ ist das Verhältnis aus der Längenänderung $\Delta$l und seiner ganzen Länge l, die der Körper bei der Dehnug erfährt: \\
-$$ \epsilon= \frac{\Delta l}{l} $$ \\
- Wir überlegen: Während einer elastischen Verformung des Drahtes bleibt das Verhältnis von Spannung und Dehnung annähernd konstant, weil es keine qualitativen Änderungen in seiner Struktur gibt - darum kehrt ein Körper nach einer elastischen Verformung auch in seinen Ausgangszustand zurück. Beginnt allerdings die plastische Verformung, gibt es kein zurück - die Kristallstruktur des armen Körpers wird dauerhaft verändert, seine Dehnung fällt leichter weil seine Integrität zerstört wird. Wir wollen den Übergang von elastischer zu plastischer Verformung genau ermitteln, indem wir die Spannung $\sigma$ pro Dehnung $\epsilon$ darstellen und untersuchen, wo das Verhältnis konstant ist und wo plötzlich mehr Dehnung bei gleich anwachsender Spannung gemessen wird. Den Quotienten aus der Spannung und der Dehnung nennt man den \textit{E-Modul E}:
+Die Dehnung  $\varepsilon$ ist das Verhältnis aus der Längenänderung $\Delta$l und seiner ganzen Länge l, die der Körper bei der Dehnug erfährt: \\
+$$ \varepsilon= \frac{\Delta l}{l} $$ \\
+ Wir überlegen: Während einer elastischen Verformung des Drahtes bleibt das Verhältnis von Spannung und Dehnung annähernd konstant, weil es keine qualitativen Änderungen in seiner Struktur gibt - darum kehrt ein Körper nach einer elastischen Verformung auch in seinen Ausgangszustand zurück. Beginnt allerdings die plastische Verformung, gibt es kein zurück - die Kristallstruktur des armen Körpers wird dauerhaft verändert, seine Dehnung fällt leichter weil seine Integrität zerstört wird. Wir wollen den Übergang von elastischer zu plastischer Verformung genau ermitteln, indem wir die Spannung $\sigma$ pro Dehnung $\varepsilon$ darstellen und untersuchen, wo das Verhältnis konstant ist und wo plötzlich mehr Dehnung bei gleich anwachsender Spannung gemessen wird. Den Quotienten aus der Spannung und der Dehnung nennt man den \textit{E-Modul E}:
 
-$$ E=\frac{\sigma}{\epsilon}$$
+$$ E=\frac{\sigma}{\varepsilon}$$
 
 Die Streckgrenze markiert den Übergang von der elastischen zur plastischen Verformung. Für sie brauchen wir auch die elastische Gerade, die durch den Bereich gefittet wird, in dem die Spannung linear mit der Dehnung ansteigt. Wir beschreiben vier Varianten der Streckgrenze:
 \begin{enumerate}
@@ -118,13 +118,18 @@ $$[E]=\frac{N}{m^2}$$
 Wir verwenden Prüfmaschine der Fa. INSTRON zur Dehnung des Drahts. Diese Maschine besitzt einen Ausgang, der eine Spannung relativ zur auf den Draht gemessenen Kraft ausgibt und mittels eines Messverstärkers verstärkt wird. Dieses Signal wird dann mittels eines Analog/Digitalwandlers der Firma National Instruments an den Messcomputer gesendet. Parallel zum Analogausgang des Verstärkers wird ein Voltmeter zur Kalibrierung des Messverstärkers geschalten.
 Wir erhalten $\sigma$ durch Division der gemessenen Kraft durch den gemessenen Probenquerschnitt q:
 $$ \sigma = \frac{F}{q}$$
-$\epsilon$ ist das Verhältnis der Längenänderung, die die Maschine verursacht, v$\cdot$t, zur ursprünglichen Einspannlänge der Probe.
-$$ \epsilon = \frac{v\cdot t}{L_0} \text{hier} = \frac{0.5\frac{mm}{min}}{100mm} = \frac{8.\bar{3}\cdot10^{-3}\frac{mm}{s}}{100mm}$$
+$\varepsilon$ ist das Verhältnis der Längenänderung, die die Maschine verursacht, v$\cdot$t, zur ursprünglichen Einspannlänge der Probe.
+$$ \varepsilon = \frac{v\cdot t}{L_0} \text{hier} = \frac{0.5\frac{mm}{min}}{100mm} = \frac{8.\bar{3}\cdot10^{-3}\frac{mm}{s}}{100mm}$$
+\subsection{Durchführung}
+Wir schalten den alten Röhrenverstärker an und lassen ihn aufwärmen. Währenddessen führen wir das andere Experiment in unserer Serie durch, das Torsionspendel. Dann beginnen wir mit diesem Experiment: \\
+Wir kalibrieren den Verstärker indem wir per BALANCE regeln, bis unser angeschlossenes Voltmeter 0V anzeigt. Dann hängen wir 2kg an die Materialprüfmaschine und regeln per CALIBRATION, bis unser Messgerät 0.040V anzeigt.
+Wir messen den Durchmesser des Drahtes fünf Mal und bilden einen Mittelwert. Wir spannen ihn ein und verbiegen ihn sehr stark, weil wir mit zu viel Kraft rangegangen sind. Also nehmen wir einen neuen Draht, messen seinen Durchmesser und spannen ihn diesmal vorsichtiger ein.  
 \subsection{Ergebnisse}
 Literaturwert [Tipler] zum E-Modul von Aluminum: 70 kN/mm²
 \subsubsection*{Querschnitt des Drahtes}
 $$\bar{q}=(2.00 \pm 0.05)mm$$ 
 \subsubsection*{Zugversuch}
+\includegraphics[scale=0.7,angle=-90]{spannungsdehnungskurve.eps}
 \subsubsection*{Bestimmung des E-Moduls}
 \subsubsection*{Bestimmung der Streckgrenze}
 \subsection{Diskussion}
