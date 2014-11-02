@@ -302,72 +302,92 @@ Die Bewegungsgleichung muss jetzt anders bestimmt werden:
 \begin{equation*}
 J\ddot{\phi(t)} + D sin(\phi(t)) = 0
 \end{equation*}
-wobei die \textbf{Winkelrichtgröße D}=$mgl$\\
+wobei die Winkelrichtgröße $D=mgl$\\
 \\
-Schwingungsdauer:
-\begin{equation*}
-T_0=\frac{2\pi}{\omega}=2\pi\sqrt{\frac{J}{D}}
-\end{equation*}\\
+Schwingungsdauer: $T_0=\frac{2\pi}{\omega}=2\pi\sqrt{\frac{J}{D}}$\\
 \\
-\textbf{Steiner'scher Satz}\\
-\begin{equation*}
-J = J_S + m_{ges} d^2
-\end{equation*}
-wobei $J_S$ das Trägheitsmoment bezüglich einer Achse um den Schwerpunkt, J das Trägheitsmoment bezüglich einer parallelen Achse im Abstand d.
+Steiner'scher Satz: $J = J_S + m_{ges} d^2$\\
+wobei $J_S$ das Trägheitsmoment bezüglich einer Achse um den Schwerpunkt, J das Trägheitsmoment bezüglich einer parallelen Achse im Abstand d.\\
 \\
 \textbf{Fahrradpendel}\\
 Ein in Wirklichkeit realisiertes Pendel kann folgendermaßen aussehen:
 %\includegraphics[scale=0.1,angle=-90]{fahrradpendel.eps}
-Wir sehen hier, dass es sich hierbei um ein Speichenrad mit zylindrischer Zusatzmasse handelt.\\
+Wir sehen hier, dass es sich um ein Speichenrad mit zylindrischer Zusatzmasse handelt.\\
 \\
 Winkelrichtgröße:
-\begin{equation*}
-D=m_Z g l_{AS}
-\end{equation*}
+$$D=m_Z g l_{AS}$$
 wobei $l_{AS}=R_F + \frac{h_Z}{2}$, $R_F$ der Radius der Felge, $h_Z$ die Höhe der Zusatzmasse.\\
 \\
 Trägheitsmoment:
 \begin{equation*}
-J = J_Z + J_{Rad} = D (\frac{T_0}{2/pi})^2
+J = J_Z + J_{Rad} = D (\frac{T_0}{2\pi})^2
 \end{equation*}
 \\
 wobei das Trägheitsmoment des Zylinders:
 \begin{equation*}
-J_Z = m_Z(\frac{1}{4}r^2_Z + \frac{1}{12}h^2_Z+l^2_{AS}
+J_Z = m_Z(\frac{1}{4}r^2_Z + \frac{1}{12}h^2_Z+l^2_{AS})
 \end{equation*}
 \\
 Das Trägheitsmoment des Rades wird rückschließend bestimmt durch Nutzung der Gleichung für das gesamte Trägeheitsmoment.
-
-\subsection{Versuchsaufbau und Methoden}
-Als Messgerät wird CASSY-Lab2 verwendet.\\
 \\
 \subsection{Ergebnisse}
 \textbf{Schwingungsdauer T}\\
-T als Funktion von $\phi_0$: \\
-Schwingungsdauer für sehr kleine Auslenkungen:\\
 \\
-Polynomfit:\\
-Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
-From x = 1.0000000000000e+01 to x = 1.0000000000000e+02
-a0 = 1.4849559932346e+00 +/- 7.2819000012540e-04
-a1 = 3.0370131473218e-05 +/- 4.0483211759158e-07
-a2 = 6.3628471138547e-10 +/- 4.0785013174204e-11
+\begin{tabular}{ r | l }
+Winkel & Zeit \\ \hline
+100.0 & 1.853\\
+90.0	 & 1.772\\
+80.0	 & 1.705\\
+70.0	 & 1.648\\
+60.0	 & 1.603\\
+50.0 & 1.566\\
+40.0	 & 1.536\\
+30.0	 & 1.513\\
+20.0	 & 1.498\\
+10.0	 & 1.486\\
+\end{tabular}
+\\
+\\
+T als Funktion von $\phi_0$, Polynomfit mit $a_0+a_1x^2+a_2x^4$: \\
+%GRAPH!
+\\
+Die Unsicherheiten wurden dem Anleitungstext entnommen.\\
+QTI-Plot ist so zuvorkommend und gibt uns folgende Daten:
+\begin{quote}
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001\\
+From $x = 1.0000000000000*10^{01}$ to $x = 1.0000000000000*10^{02}$\\
+$a_0 = 1.4849559932346  \pm 7.2819000012540*10^{04}$\\
+$a_1 = 3.0370131473218*10^{05} \pm 4.0483211759158*10^{07}$\\
+$a_2 = 6.3628471138547*10^{10} \pm 4.0785013174204*10^{11}$
+\end{quote}
+Daraus lesen wir ab, dass die Schwingungsdauer für sehr kleine Auslenkungen:\\  $$\boxed{T_0=a_0=(1.48496 \pm 0.00073)s}$$\\
+\\
 \textbf{Winkelrichtgröße}\\
+\begin{gather*}
+m_Z=(938.5 \pm 0.1)g\\
+l_{AS}=(388 \pm 1)mm\\
+D=m_Zgl_{AS}=0.9385 * 9.81 * 0.388 = \boxed{D=(3.5722 \pm 0.0096)J}
+\end{gather*}
 \\
 \textbf{Trägheitsmoment des Pendels}\\
+\begin{equation*}
+J = J_Z + J_{Rad} = D (\frac{T_0}{2\pi})^2=\boxed{J=(0.1995 \pm 0.0074) kg m^2}\\
+\end{equation*}
 \\
 \textbf{Trägheitsmoment der Zusatzmasse}\\
+\begin{gather*}
+r_Z=(35.28 \pm 0.02)mm\\
+h_Z=(107.60 \pm 0.02)mm\\
+J_Z = m_Z(\frac{1}{4}r^2_Z + \frac{1}{12}h^2_Z+l^2_{AS})=\boxed{J_Z=(0.1425 \pm 0.0075)kg m^2}\\
+\end{gather*}
 \\
 \textbf{Trägheitsmoment des Rades}\\
+$$\boxed{J_{Rad} = J - J_Z = (0.057 \pm 0.015)kg m^2}$$\\
 \\
-\textbf{Fehlerrechnung}\\
-Sensordaten:\\
-Frequenzauflösung: 0.001Hz\\
-Winkelauflösung: 0.18°\\
-Wegauflösung: 0.08mm\\
-Zeitauflösung: 0.001s\\
-$\boxed{Endergebnis}$ %command merken
 \subsection{Diskussion}
-Bis zu welchen Auslenkungswinkeln stimmt die Ausgleichskurve mit der experimentellen Kurve überein? 
+Der Umgang mit CASSY-Lab2 fiel uns nicht schwer, da die Anweisungen im Anleitungstext leicht zu befolgen waren.\\
+Bei diesem Experiment haben wir allerdings unseren ersten Fehler während des Praktikums begangen: Vergessen, einige Größen zu messen. \\
+Wir beziehen unsere Daten für $l_{AS}$, $r_Z$ und $h_Z$ daher mit freundlicher Genehmigung aus dem Protokoll von Johannes Kurz, Patrick Braun aus dem WS 2013/14 und hoffen, dass der Experiment-Aufbau sich seither nicht verändert hat. Die weiteren Berechnungen führen wir natürlich selbst durch. \\
+Der Polynomfit 4. Ordnung passt sehr gut zu unseren Ergebnissen. Wir sehen dabei kaum Abweichung der gefitteten Kurve von den Messdaten.\\
 
 \end{document}
