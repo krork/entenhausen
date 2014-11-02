@@ -128,7 +128,6 @@ Wir messen den Durchmesser des Drahtes fünf Mal und bilden einen Mittelwert. Wi
 
 \subsubsection*{Querschnitt des Drahtes}
 $$\bar{q}=(2.00 \pm 0.05)mm$$ 
-\subsubsection*{Zugversuch}
 \begin{center}
 \begin{figure}
 \caption{Elektrische Spannung zu Zeit}
@@ -136,34 +135,48 @@ $$\bar{q}=(2.00 \pm 0.05)mm$$
 \end{figure}
 \end{center}
 \begin{center}
-\begin{figure}
+\begin{figure}	
 \caption{Kraft zu Zeit}
 \includegraphics[scale=0.8, angle=-90]{kraftzeitkurve.eps}
 \end{figure}
 \end{center}
-Die Steigung der gefitteten Gerade durch unseren ersten Andehnversuch: 
-$$ (41.15 \pm 487) \frac{kN}{mm^2} od. GPa $$
-
-Die Steigung der gefitteten Gerade durch unseren zweiten Andehnversuch:
-$$ (17.79 \pm 151) \frac{kN}{mm^2} od. GPa $$
-
 \begin{center}
-\begin{figure}
+\begin{figure}[H]	
 \caption{Mechanische Spannung zu relativer Dehnung}
-\includegraphics[scale=0.7,angle=-90]{spannungsdehnungskurve.eps}
+\includegraphics[scale=0.8,angle=-90]{spannungsdehnungskurve.eps}
 \end{figure}
 \end{center}
 \subsubsection*{Bestimmung des E-Moduls}
+\begin{center}
+\begin{figure}[H]
+\caption{Bestimmung des E-Moduls durch gefittete Geraden}
+\includegraphics[scale=0.8,angle=-90]{spannungmitfits.eps}
+\end{figure}
+\end{center}
+Die Steigung der gefitteten Gerade durch unseren ersten Andehnversuch: 
+$$ (4.12 \pm 0.49) \frac{kN}{mm^2} od. GPa $$
+
+Die Steigung der gefitteten Gerade durch unseren zweiten Andehnversuch:
+$$ (17.79 \pm 0.16) \frac{kN}{mm^2} od. GPa $$
+
+
+
 \subsubsection*{Bestimmung der Streckgrenze}
-Wir verwenden qtiplot um die Streckgrenze in unsere Daten auf verschiedene Arten zu zeichnen und bestimmen die verschiedenen Werte der Dehnung wo sie auftritt:
+\begin{center}
+\begin{figure}[H]
+\caption{Bestimmung der Streckgrenze auf verschiedene Arten}
+\includegraphics[scale=0.8,angle=-90]{streckgrenze2.eps}
+\end{figure}
+\end{center}
+Wir verwenden qtiplot um die Streckgrenze in unsere Daten auf verschiedene Arten zu zeichnen und berechnen mit scilab die Schnittpunkte der Geraden mit der Spannungs-Dehnungs-Kurve. Die Unsicherheit schätzen wir durch den Abstand der einzelnen Datenpunkte auf der x-Achse ab: Nachdem wir die Streckgrenze durch Fits durch die Punkte erhalten, können wir sie nicht genauer bestimmen als diese Fits.
 \begin{itemize}
-\item \textbf{Elastizitätsgrenze} Erste sichtbare Abweichung von der Geraden bei ca: $\varepsilon$ = 0.00485
-\item \textbf{Schnitt der elastischen Gerade mit der rück-extrapolierten plastischen Gerade}: Mit scilab geschnittene Geraden bei: $\varepsilon$=0.005284
-\item \textbf{0.05\% Streckgrenze}
+\item \textbf{Elastizitätsgrenze} Erste sichtbare Abweichung von der Geraden bei ca: $\varepsilon$ = 0.00485 $\pm$ 0.00002
+\item \textbf{0.05\% Streckgrenze} $\varepsilon$= 0.00576 $\pm$ 0.00002
+\item \textbf{0.2\% Streckgrenze} $\varepsilon$= 0.00739 $\pm$ 0.00002
+\item \textbf{Schnitt der elastischen Gerade mit der rück-extrapolierten plastischen Gerade}: Mit scilab geschnittene Geraden bei: $\varepsilon$=0.005284 $\pm$ 0.00002
 \end{itemize}
 \subsection{Diskussion}
-\newpage
-=======
+Zuerst bemerken wir, dass die \textit{Aufzeichnung} unserer Spannung immer wieder stark nach oben und unten ausschlägt. Wir haben während diesem Ausschlagen aber die Spannung am angeschlossenen Voltmeter beobachtet, wo sie \textit{nicht} so stark ausschlug - sie schwankte höchstens um die letzte Kommastelle der Anzeige, also um 1 mV, während die Software Ausschläge im Bereich von $\pm$ 10 mV aufzeichnete. Wir vermuten daher, dass es sich um Artefakte aus dem Zusammenwirken des Analog/Digitalwandlers, des Computers und des Messverstärkers handelt. Da sie aber in beide Richtungen quasi gleich groß sind, ignorieren wir sie einfach in unserer Auswertung - beim Fitten der Geraden würden sich die Abweichungen einfach herausheben und höchstens als größere Unsicherheiten bemerkbar machen. 
 Uns fällt auf dass sogar unser zweiter, gemessener Wert stark des E-Moduls weit unter dem
 Literaturwert zum E-Modul von Aluminum von 70 kN/mm² [Tipler] liegt. Wir müssen daher leider davon ausgehen, dass wir schlecht gemessen haben. Womöglich hat sich unser zweiter, femininerer Einspannversuch doch als zu schwach erwiesen, wodurch der Draht rutschen konnte - oder vielleicht ist doch, etwas aufgeklärter, die Halterung des alten Geräts schon locker.
 
