@@ -87,12 +87,12 @@
 \end{verbatim}
 							%Name des Betreuers, das Praktikum betreute.
 			\begin{flushleft}
-			\LARGE{\textbf{Betreuer:}}	\Large{}	
+			\LARGE{\textbf{Betreuer:}}	\Large{SETMAN}	
 			\end{flushleft}
 \newpage
 \section{Oberflächenspannung}
 \subsection{Aufgabenstellung}
-Wir wollen mithilfe einer Torsionswaage die Oberflächenspannung einer Probeflüßigkeit bestimmen. Mehr nicht. Wir sind ziemlich bescheiden.
+Wir wollen mithilfe einer Torsionswaage die Oberflächenspannung einer Probeflüßigkeit bestimmen. 
 \subsection{Grundlagen}
 Die Oberflächenspannung resultiert aus der Anziehungsenergie zwischen den Molekülen einer Flüßigkeit. Sie ist proportional zur Oberfläche.
 
@@ -102,16 +102,21 @@ E=\sigma \cdot A
 
 wobei $\sigma$ die spezifische Oberflächenenergie darstellt.
 \subsection{Versuchsaufbau und Methoden}
-Wir haben einen Behälter mit Flüßigkeit, eine Torsionswaage, an der ein Metallring zum Untertauchen befestigt ist, und ausreichend Putzutensilien. Wir putzen! Dann, wenn alles sauber ist, messen wir. Und zwar die Kraft K, die auf der zuvor geeichten Torsionswaage angezeigt wird, kurz bevor die sich im untergetauchten Metallring mit Hilfe der Oberflächenspannung festklammernde Flüßigkeitsschicht reisst. Daraus berechnen wir uns $\sigma$:
+Wir haben einen Behälter mit Flüßigkeit und eine Torsionswaage, an der ein Metallring zum Untertauchen befestigt ist. Wir messen die Kraft K, die auf der zuvor kalibrierten Torsionswaage angezeigt wird, kurz bevor die durch die Oberflächenspannung im untergetauchten Metallring festgefasste Flüßigkeitsschicht reisst. Daraus berechnen wir uns $\sigma$:
 \begin{equation}
+\label{sigma}
 \sigma=\frac{K}{\pi(d_1+d_2)}
 \end{equation}
 \subsection{Durchführung}
 Wir eichen erst die Torsionswaage von 0.1g bis 1.4g in 0.1g Schritten. Dabei notieren wir die angezeigte Skalenauslenkung bei den jeweiligen Kräften und legen dann eine Regressionsgrade durch diese Punkte um die Skalenanteile in eine Kraft umrechnen zu können.
 Bei der Durchführung ergaben sich keine Probleme.
 \subsection{Ergebnisse}
-
+Wir messen den Außen- und Innendurchmesser des Metallrings: 
+$$d_{außen}=(24.10\pm0.05)mm$$
+$$d_{innen}=(23.15\pm0.05)mm$$
+Laut \ref{sigma} ist $\sigma=46*10^{-3}\frac{N}{m}$ bei einer Temperatur von 25.8°C. 
 \subsection{Diskussion}
+Der Vergleichswert von wikipedia nennt 72.75$10^{-3}\frac{N}{m}$ bei 20.0°C.
 \section{Dynamische Viskosität}
 \subsection{Aufgabenstellung}
 In diesem Experiment bestimmen wir die dynamische Viskosität $\eta$ einer Testflüssigkeit auf zwei verschiedene Arten: Einmal mit der Stokes'schen Kugelfallmethode und einmal mit dem Höppler-Viskosimeter.
@@ -123,20 +128,28 @@ Ist ein Fluid dickflüssig, ist die Viskosität größer; ist es dünnflüssig, 
 F=\eta A \frac{dv}{dx}\\
 [\eta]=N s/m^2 = kg m^{-1}s^{-1} = Pa s
 \end{gather}
+\begin{equation}
+\label{stokes}
+(m_i-\rho V_i)g - 6\pi\eta v r_i \kappa_i = 0 \text{i = 1, 2}
+\end{equation}
 
+\begin{equation}
+\eta=\frac{(m_i-\rho V_i)g}{6\pi v r_i \kappa_i}
+\end{equation}
 \subsection{Versuchsaufbau und Methoden}
+
 \textbf{Stokes'sche Kugelfallmethode:}\\
 Die Reibungskraft wird hier geschrieben als:
 $F = -6 \pi \eta v r$, wobei r der Kugelradius ist. \\
 Aus dem Anleitungstext stehen uns noch folgende zusätzliche Daten zur Verfügung:\\
 \\
-Gefäßradius: $R=15mm$\\ 
-Dichte der Flüssigkeit: $\rho=(1225 \pm 5) kg/m^3$\\
+Dichte der Flüssigkeit: $\rho=(960 \pm 5) kg/m^3$\\
 Fallstrecke: $a=(150.0 \pm 0.5)mm$\\
 Kugelradius 1: $r_1=(0.595 \pm 0.01)mm$\\
 Kugelmasse 1: $m_1=(6.6 \pm 0.1)mg$\\
 Kugelradius 2: $r_2=(0.794 \pm 0.002)mm$\\
 Kugelmasse 2: $m_2=(16.1 \pm 0.1)mg$\\
+Den Gefäßradius haben wir selbst gemessen da die Angabe von 15mm zum anderen Gefäß gehörte: $R=18mm$\\ 
 \\
 \textbf{Höppler-Viskosimeter:}\\
 Durchmesser Kugel 3: $2r_3=15.604mm$\\
@@ -146,17 +159,18 @@ Konstante K: $K=0.09208mPa cm^3 g^{-1}$\\
 
 \subsection{Ergebnisse}
 \textbf{Stokes'sche Kugelfallmethode:}\\
-Wir messen jeweils 10 kataklysmische Stürze von zwei verschieden großen Kugeltypen. 
-\begin{gather*}
-\text{Radius von K_1:} r_1=(0.595 \pm 0.010)mm \\
-\text{Radius von K_2:} r_2=(
-\end{gather*}
-$$t_1=$$
-$$t_2=$$
+Wir messen jeweils 10 Stürze von den zwei verschieden großen Kugeltypen und bilden den Mittelwert. Wir verwenden die Standardabweichung des Mittelwerts als Unsicherheit.
+$$\bar{t_1}=(3.61\pm0.02)s$$
+$$\bar{t_2}=(2.14\pm0.02)s$$
 \\
-Dichte der Flüssigkeit: $\rho=0.96 g/cm³$
-Temperatur der Flüssigkeit: $T=25.8°C$
+Dichte der Flüssigkeit: $\rho=0.96 g/cm^3$
+Temperatur der Flüssigkeit: $T=(25.8 \pm 0.05)^\circ C$
 \\
+Wir setzen in \ref{stokes} ein und berechnen zwei Werte $\eta_i$ i=1,2 für die Viskosität der Flüßigkeit, für die beiden verschiedenen Kugelarten. \\
+
+$$  \eta_1 =   113.1486 \text{mPa} $$ 
+ 
+$$  \eta_2 =   120.6765 \text{mPa} $$ \\
 \textbf{Höppler-Viskosimeter:}\\
 Die Fallzeit wird gemessen zwischen den beiden äußeren Markierungen des Fallrohrs in dem Moment, in dem sich die Markierung in der Mitte der Kugel befindet.\\
 \begin{center}
@@ -169,19 +183,14 @@ Temperatur[°C] & 24.8° & 40.3° & 60.2° \\
 \end{tabular}
 \end{table}
 \end{center}
-$$T_1=24.8°C$$
-$$t_1=168.41s$$
-$$T_2=40.3°C$$
-$$t_2=69.57s$$
-$$T_3=60.2°C$$
-$$t_3=28.81s$$
 
 \subsection{Diskussion}
 \textbf{Stokes'sche Kugelfallmethode:}\\
-Die Messung begleitet eine der gespannten Forscher mit den bedeutungsvollen Geräuschen "bling! - bling!", als die Kugeln hintereinander die grünen Markierungen passieren und einem dumpfen "dock!", als sie am Grund des Messgeräts landen.\\
+
+Die Werte, die wir für die Viskosität erhalten, liegen nahe an dem Sollwert 140 mPa, den unsere Betreuerin uns mitteilt. 
 \\
 \textbf{Höppler-Viskosimeter:}\\
-Wir sind begeistert von der dynamisch ungeordneten Bewegung der Bläschen in unserer Testflüssigkeit, während wir sie auf 40°C heizen.
+Wir sind begeistert von der dynamisch chaotischen Bewegung der Bläschen in unserer Testflüssigkeit, während wir sie auf 40°C heizen.
 \section{Luftfeuchtigkeit}
 \subsection{Aufgabenstellung}
 Wir messen die Luftfeuchtigkeit im Labor mit einem Aspirationspsychrometer nach Aßmann.
