@@ -152,9 +152,10 @@ Kugelmasse 2: $m_2=(16.1 \pm 0.1)mg$\\
 Den Gefäßradius haben wir selbst gemessen da die Angabe von 15mm zum anderen Gefäß gehörte: $R=18mm$\\ 
 \\
 \textbf{Höppler-Viskosimeter:}\\
-Durchmesser Kugel 3: $2r_3=15.604mm$\\
-Kugelmasse 3: $m_3=16.1760g$\\
-Kugeldichte 3: $\rho=8.131 g/cm^3$\\
+Kugeldurchmesser: $2r_3=15.604mm$\\
+Kugelmasse: $m_3=16.1760g$\\
+Kugeldichte: $\rho=8.131 g/cm^3$\\
+Dichte von Glyzerin: $\rho_F=(1225 \pm 5)kg/m^3$\\
 Konstante K: $K=0.09208mPa cm^3 g^{-1}$\\
 
 \subsection{Ergebnisse}
@@ -174,23 +175,35 @@ $$  \eta_2 =   120.6765 \text{mPa} $$ \\
 \textbf{Höppler-Viskosimeter:}\\
 Die Fallzeit wird gemessen zwischen den beiden äußeren Markierungen des Fallrohrs in dem Moment, in dem sich die Markierung in der Mitte der Kugel befindet.\\
 \begin{center}
-\begin{table}
-\begin{tabular}{|l|r||r||r|}
+\begin{tabular}{|l||r|r|r||r|}
 \hline
-Temperatur[°C] & 24.8° & 40.3° & 60.2° \\
-\hline Fallzeit [s] & 168.41s & 69.57s &  28.81 s \\
+Temperatur[°C] & 24.8 & 40.3 & 60.2 & $\Delta T=\pm$ 0.1\\
+\hline
+Fallzeit [s] & 168.41 & 69.57 &  28.81 & $\Delta t=\pm$ 0.01\\
 \hline
 \end{tabular}
-\end{table}
 \end{center}
+\begin{gather*}
+\eta_1[24.8°C] = K (\rho_K - \rho_F)t_1%=9.208*10^{-8}(8.131*10^3-1225)168.41
+=(107.093 \pm 0.072) mPa s\\
+\eta_2[40.3°C] = K (\rho_K - \rho_F)t_2%=9.208*10^{-8}(8.131*10^3-1225)69.57
+= (44.240 \pm 0.026) mPa s\\
+\eta_3[60.2°C] = K (\rho_K - \rho_F)t_3%=9.208*10^{-8}(8.131*10^3-1225)28.81
+= (18.3204 \pm 0.0069) mPa s\\
+\end{gather*}
+%Dichte der Kugel: $\rho_K=8.131*10^{-3} kg/m^3$\\
+%Dichte von Glyzerin: $\rho_F=(1225 \pm 5)kg/m^3$\\
+%Konstante: $K=0.09208mPa cm^3 g^{-1}=9.208*10^{-8}Pa m^3 / kg = 9.208 * 10^{-8} m^2/s^2$\\
 
 \subsection{Diskussion}
-\textbf{Stokes'sche Kugelfallmethode:}\\
-
-Die Werte, die wir für die Viskosität erhalten, liegen nahe an dem Sollwert 140 mPa, den unsere Betreuerin uns mitteilt. 
+\textbf{Stokes'sche Kugelfallmethode:}
+\\
+Die Werte, die wir für die Viskosität erhalten, liegen nahe an dem Sollwert 140 mPa, den unsere Betreuerin uns mitteilt. \\
 \\
 \textbf{Höppler-Viskosimeter:}\\
-Wir sind begeistert von der dynamisch chaotischen Bewegung der Bläschen in unserer Testflüssigkeit, während wir sie auf 40°C heizen.
+%Wir sind begeistert von der dynamisch chaotischen Bewegung der Bläschen in unserer Testflüssigkeit, während wir sie auf 40°C heizen.
+Wir messen die Viskosität bei 3 anstatt 2 verschiedenen Temperaturen, weil uns die Beschleunigung der Kugel bei höheren Temperaturen begeistert. Für die Berechnung verwenden wir jedes Mal dieselbe Dichte für das Glyzerin, obwohl auch diese sich bei steigender Temperatur verändern sollte. Die Viskosität ist jedoch sehr viel stärker von der Temperatur abhängig, weswegen wir dies vernachlässigen.\\
+Wir sehen einen deutlichen Abfall der Viskosität. Da wir nur 3 Datenpunkte zur Verfügung haben, ist keine klare Aussage über die Art des Abfalls zu machen, allerdings erraten wir einen exponentiellen Abfall. Das bestätigt uns auch Wikipedia.\\
 \section{Luftfeuchtigkeit}
 \subsection{Aufgabenstellung}
 Wir messen die Luftfeuchtigkeit im Labor mit einem Aspirationspsychrometer nach Aßmann.
