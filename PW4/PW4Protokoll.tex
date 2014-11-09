@@ -178,7 +178,7 @@ Die Fallzeit wird gemessen zwischen den beiden äußeren Markierungen des Fallro
 \begin{center}
 \begin{tabular}{|l||r|r|r||r|}
 \hline
-Temperatur[°C] & 24.8 & 40.3 & 60.2 & $\Delta T=\pm$ 0.1\\
+Temperatur[$^\circ$C] & 24.8 & 40.3 & 60.2 & $\Delta T=\pm$ 0.1\\
 \hline
 Fallzeit [s] & 168.41 & 69.57 &  28.81 & $\Delta t=\pm$ 0.01\\
 \hline
@@ -218,16 +218,16 @@ Wir verwenden diese Formel um aus der gemessenen Differenz zwischen der Temperat
 \label{psychrometerformel}
 p_w(T_t)=p_{w,max}(T_f)-\frac{p_L\cdot c_p \cdot M_L}{q_v\cdot M_w} \cdot (T_t - T_f)
 \end{equation}
-Bei einem mittleren Luftdruck auf Meereshöhe von $p_L$= 101.325kPa, einer spezifischen Verdampfungswärme von Wasser $q_v$ = 2440kJ/kg bei 25°C, einer isobaren spezifischen Wärmekapazität von Luft $c_p=1.005kJkg^{-1}K^{-1}$ und einer molaren Masse von Luft $M_L$=28.9644g/mol entspricht $\frac{p_L\cdot c_p \cdot M_L}{q_v\cdot M_w} \approx $ 67Pa/K. [laut Aufgabenstellung.]
+Bei einem mittleren Luftdruck auf Meereshöhe von $p_L$= 101.325kPa, einer spezifischen Verdampfungswärme von Wasser $q_v$ = 2440kJ/kg bei 25$^\circ$C, einer isobaren spezifischen Wärmekapazität von Luft $c_p=1.005kJkg^{-1}K^{-1}$ und einer molaren Masse von Luft $M_L$=28.9644g/mol entspricht $\frac{p_L\cdot c_p \cdot M_L}{q_v\cdot M_w} \approx $ 67Pa/K. [laut Aufgabenstellung.]
 \subsection{Versuchsaufbau und Methoden}
 Wir verwenden ein Aspirationspsychrometer nach Aßmann. Dabei wird eines der beiden Thermometer befeuchtet, eines bleibt trocken; es wird für eine konstante Ventilation gesorgt. Am feuchten Thermometer verdunstet Wasser, und zwar je mehr, umso trockener die Luft ist. Dabei wird dem Thermometer \textit{Verdungstungswärme} entzogen; die Temperatur sinkt, und zwar um so mehr, je trockener die Luft ist! Aus der Temperaturdifferenz zum trockenen Thermometer können wir die absolute Luftfeuchtigkeit bestimmen. 
 \subsection{Durchführung}
 Bei der Durchführung ergaben sich keine Besonderheiten. 
 \subsection{Ergebnisse}
 Wir messen die Temperatur des trockenen Thermometers $T_t$:
-$$T_t=(25.8 \pm 0.5)°C$$
+$$T_t=(25.8 \pm 0.5) ^\circ C$$
 Nach ein paar Minuten, in denen das Wasser an der Baumwollgaze am zweiten Thermometer verdunsten und es abkühlen konnte, messen wir die Temperatur am Thermometer ab, die sich nun eingestellt hat und nicht mehr verändert:
-$$T_f=(18.8 \pm 0.5)°C $$ 
+$$T_f=(18.8 \pm 0.5) ^\circ C $$ 
 \subsection{Diskussion}
 \section{Schmelzwärme von Eis}
 \subsection{Aufgabenstellung}
@@ -236,27 +236,35 @@ Wir bestimmen die Schmelzwärme von Eis mittels Mischungsmethode mit dem Kalorim
 Latente Wärmemengen werden bei Änderung des Aggregatszusandes frei, wenn das Volumen, aber nicht die Temperatur geändert wird. \\
 \textbf{Mischungsmethode:}
 Es werden zwei verschiedenen Massen $m_i$ (eine flüssig, eine flüssig oder fest) mit unterschiedlicher Temperatur ($T_A$: Anfangstemperatur) und spezifischer Wärme ($c_W$: Wasser) gemischt. Sobald sich eine Mischungstemperatur $T_m$ eingestellt hat, lässt sich für die von Kalorimeter und darin befindlicher Flüssigkeit abgegebene Wärmemenge:
-$$\Delta Q_1=(C_k + c_W m_W)(T_A - T_m)$$
+$$\Delta Q_1=(C_k + c_W M_W)(T_A - T_m)$$
 \\
 und für die vom Eis aufgenommene Wärmemenge:
-$$\Delta Q_2=m_{Eis} S + m_{Eis} c_W (T_m - T_S)$$
+$$\Delta Q_2=M_{Eis} S + M_{Eis} c_W (T_m - T_S)$$
 \\
 Aus dem Energieerhaltungssatz:
 $$\Delta Q_1=\Delta Q_2=\Delta Q$$
 \\
 Und daraus folgt für die Schmelzwärme S:
-$$S=(C_k+c_W m_W)(T_A-T_m) / m_{Eis} - c_W(T_m-T_S)$$
+$$S=(C_k+c_W M_W)(T_A-T_m) / M_{Eis} - c_W(T_m-T_S)$$
 \\
 Dabei verwenden wir folgende Werte: 
 $$C_k=(100 \pm 10)\frac{J}{K}$$
-$$c_W =4.1868 \frac{kJ}{kg K}$$
+$$c_W=4.1868 \frac{kJ}{kg K}$$
+$$T_S=0 ^\circ C$$
 \subsection{Versuchsaufbau und Methoden}
 
 \subsection{Ergebnisse}
 Massen:
 $$M_{Eis}= (48 \pm 1.0)g$$
 $$M_{Wasser} = (159.5 \pm 2.0)g$$
+Temperaturen laut Graph:
+$$T_A=(67 \pm 1) ^\circ C$$
+$$T_m=(35 \pm 1) ^\circ C$$
+\\
+Daraus folgt für die Schmelzwärme:
+$$\boxed{S=(365 \pm 44) kJ/kg}$$
 
 \subsection{Diskussion}
-Dadurch, dass wir die Massen aus Differenzwägungen von dem Behälter und seinen verschieden Füllstadien gewonnen haben, erhöhten sich die Unsicherheiten in jedem Rechenschritt.
+Unser Ergebnis passt mit dem Literaturwert für die spezifische Schmelzenergie von Eis: 335J/g gut zusammen. Allerdings haben wir hier eine sehr große Unsicherheit, die wir wie folgt erklären:\\
+Dadurch, dass wir die Massen aus Differenzwägungen von dem Behälter und seinen verschieden Füllstadien gewonnen haben, erhöhten sich die Unsicherheiten in jedem Rechenschritt. Dazu kommt, dass die Wärmekapazität des Kalorimeters selbst bereits eine sehr große Unsicherheit beinhaltet.
 \end{document}
