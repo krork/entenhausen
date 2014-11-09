@@ -129,11 +129,11 @@ F=\eta A \frac{dv}{dx}\\
 [\eta]=N s/m^2 = kg m^{-1}s^{-1} = Pa s
 \end{gather}
 \begin{equation}
-\label{stokes}
 (m_i-\rho V_i)g - 6\pi\eta v r_i \kappa_i = 0 \text{i = 1, 2}
 \end{equation}
 
 \begin{equation}
+\label{stokes}
 \eta=\frac{(m_i-\rho V_i)g}{6\pi v r_i \kappa_i}
 \end{equation}
 \subsection{Versuchsaufbau und Methoden}
@@ -149,7 +149,7 @@ Kugelradius 1: $r_1=(0.595 \pm 0.01)mm$\\
 Kugelmasse 1: $m_1=(6.6 \pm 0.1)mg$\\
 Kugelradius 2: $r_2=(0.794 \pm 0.002)mm$\\
 Kugelmasse 2: $m_2=(16.1 \pm 0.1)mg$\\
-Den Gefäßradius haben wir selbst gemessen da die Angabe von 15mm zum anderen Gefäß gehörte: $R=18mm$\\ 
+Den Gefäßradius haben wir selbst gemessen da die Angabe von 15mm zum anderen Gefäß gehörte: $R=(18 \pm 1)mm$\\ 
 \\
 \textbf{Höppler-Viskosimeter:}\\
 Kugeldurchmesser: $2r_3=15.604mm$\\
@@ -169,9 +169,10 @@ Temperatur der Flüssigkeit: $T=(25.8 \pm 0.05)^\circ C$
 \\
 Wir setzen in \ref{stokes} ein und berechnen zwei Werte $\eta_i$ i=1,2 für die Viskosität der Flüßigkeit, für die beiden verschiedenen Kugelarten. \\
 
-$$  \eta_1 =   113.1486 \text{mPa} $$ 
+$$  \eta_1 =   (113.1 \pm 3.1)mPa $$ 
  
-$$  \eta_2 =   120.6765 \text{mPa} $$ \\
+$$  \eta_2 =   (120.6 \pm 2.0)mPa $$ \\
+
 \textbf{Höppler-Viskosimeter:}\\
 Die Fallzeit wird gemessen zwischen den beiden äußeren Markierungen des Fallrohrs in dem Moment, in dem sich die Markierung in der Mitte der Kugel befindet.\\
 \begin{center}
@@ -198,7 +199,7 @@ Fallzeit [s] & 168.41 & 69.57 &  28.81 & $\Delta t=\pm$ 0.01\\
 \subsection{Diskussion}
 \textbf{Stokes'sche Kugelfallmethode:}
 \\
-Die Werte, die wir für die Viskosität erhalten, liegen nahe an dem Sollwert 140 mPa, den unsere Betreuerin uns mitteilt. \\
+Die Werte, die wir für die Viskosität erhalten, liegen nahe an dem Sollwert 140 mPa, den unsere Betreuerin uns mitteilt. Allerdings ist dieser Wert auch in den Unsicherheitsgrenzen nicht enthalten. Wir erklären uns diese Abweichung dadurch, dass mit einer Stoppuhr und Augenmaß bezüglich der Markierungen gemessen wurde.\\
 \\
 \textbf{Höppler-Viskosimeter:}\\
 %Wir sind begeistert von der dynamisch chaotischen Bewegung der Bläschen in unserer Testflüssigkeit, während wir sie auf 40°C heizen.
@@ -234,18 +235,28 @@ Wir bestimmen die Schmelzwärme von Eis mittels Mischungsmethode mit dem Kalorim
 \subsection{Grundlagen}
 Latente Wärmemengen werden bei Änderung des Aggregatszusandes frei, wenn das Volumen, aber nicht die Temperatur geändert wird. \\
 \textbf{Mischungsmethode:}
-Es werden zwei verschiedenen Massen $m_i$ (eine flüssig, eine flüssig oder fest) mit unterschiedlicher Temperatur $T_i$ und spezifischer Wärme $c_i$ gemischt. Sobald sich eine Mischungstemperatur $T_m$ eingestellt hat, lässt sich für die von $m_1$ und dem Kalorimeter abgegebene Wärmemenge:\\
-$$\Delta Q_1=(C_k + c_1m_1)(T_1 - T_m)$$\\
-und für die von $m_2$ aufgenommene Wärmemenge: \\
-$$\Delta Q_2=c_2m_2(T_m - T_2)$$\\
-Aus dem Energieerhaltungssatz: \\
-$$\Delta Q_1=\Delta Q_2=\Delta Q$$\\
+Es werden zwei verschiedenen Massen $m_i$ (eine flüssig, eine flüssig oder fest) mit unterschiedlicher Temperatur ($T_A$: Anfangstemperatur) und spezifischer Wärme ($c_W$: Wasser) gemischt. Sobald sich eine Mischungstemperatur $T_m$ eingestellt hat, lässt sich für die von Kalorimeter und darin befindlicher Flüssigkeit abgegebene Wärmemenge:
+$$\Delta Q_1=(C_k + c_W m_W)(T_A - T_m)$$
+\\
+und für die vom Eis aufgenommene Wärmemenge:
+$$\Delta Q_2=m_{Eis} S + m_{Eis} c_W (T_m - T_S)$$
+\\
+Aus dem Energieerhaltungssatz:
+$$\Delta Q_1=\Delta Q_2=\Delta Q$$
+\\
+Und daraus folgt für die Schmelzwärme S:
+$$S=(C_k+c_W m_W)(T_A-T_m) / m_{Eis} - c_W(T_m-T_S)$$
+\\
+Dabei verwenden wir folgende Werte: 
+$$C_k=(100 \pm 10)\frac{J}{K}$$
+$$c_W =4.1868 \frac{kJ}{kg K}$$
 \subsection{Versuchsaufbau und Methoden}
 
 \subsection{Ergebnisse}
 Massen:
-$$M_{Eis}= (48.0 \pm 1)g$$
-$$M_{Wasser} = (159.5 \pm 2)g$$
-Dadurch, dass wir die Massen aus Differenzwägungen von dem Behälter und seinen verschieden Füllstadien gewonnen haben, erhöhten sich die Unsicherheiten in jedem Rechenschritt.
+$$M_{Eis}= (48 \pm 1.0)g$$
+$$M_{Wasser} = (159.5 \pm 2.0)g$$
+
 \subsection{Diskussion}
+Dadurch, dass wir die Massen aus Differenzwägungen von dem Behälter und seinen verschieden Füllstadien gewonnen haben, erhöhten sich die Unsicherheiten in jedem Rechenschritt.
 \end{document}
