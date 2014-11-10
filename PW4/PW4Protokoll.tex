@@ -114,9 +114,13 @@ Bei der Durchführung ergaben sich keine Probleme.
 Wir messen den Außen- und Innendurchmesser des Metallrings: 
 $$d_{außen}=(24.10\pm0.05)mm$$
 $$d_{innen}=(23.15\pm0.05)mm$$
-Laut \ref{sigma} ist $\sigma=46*10^{-3}\frac{N}{m}$ bei einer Temperatur von 25.8°C. 
+Die Kraft beim Abreissen der Flüßigkeitsschicht erfolgt bei 
+$$K=6.867*10^{-3N}$$,
+was einem Gewicht von 0.7g entspricht.
+\\Dabei entfiel die Messung an der Skala auf einen Skalenabschnitt, der genau einem Punkt unserer Regressionsgeraden entsprach, so dass wir nicht interpolieren mussten. \\
+Laut \ref{sigma} ist $$\sigma=(46 \pm 22)*10^{-3}\frac{N}{m}$$ bei einer Temperatur von 25.8°C. 
 \subsection{Diskussion}
-Der Vergleichswert von wikipedia nennt 72.75$10^{-3}\frac{N}{m}$ bei 20.0°C.
+Der Vergleichswert von wikipedia nennt 72.75$10^{-3}\frac{N}{m}$ bei 20.0°C, der nicht in unserem Vertrauensbereich liegt - aber wir hören, dass andere Gruppen mit der selben Apparatur ähnliche Werte erzielen. Was uns ein bisschen verwundert ist die hohe Messunsicherheit, der wir aber vertrauen - wir haben die Gaußsche Fehlerfortpflanzung mehrmals nachgerechnet und sind immer wieder auf diesem Wert gelandet. \\
 \section{Dynamische Viskosität}
 \subsection{Aufgabenstellung}
 In diesem Experiment bestimmen wir die dynamische Viskosität $\eta$ einer Testflüssigkeit auf zwei verschiedene Arten: Einmal mit der Stokes'schen Kugelfallmethode und einmal mit dem Höppler-Viskosimeter.
@@ -137,7 +141,8 @@ F=\eta A \frac{dv}{dx}\\
 \eta=\frac{(m_i-\rho V_i)g}{6\pi v r_i \kappa_i}
 \end{equation}
 \subsection{Versuchsaufbau und Methoden}
-
+Wir messen einmal die Fallzeit zweier verschieden kleiner Kugeltypen in einer Flüssigkeit bei gleichbleibender Temperatur. \\
+Dann messen wir mit dem Höppler-Viskosimeter die Fallzeit einer großen Kugel in Glyzerin bei drei verschiedenen Temperaturen. \\
 \textbf{Stokes'sche Kugelfallmethode:}\\
 Die Reibungskraft wird hier geschrieben als:
 $F = -6 \pi \eta v r$, wobei r der Kugelradius ist. \\
@@ -178,9 +183,9 @@ Die Fallzeit wird gemessen zwischen den beiden äußeren Markierungen des Fallro
 \begin{center}
 \begin{tabular}{|l||r|r|r||r|}
 \hline
-Temperatur[$^\circ$C] & 24.8 & 40.3 & 60.2 & $\Delta T=\pm$ 0.1\\
+Temperatur[$^\circ$C] & 24.8 & 40.3 & 60.2 & $\Delta T=\pm$ 0.1°\\
 \hline
-Fallzeit [s] & 168.41 & 69.57 &  28.81 & $\Delta t=\pm$ 0.01\\
+Fallzeit [s] & 168.41 & 69.57 &  28.81 & $\Delta t=\pm$ 0.01s\\
 \hline
 \end{tabular}
 \end{center}
@@ -215,20 +220,41 @@ Wir messen die Luftfeuchtigkeit im Labor mit einem Aspirationspsychrometer nach 
 \subsubsection*{Die Psychrometerformel}
 Wir verwenden diese Formel um aus der gemessenen Differenz zwischen der Temperatur des trockenen Thermometers $T_t$ und der des feuchten $T_f$ den Partialdruck des Wasserdampfes in der Luft zu bestimmen.
 \begin{equation}
-\label{psychrometerformel}
+\label{psychro}
 p_w(T_t)=p_{w,max}(T_f)-\frac{p_L\cdot c_p \cdot M_L}{q_v\cdot M_w} \cdot (T_t - T_f)
 \end{equation}
 Bei einem mittleren Luftdruck auf Meereshöhe von $p_L$= 101.325kPa, einer spezifischen Verdampfungswärme von Wasser $q_v$ = 2440kJ/kg bei 25$^\circ$C, einer isobaren spezifischen Wärmekapazität von Luft $c_p=1.005kJkg^{-1}K^{-1}$ und einer molaren Masse von Luft $M_L$=28.9644g/mol entspricht $\frac{p_L\cdot c_p \cdot M_L}{q_v\cdot M_w} \approx $ 67Pa/K. [laut Aufgabenstellung.]
+\subsubsection*{Absolute und relative Luftfeuchtigkeit}
+Die absolute $\rho_w$ und die relative Luftfeuchtigkeit $\phi$ ergeben sich aus:
+\begin{gather}
+\label{abs}
+\rho_w=\frac{p_w(T_t)\cdot M_w}{R\cdot T_t} \\
+\label{rel}
+\phi=\frac{p_w(T_t)}{p_{w,max}(T_t)}
+\end{gather}
 \subsection{Versuchsaufbau und Methoden}
 Wir verwenden ein Aspirationspsychrometer nach Aßmann. Dabei wird eines der beiden Thermometer befeuchtet, eines bleibt trocken; es wird für eine konstante Ventilation gesorgt. Am feuchten Thermometer verdunstet Wasser, und zwar je mehr, umso trockener die Luft ist. Dabei wird dem Thermometer \textit{Verdungstungswärme} entzogen; die Temperatur sinkt, und zwar um so mehr, je trockener die Luft ist! Aus der Temperaturdifferenz zum trockenen Thermometer können wir die absolute Luftfeuchtigkeit bestimmen. 
 \subsection{Durchführung}
 Bei der Durchführung ergaben sich keine Besonderheiten. 
 \subsection{Ergebnisse}
 Wir messen die Temperatur des trockenen Thermometers $T_t$:
-$$T_t=(25.8 \pm 0.5) ^\circ C$$
+$$T_t=(25.8 \pm 0.1) ^\circ C$$
 Nach ein paar Minuten, in denen das Wasser an der Baumwollgaze am zweiten Thermometer verdunsten und es abkühlen konnte, messen wir die Temperatur am Thermometer ab, die sich nun eingestellt hat und nicht mehr verändert:
-$$T_f=(18.8 \pm 0.5) ^\circ C $$ 
+$$T_f=(18.8 \pm 0.1) ^\circ C $$ 
+Wir berechnen mittels Interpolation aus der Tabelle in der Aufgabenstellung den Sättigungsdampfdruck bei der $T_f$, unter Berücksichtigung der Messungenauigkeit der Temperatur:
+\begin{equation}
+\label{feuchtdruck}
+p_{w,max}(T_f)=(2170 \pm 20) Pa
+\end{equation}
+Wir setzen \ref{feuchtdruck} in \ref{psychro} ein und erhalten für $p_w(T_t)$:
+$$p_w(T_t)=(1700 \pm 30) Pa $$
+Daraus ergibt sich mit \ref{abs} die absolute Luftfeuchtigkeit:
+$$\rho_w=(140 \pm 3) \frac{g}{m^3}$$
+und mit $p_w(T_t)$=3324.8 Pa aus \ref{rel} die relative:
+$$\phi=(51.1 \pm 1,9)\%$$
+Die Unsicherheiten wurden aus dem Gaußschen Fehlerfortpflanzungsgesetz gewonnen.
 \subsection{Diskussion}
+Wir haben kein digitales Messgerät gefunden mit dem wir unsere Messung vergleichen hätten können, darum können wir unsere Messungen mit nichts vergleichen. Wir staunen über die geringen Unsicherheiten! Das Aspirationspsychrometer nach Aßmann ist eine wirklich hervorragende Methode zur Messung der Luftfeuchtigkeit.
 \section{Schmelzwärme von Eis}
 \subsection{Aufgabenstellung}
 Wir bestimmen die Schmelzwärme von Eis mittels Mischungsmethode mit dem Kalorimeter.
@@ -252,8 +278,15 @@ $$C_k=(100 \pm 10)\frac{J}{K}$$
 $$c_W=4.1868 \frac{kJ}{kg K}$$
 $$T_S=0 ^\circ C$$
 \subsection{Versuchsaufbau und Methoden}
-
+Wir verwenden das hervorragende digitale ULAB Messgerät, mit dessen angeschlossenen Temperaturfühler wir eine Messserie von Temperatur gegen Zeit, 2 Datenpunkte pro Sekunde, aufzeichnen und später in qtiplot auswerten. \\
+Wir heizen Wasser mit einem küchentauglichen Wasserkocher auf gut 70°C und geben es in ein isoliertes, offenes Gefäß. Wir lassen es etwas abkühlen, dann geben wir einige Eiswürfel, die wir von unserer Praktikumsbetreuerin Frau Dr. Daria Setman erhalten, hinzu. Sie wiegen ungefähr ein Drittel des Wassers im Gefäß. Wir messen auch noch einige Minuten nachdem die Eiswürfel schon geschmolzen sind.
 \subsection{Ergebnisse}
+\begin{center}
+\begin{figure}
+\caption{Temperatur der Probe über die Zeit}
+\includegraphics[scale=0.7]{Schmelzplot.eps}
+\end{figure}
+\end{center}
 Massen:
 $$M_{Eis}= (48 \pm 1.0)g$$
 $$M_{Wasser} = (159.5 \pm 2.0)g$$
