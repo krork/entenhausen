@@ -122,6 +122,13 @@ Loschmidt'sche Zahl & $N_A=6.02214179*10^{23}$\\
 \hline
 \end{tabular}
 \end{flushleft}
+\textbf{Definitionen\footnote{übernommen aus dem Anleitungstext}:}\\
+\textbf{1 Mol} = Anzahl von Partikeln, die gleich groß ist wie die Anzahl der Atome in 12g des Isotops $^{12}C$, entspricht $N_A$. \\
+\textbf{Molare Masse} = Masse eines Mols in g\\
+\textbf{Molekularmasse} = Masse eines Moleküls, ausgedrückt in atomaren Masseneinheiten. \\
+1 atomare Masseneinheit = $\frac{1}{12}$ eines $^{12}C$-Atoms.\\
+1 amu = $\frac{1}{N_A}$=$1.6605 10^{-27}kg$\\
+\textbf{Molekülmasse} = Masse eines Moleküls in g\\
 \newpage
 \section{Gasthermometer}
 \subsection{Aufgabenstellung}
@@ -135,6 +142,7 @@ Wir zeigen die Gültigkeit des Boyle-Mariotte'schen Gesetzes (\ref{boyle-mariott
 \newpage
 \section{Bestimmung des Adiabatenexponenten der Luft nach Rüchardt}
 \subsection{Aufgabenstellung}
+Wir bestimmen den Adiabatenexponenten der Luft mit der Methode von Rüchardt.
 \subsection{Grundlagen}
 \subsection{Versuchsaufbau und Methoden}
 \subsection{Durchführung}
@@ -144,9 +152,38 @@ Wir zeigen die Gültigkeit des Boyle-Mariotte'schen Gesetzes (\ref{boyle-mariott
 \newpage
 \section{Dampfdichtebestimmung nach Viktor Meyer}
 \subsection{Aufgabenstellung}
+Wir bestimmen die Dampfdichte $\alpha$ und die Molekularmasse M einer Probesubstanz. 
 \subsection{Grundlagen}
+\textbf{Dampfdichte}: 
+\begin{equation}
+\label{dampfdichte_norm}
+\alpha=\frac{\rho_{Gas}}{\rho_{L,N}}
+\end{equation}
+bei Normalbedingungen ($0^\circ C$, 1.01325 bar), wobei $\rho_{Gas}$ die Dichte des Gases, $\rho_{L,N}$ die Dichte der Luft bei Normalbedingungen.\\
+\\
+Umrechnung für ideale Gase, falls $T\neq 0$:
+\begin{equation}
+\frac{V_Dp}{T}=\frac{V_Np_N}{T_N}
+\end{equation}
+wobei $V_D$, $p$, $T$ bei Messbedingungen, $V_N$, $p_N$, $T_N$ bei Normalbedingungen.\\
+\\
+\textbf{Relative Dampfdichte:}
+\begin{equation}
+\label{dampfdichte_rel}
+\alpha=\frac{\rho_N}{\rho_{L,N}}=\frac{\rho_D}{\rho_{L,N}}\frac{p_NT}{pT_N}
+\end{equation}
+
 \subsection{Versuchsaufbau und Methoden}
 \subsection{Durchführung}
 \subsection{Ergebnisse}
+Dichte der Luft bei Normalbedingungen ($0^\circ C$, 1.01325 bar):\\
+$\rho_{L,N}=1.2931kg/m^3$
+
+Setzen wir in \ref{dampfdichte_rel} ein, erhalten wir für die Dampfdichte:\\
+%\alpha=\frac{\rho_N}{\rho_{L,N}}=\frac{\rho_D}{\rho_{L,N}}\frac{p_NT}{pT_N}\\
+\\
+Daraus die Molekularmasse:\\
+$$M_{Gas}=\alpha*M_L=\alpha*28.98$$
+
 \subsection{Diskussion}
 \end{document}
