@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.10.26)  13 NOV 2014 21:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.10.26)  13 NOV 2014 22:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -665,24 +665,44 @@ Underfull \hbox (badness 10000) in paragraph at lines 125--132
 
  []
 
-[2] [3]
-Overfull \hbox (12.52127pt too wide) in paragraph at lines 143--143
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 142--143
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--149
+
+ []
+
+[3]
+Overfull \hbox (12.52127pt too wide) in paragraph at lines 154--154
 []\OT1/cmr/bx/n/14.4 Bestimmung des Adia-ba-ten-ex-po-nen-ten der Luft
  []
 
 
-Overfull \hbox (11.55624pt too wide) in paragraph at lines 145--146
+Overfull \hbox (11.55624pt too wide) in paragraph at lines 156--157
 \OT1/cmr/m/n/10 Wir be-stim-men den Adia-ba-ten-ex-po-nen-ten der Luft mit der 
 Me-tho-de von R[]uchardt. 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 161--165
+Underfull \hbox (badness 10000) in paragraph at lines 172--176
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--171
+Underfull \hbox (badness 10000) in paragraph at lines 178--182
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 193--197
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 193--197
 
  []
 
@@ -710,7 +730,7 @@ pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
 fb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 ></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
 
-Output written on PW5Protokoll.pdf (5 pages, 169178 bytes).
+Output written on PW5Protokoll.pdf (5 pages, 171583 bytes).
 PDF statistics:
  76 PDF objects out of 1000 (max. 8388607)
  54 compressed objects within 1 object stream
