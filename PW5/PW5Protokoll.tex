@@ -184,20 +184,32 @@ Wir bestimmen den Adiabatenexponenten der Luft mit der Methode von Rüchardt.
 \subsection{Grundlagen}
 Der Adiabatenexponent ist die Hochzahl in folgender Gleichung:\\
 $$p=const./V^{\kappa}$$
-Er kann mit der Methode von Rückhardt bestimmt werden. 
-
+Er kann mit der Methode von Rückhardt bestimmt werden. Aus ihr folgt:
+\begin{equation}
+\label{kappa}
+\kappa=(\frac{2\pi}{T})^2 \frac{mV_0}{q^2p}
+\end{equation}
+$$p=p_0+\frac{mg}{q}$$
 \subsection{Versuchsaufbau und Methoden}
 \subsection{Durchführung}
 \subsection{Ergebnisse}
-15 Messungen zu je 5 Schwingungen.\\
-Masse der Kugel. (Sartoriuswaage)\\
-Adiabatenexponent:
-$$\kappa=(\frac{2\pi}{T})^2 \frac{mV_0}{q^2p}$$
-$$p=p_0+\frac{mg}{q}$$
+Wir machen 15 Messungen zu je 4 Schwingungen. Der Mittelwert der Messungen ist:\\
+$$\bar{T}=1.09s$$
+Masse der Kugel. (gemessen mit der Sartorius-Feinwaage ED2245)\\
+$$m=16.700\pm0.005g$$
 
-$$\boxed{\kappa=1.375093} $$
+Der Standardabweichung des Mittelwerts unserer Messserie ist größer als die innere Messunsicherheit unserer Stoppuhr, also verwenden wir sie als unsere Unsicherheit $\Delta T$.
+$$\Delta T=0.02s$$
+Wir  berechnen $\kappa$ laut \ref{kappa}. \\
+Mittels der Gaußschen Fehlerfortpflanzung erhalten wir $\Delta\kappa$:
+$$\Delta\kappa=0.0505798$$
+Also:
+$$\boxed{\kappa=(1.375093 \pm 0.0505798)} $$
+
 \subsection{Diskussion}
-
+Wir verwenden die in der Aufgabenstellung angegebene Unsicherheit von $\pm$0.005g für die Masse der Kugel, obwohl die Waage eine Genauigkeit von $\pm$0.0003g erlauben würde. Aber es ist durchaus denkbar, nachdem wir eine nur eine Kopie der verwendeten Kugel gewogen haben, dass diese größere Unsicherheit gerechtfertigt ist. \\ 
+Aufgrund eines peinlichen Fehlers bei einem Zaunpfostenproblem (dem Abzählen der Schwingungen an ihren Umkehrpunkten) haben wir nie 5 Schwingungen gemessen, sondern 4. Wir glauben aber, vor allem im Hinblick auf die Genauigkeit unseres Ergebnisses, dass wir diese Messungen verwenden können. \\ 
+Wir würden für ein 2-Atomiges Molekül, nachdem es einen Freiheitsgrad f von 6 besitzt, ein $\kappa$ von $\frac{f+2}{f}=\frac{8}{6}\approx1.333333$ erwarten. Dieser erwartete Wert liegt im Vertrauensbereich des $\kappa$, das wir aus unseren Messungen berechnen. Wir sind stolz.
 \newpage
 \section{Dampfdichtebestimmung nach Viktor Meyer}
 \subsection{Aufgabenstellung}
