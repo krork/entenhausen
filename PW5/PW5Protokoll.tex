@@ -107,9 +107,9 @@ und das \textbf{Gay-Lussac'sche Gesetz:}
 \label{gay-lussac}
 p(t_C)=p(0)(1+\gamma_p t_C)
 \end{equation}
-erfüllt sind. (Aus \textit{Wagner, Reischl, Steiner: Einführung in die Physik})\\
+Wobei $\gamma$=$\frac{1}{273.15^\circ}$, erfüllt sind. (Aus \textit{Wagner, Reischl, Steiner: Einführung in die Physik})\\
 \\
-Hier ist $n$ die Anzahl der Mole der vorliegenden Substanzmenge und weiters
+Hier ist $n$ die Anzahl der Moleküle der vorliegenden Substanzmenge in Mol und weiters
 \begin{flushleft}
 \begin{tabular}{|l|l|}
 \hline Druck & $[p]=Pa$\\
@@ -135,10 +135,17 @@ Loschmidt'sche Zahl & $N_A=6.02214179*10^{23}$\\
 Wir zeigen die Gültigkeit des Boyle-Mariotte'schen Gesetzes (\ref{boyle-mariotte}) und bestimmen den Spannungskoeffizienten der Luft $\beta$ und die absolute Temperatur $T_0$ bei $0^\circ C$.\\
 Dabei ermitteln wir auch den Zusammenhang zwischen Druck, Volumen und Temperatur der eingeschlossenen Luftmenge.
 \subsection{Grundlagen}
+Wir überprüfen die Beziehung von Boyle-Mariotte (\ref{boyle-mariotte}).
 \subsection{Versuchsaufbau und Methoden}
-Wir halten die Temperatur konstant (Raumtemperatur) und ändern schrittweise h. Wir lesen dabei die zugehörigen Längen l der Luftsäule ab und multiplizieren diese mit den Gesamtdrücken p. 
-$$pV=const \Rightarrow pl=const$$
+\subsubsection{Boyle-Mariotte}
+Wir verändern die Höhe eines Quecksilbervorratsgefäßes, das mit einer Luftkammer verbunden ist, und ändern damit den Druck in der Luftkammer - dabei verändert sich nach (\ref{boyle-mariotte}) das Volumen der Luft. Dabei ist die Höhendifferenz der beiden Quecksilberpegel dem Druck in der Kammer proportional. Wir lesen diese Differenz ab und die Länge der Luftkammer, die ihrem Volumen proportional ist. \\
+Wir halten die Temperatur konstant (Raumtemperatur) und ändern schrittweise h. Dabei ist h dem Druck p proportional und l dem Volumen der Luftsäule, also:
+$$p\cdot V=const \Rightarrow h \cdot l=const$$
+
+\subsubsection{Spannungskoeffizient der Luft}
+Wir halten das Volumen der Luftkammer konstant und verändern ihre Temperatur durch die Kammer umspülendes Wasser, von 39°C bis 60°C. Dabei messen wir den Druck in der Kammer an der Quecksilbersäule. 
 \subsection{Ergebnisse}
+\subsubsection{Boyle-Mariotte}
 Nachweis des Boyle-Mariotte'schen Gesetzes:\\
 
 $$p_{\vartheta}=p_0 (1+\beta \vartheta)$$
@@ -148,14 +155,7 @@ $$T_0=$$
 Theoretischer Wert für ideale Gase:\\
 $$\beta=\frac{1}{T_0}=\frac{1}{273.15K}$$
 
-unsere p*V Werte
-178953
-17814.8
-179628
-178318
-177024
-177830
-177328
+
 
 Atmosphärischer Druck: $P_a=994.5mbar$\\
 \\
@@ -180,9 +180,27 @@ Um zu zeigen, dass unsere Werte der Boyle-Mariotte Bedingung genügen, also ihr 
 \includegraphics[scale=0.7]{Graph1.eps}
 \end{figure}
 \end{center}
-2.
-\subsection{Diskussion}
+\subsubsection{Spannungskoeffizient}
+Wir stellen den Druckanstieg mit der Erwärmung grafisch dar und legen eine Gerade durch die gemessenen Drücke, um zu zeigen, dass der Anstieg, wie erwartet, linear erfolgt. 
 
+\begin{center}
+\begin{figure}
+
+\includegraphics[scale=0.7]{warmdruck.eps}
+\caption{Druckanstieg}
+\end{figure}
+\end{center}
+Die Gleichung der Gerade ist laut qtiplot  $$y=(0.6 \pm 0.1)x+(500\pm5)$$
+Das Gesetz, das wir dabei untersuchen, ist 
+$$p_{\vartheta}=p_0*(1+\beta\cdot\vartheta)$$
+Wenn wir unsere Gerade also nun am Punkt x=0 untersuchen, entspricht das dem Druck $p_0$ des Gases bei Temperatur=0°C. Diesen setzen wir in das Gay-Lussacsche Gesetz \ref{gay-lussac}  ein und formen es um:
+$$\frac{p_{\vartheta}-p_0}{p_0(\vartheta-\vartheta_0}=\frac{1}{p_0}\cdot}\frac{\Delta p}{\Delta \vartheta}=\beta$$
+Dabei erhalten wir:
+$$\beta=0.0012$$
+B (y-intercept) = 4.99039474e+02 +/- 5.44832181e+00
+A (slope) = 5.95805921e-01 +/- 1.07299384e-01
+\subsection{Diskussion}
+Wir beginnen nicht bei Raumtemperatur weil die Druckänderung zu gering war um sie sicher zu messen. 
 \newpage
 \section{Bestimmung des Adiabatenexponenten der Luft nach Rüchardt}
 \subsection{Aufgabenstellung}
