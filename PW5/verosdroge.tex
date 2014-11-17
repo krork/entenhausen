@@ -282,29 +282,38 @@ In unserem Fall müssen wir  improvisieren, da das Kölbchen, in dem sich die Pr
 
 Dichte der Luft bei Normalbedingungen: $\rho_{L,N}=1.2931kg/m^3$\\
 Volumen der verdrängten Luft: $V=(38.8 \pm 0.2)cm^3=(38800 \pm 200)mm^3$\\
-Raumtemperatur: $22^\circ C$\\
-Atmosphärischer Druck: $H=(0.9945 \pm 0.0001)bar=747.744mmHg$\\
+Raumtemperatur: $\vartheta=(22 \pm 0.5)^\circ C$\\
+Atmosphärischer Druck: $H=(0.9945 \pm 0.0001)bar=(747.744 \pm 0.076)mmHg$\\
 Dampfdruck des gesättigten Wasserdampfes: $p_w=19.8Torr=19.8mmHg$\\
-Masse der Flüssigkeit: $m=0.1560g$\\
-Höhe der Wassersäule\footnote{Unsicherheiten für m, h unklar, siehe Diskussion}: $h=459mm$\\
+Höhe der Wassersäule: $h_{H_2O}=(468.3 \pm 2.4)mm$\\
+Daraus der Gewichtsdruck der Wassersäule in mmHg:
+$$h_{Hg}=h_{H_2O}\frac{\rho_{H_2O}}{\rho_{Hg}}=0.4683\frac{0.998}{13.546}=0.0345019$$
+$$h_{Hg}=(34.50 \pm 0.75)mmHg$$
+Masse der Flüssigkeit\footnote{Unsicherheit unklar, siehe Diskussion}: $m=0.1560g$\\
 \\
 Partialdruck der Luft im Messzylinder:
 \begin{equation}
-p=H-\frac{h}{13.6}-p_w=694.120
+p=H-\frac{h}{13.6}-p_w=(725.41 \pm 0.55)mmHg
 \end{equation}
-
-Setzen wir in folgende Formel ein, erhalten wir für die Dampfdichte:\\
+Wir wollen in folgende Formel aus dem Anleitungstext einsetzen: 
+$$\alpha=\frac{m}{V}\frac{760}{p}\frac{1+\frac{1}{237.15}\vartheta}{0.001293}$$
+allerdings fällt uns die Zahl 760 auf, die unseres Wissens nach den atmosphärischen Druck darstellen soll. In unserem Fall hat dieser jedoch einen anderen Wert, also korrigieren wir: 
 \begin{equation}
-\alpha=\frac{m}{V}\frac{760}{p}\frac{1+\frac{1}{237.15}\vartheta}{0.001293}=3.6605
+\alpha=\frac{m}{V}\frac{747.744}{p}\frac{1+\frac{1}{237.15}\vartheta}{0.001293}
 \end{equation}
+und erhalten hierfür:
+$$\boxed{\alpha=3.503\pm 0.028}$$
 
 Daraus die Molekularmasse:\\
-$$M_{Gas}=\alpha*M_L=\alpha*28.98=106.081g/mol$$
+$$M_{Gas}=\alpha*M_L=\alpha*28.98=(106.08 \pm 0.82)g/mol$$
 
 
 \subsection{Diskussion}
-Anmerkung zu den Unsicherheiten: Für die Masse konnten wir keine zuverlässige Unsicherheit angeben, weil uns unbekannt ist, wie viel der Flüssigkeit tatsächlich bei dem Manöver mit dem Stock-Nachschieben bereits verdampft ist. \\
-Außerdem haben wir im Nachhinein festgestellt, dass wir die Höhe der Wassersäule nicht gemessen haben und haben den verwendeten Wert berechnet, indem wir die Verhältnisse von Höhe und Volumen der Wassersäule aus anderen Protokollen verglichen und auf unser Volumen angewandt haben. Wir wissen also auch hier nicht, wie groß unsere Unsicherheit ist.\\
-In diesem Fall können wir also sogar schon von Fehler anstatt von Unsicherheit sprechen und aufgrund dieser Umstände sind unsere Dampfdichte und Molekularmasse offensichtlich weit vom erwarteten Wert entfernt.\\
-Allerdings sehen wir, dass zumindest die Größenordnung von $\alpha$ richtig ist, was ein kleiner Trost ist.
+Anmerkung zu den Unsicherheiten: \\
+Für die Masse konnten wir keine zuverlässige Unsicherheit angeben, weil uns unbekannt ist, wie viel der Flüssigkeit tatsächlich bei dem im Versuchsaufbau erwähnten Manöver mit dem Stock-Nachschieben bereits verdampft ist. \\
+Außerdem haben wir im Nachhinein festgestellt, dass wir die Höhe der Wassersäule nicht gemessen haben und haben den verwendeten Wert berechnet, indem wir die Verhältnisse von Höhe und Volumen der Wassersäule aus einem anderen Protokoll\footnote{mit freundlicher Genehmigung von Johannes Kurz, Patrick Braun, WS 2013} verglichen und auf unser Volumen angewandt haben: $h=V_{hier}\frac{h_{geliehen}}{V_{geliehen}}=38*\frac{68.8}{57}=46.83$. \\ 
+Die Unsicherheit kommt aus dem Wert unseres Volumens.\\
+\\
+In diesem Fall können wir also sogar von Fehler anstatt von Unsicherheit sprechen und aufgrund dieser Umstände sind unsere Dampfdichte und Molekularmasse offensichtlich weit vom erwarteten Wert entfernt.\\
+Allerdings sehen wir, dass zumindest die Größenordnung von $\alpha$ richtig ist, was ein kleiner Trost ist. Um den Fehler besser abschätzen zu können, testen wir, mit welcher Masse wir den richtigen Wert erhalten würden: Es handelt sich um $m_{passend}\approx 0.09g$. Laut diesem Wert hätten wir also $\Delta m=0.066g$ bereits vor der Messung verloren, das sind 42.31\% unserer Masse.\\
 \end{document}
