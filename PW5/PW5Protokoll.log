@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.10.26)  15 NOV 2014 13:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.10.26)  17 NOV 2014 18:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -666,16 +666,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 125--132
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 149--152
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 166--167
+Underfull \hbox (badness 10000) in paragraph at lines 154--157
 
  []
 
 [3]
+Underfull \hbox (badness 10000) in paragraph at lines 173--177
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 191--192
+
+ []
+
 Package epstopdf Info: Source file: <Graph1.eps>
 (epstopdf)                    date: 2014-11-15 12:13:26
 (epstopdf)                    size: 439806 bytes
@@ -684,82 +693,118 @@ Package epstopdf Info: Source file: <Graph1.eps>
 (epstopdf)                    size: 312278 bytes
 (epstopdf)             Command: <repstopdf --outfile=Graph1-eps-converted-to.pd
 f Graph1.eps>
-(epstopdf)             \includegraphics on input line 170.
+(epstopdf)             \includegraphics on input line 195.
 Package epstopdf Info: Output file is already uptodate.
- <Graph1-eps-converted-to.pdf, id=27, 461.725pt x 326.21875pt>
+<Graph1-eps-converted-to.pdf, id=28, 461.725pt x 326.21875pt>
 File: Graph1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Graph1-eps-converted-to.pdf>
-Package pdftex.def Info: Graph1-eps-converted-to.pdf used on input line 170.
+Package pdftex.def Info: Graph1-eps-converted-to.pdf used on input line 195.
 (pdftex.def)             Requested size: 323.20529pt x 228.35156pt.
- [4 <./Graph1-eps-converted-to.pdf>]
-Overfull \hbox (12.52127pt too wide) in paragraph at lines 177--177
+ [4]
+Package epstopdf Info: Source file: <warmdruck.eps>
+(epstopdf)                    date: 2014-11-17 07:52:54
+(epstopdf)                    size: 417526 bytes
+(epstopdf)             Output file: <warmdruck-eps-converted-to.pdf>
+(epstopdf)                    date: 2014-11-17 07:55:00
+(epstopdf)                    size: 307508 bytes
+(epstopdf)             Command: <repstopdf --outfile=warmdruck-eps-converted-to
+.pdf warmdruck.eps>
+(epstopdf)             \includegraphics on input line 209.
+Package epstopdf Info: Output file is already uptodate.
+
+<warmdruck-eps-converted-to.pdf, id=33, 411.5375pt x 326.21875pt>
+File: warmdruck-eps-converted-to.pdf Graphic file (type pdf)
+
+<use warmdruck-eps-converted-to.pdf>
+Package pdftex.def Info: warmdruck-eps-converted-to.pdf used on input line 209.
+
+(pdftex.def)             Requested size: 288.07428pt x 228.35156pt.
+
+! Extra }, or forgotten $.
+l.218 ...vartheta-\vartheta_0}=\frac{1}{p_0}\cdot}
+                                                  \frac{\Delta p}{\Delta \va...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+[5 <./Graph1-eps-converted-to.pdf>]
+Overfull \hbox (1.60966pt too wide) in paragraph at lines 221--224
+\OT1/cmr/m/n/10 B (y-intercept) = 4.99039474e+02 +/- 5.44832181e+00 A (slo-pe) 
+= 5.95805921e-
+ []
+
+[6 <./warmdruck-eps-converted-to.pdf>]
+Overfull \hbox (12.52127pt too wide) in paragraph at lines 227--227
 []\OT1/cmr/bx/n/14.4 Bestimmung des Adia-ba-ten-ex-po-nen-ten der Luft
  []
 
 
-Overfull \hbox (11.55624pt too wide) in paragraph at lines 179--180
+Overfull \hbox (11.55624pt too wide) in paragraph at lines 229--230
 \OT1/cmr/m/n/10 Wir be-stim-men den Adia-ba-ten-ex-po-nen-ten der Luft mit der 
 Me-tho-de von R[]uchardt. 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 181--182
+Underfull \hbox (badness 10000) in paragraph at lines 231--232
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--196
+Underfull \hbox (badness 10000) in paragraph at lines 245--246
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--198
+Underfull \hbox (badness 10000) in paragraph at lines 246--248
 
  []
 
-[5]
-Overfull \hbox (4.11174pt too wide) in paragraph at lines 209--212
+[7]
+Overfull \hbox (4.11174pt too wide) in paragraph at lines 259--262
 \OT1/cmr/m/n/10 Wir ver-wen-den die in der Auf-ga-ben-stel-lung an-ge-ge-be-ne 
 Un-si-cher-heit von $\OMS/cmsy/m/n/10 ^^F$\OT1/cmr/m/n/10 0.005g
  []
 
 
-Overfull \hbox (1.22285pt too wide) in paragraph at lines 209--212
+Overfull \hbox (1.22285pt too wide) in paragraph at lines 259--262
 \OT1/cmr/m/n/10 Aufgrund ei-nes pein-li-chen Feh-lers bei ei-nem Zaun-pfo-sten-
 pro-blem (dem Abz[]ahlen
  []
 
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 221--225
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 271--275
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--231
+Underfull \hbox (badness 10000) in paragraph at lines 277--281
 
  []
 
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 248--254
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 298--304
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 248--254
+Underfull \hbox (badness 10000) in paragraph at lines 298--304
 
  []
 
-[8] (./PW5Protokoll.aux) ) 
+[10] (./PW5Protokoll.aux) ) 
 Here is how much of TeX's memory you used:
- 4420 strings out of 493117
- 60491 string characters out of 6135432
+ 4428 strings out of 493117
+ 60679 string characters out of 6135432
  134746 words of memory out of 5000000
- 7804 multiletter control sequences out of 15000+600000
- 9005 words of font info for 33 fonts, out of 8000000 for 9000
+ 7810 multiletter control sequences out of 15000+600000
+ 9340 words of font info for 34 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,8n,35p,459b,286s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2014/texmf-dist/fonts/type1/publi
+{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/
+cm-super/cm-super-ts1.enc}</usr/local/texlive/2014/texmf-dist/fonts/type1/publi
 c/dejavu/DejaVuSans-Bold.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/pu
 blic/dejavu/DejaVuSans.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publi
@@ -774,12 +819,14 @@ m/cmr5.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mr6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7
 .pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pf
 b></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><
-/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on PW5Protokoll.pdf (8 pages, 513751 bytes).
+></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><
+/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></u
+sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></us
+r/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on PW5Protokoll.pdf (10 pages, 836882 bytes).
 PDF statistics:
- 202 PDF objects out of 1000 (max. 8388607)
- 75 compressed objects within 1 object stream
+ 324 PDF objects out of 1000 (max. 8388607)
+ 90 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
