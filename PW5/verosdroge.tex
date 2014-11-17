@@ -105,9 +105,9 @@ pV=const
 und das \textbf{Gay-Lussac'sche Gesetz:}
 \begin{equation}
 \label{gay-lussac}
-p(t_C)=p(0)(1+\gamma_p t_C)
+p_{\vartheta}=p_0\cdot (1+\beta \cdot \vartheta)
 \end{equation}
-Wobei $\gamma$=$\frac{1}{273.15^\circ}$, erfüllt sind. (Aus \textit{Wagner, Reischl, Steiner: Einführung in die Physik})\\
+erfüllt sind. 
 \\
 Hier ist $n$ die Anzahl der Moleküle der vorliegenden Substanzmenge in Mol und weiters
 \begin{flushleft}
@@ -132,45 +132,35 @@ Loschmidt'sche Zahl & $N_A=6.02214179*10^{23}$\\
 \newpage
 \section{Gasthermometer}
 \subsection{Aufgabenstellung}
-Wir zeigen die Gültigkeit des Boyle-Mariotte'schen Gesetzes (\ref{boyle-mariotte}) und bestimmen den Spannungskoeffizienten der Luft $\beta$ und die absolute Temperatur $T_0$ bei $0^\circ C$.\\
+Wir zeigen die Gültigkeit des Boyle-Mariotte'schen Gesetzes (\ref{boyle-mariotte}) und bestimmen den Spannungskoeffizienten der Luft $\beta$ und den Druck $p_0$ bei $T_0$= $0^\circ C$.\\
 Dabei ermitteln wir auch den Zusammenhang zwischen Druck, Volumen und Temperatur der eingeschlossenen Luftmenge.
 \subsection{Grundlagen}
-<<<<<<< HEAD
-Wir überprüfen die Beziehung von Boyle-Mariotte (\ref{boyle-mariotte}).
+Aus der allgemeinen Gasgleichung erhalten wir:
+\begin{gather*}
+\frac{p_{\vartheta}V_{\vartheta}}{T}=\frac{p_0V_0}{T_0}=nR
+\end{gather*}
+Und daraus:
+$$p_{\vartheta}=p_0 (1+\beta \vartheta)$$
+\begin{equation}
+\label{beta}
+\beta=\frac{1}{p_0}\frac{\Delta p}{\Delta \vartheta}=\frac{p_{\vartheta}-p_0}{p_0(\vartheta - \vartheta_0)}
+\end{equation}
+Theoretischer Wert für ideale Gase:\\
+$$\beta=\frac{1}{T_0}=\frac{1}{273.15K}$$
+
 \subsection{Versuchsaufbau und Methoden}
-\subsubsection{Boyle-Mariotte}
+\subsubsection*{Boyle-Mariotte}
+Nachweis des Boyle-Mariotte'schen Gesetzes:\\
+
 Wir verändern die Höhe eines Quecksilbervorratsgefäßes, das mit einer Luftkammer verbunden ist, und ändern damit den Druck in der Luftkammer - dabei verändert sich nach (\ref{boyle-mariotte}) das Volumen der Luft. Dabei ist die Höhendifferenz der beiden Quecksilberpegel dem Druck in der Kammer proportional. Wir lesen diese Differenz ab und die Länge der Luftkammer, die ihrem Volumen proportional ist. \\
 Wir halten die Temperatur konstant (Raumtemperatur) und ändern schrittweise h. Dabei ist h dem Druck p proportional und l dem Volumen der Luftsäule, also:
 $$p\cdot V=const \Rightarrow h \cdot l=const$$
 
-\subsubsection{Spannungskoeffizient der Luft}
+\subsubsection*{Spannungskoeffizient der Luft}
 Wir halten das Volumen der Luftkammer konstant und verändern ihre Temperatur durch die Kammer umspülendes Wasser, von 39°C bis 60°C. Dabei messen wir den Druck in der Kammer an der Quecksilbersäule. 
+
+
 \subsection{Ergebnisse}
-\subsubsection{Boyle-Mariotte}
-Nachweis des Boyle-Mariotte'schen Gesetzes:\\
-
-$$p_{\vartheta}=p_0 (1+\beta \vartheta)$$
-$$\beta=\frac{1}{p_0}\frac{\Delta p}{\Delta \vartheta}=\frac{p_{\vartheta}-p_0}{p_0(\vartheta - \vartheta_0)}$$
-$$T_0=$$
-\\
-Theoretischer Wert für ideale Gase:\\
-$$\beta=\frac{1}{T_0}=\frac{1}{273.15K}$$
-
-
-
-=======
-Zusätzlich zu den allgemeinen Grundlagen schreiben wir hier noch folgendes Gesetz:\\
-\textbf{Amonton'sches Gesetz:} $p_\vartheta=p_0 (1+\beta\vartheta)$\\
-Es bedeutet, dass sich bei konstantem Volumen der Druck eines idealen Gases linear mit der Temperatur und proportional zur absoluten Temperatur ändert. \\
-Durch Umformen erhält man den Spannungskoeffizienten der Luft $\beta$.
-$$\beta=\frac{p_\vartheta-p_0}{p_0(\vartheta-\vartheta_0)}=\frac{1}{p_0}\frac{\Delta p}{\Delta \vartheta}$$
-außerdem: $\beta=\frac{1}{T_0}$
-\subsection{Versuchsaufbau und Methoden}
-Wir halten die Temperatur konstant (Raumtemperatur) und ändern schrittweise h (Höhendifferenz des Quecksilberpegels). Wir lesen dabei die zugehörigen Längen l der Luftsäule ab und multiplizieren diese mit den Gesamtdrücken p.\\
-p ist dabei $p=P_a + \Delta p$
-$$pV=const \Rightarrow pl=const$$
-\subsection{Ergebnisse}
->>>>>>> 9d0d806be5cfcd49b239957206a9590541594ab6
 Atmosphärischer Druck: $P_a=994.5mbar$\\
 \\
 Messung von l~V, h~$\Delta p$
@@ -188,20 +178,18 @@ l in mm & h in mmHg & $\Delta p$ in mbar\\
 \end{tabular}
 \end{center}
 %178953 178148 179628 178318 177024 177830 177328\\
-Um zu zeigen, dass unsere Werte der Boyle-Mariotte Bedingung genügen, also ihr Produkt konstant ist, haben wir dieses pV~$l(\frac{P_A}{1.33}+\Delta p)$ für jedes Paar berechnet und mit seinem jeweils eigenen Unsicherheitsbereich geplottet. Dabei wird ersichtlich, dass wir durch alle Bereiche eine Gerade legen können - also liegen die Werte der Konstanten in ihren jeweiligen Vertrauensbereichen! Boyle-Mariotte gilt!\\
+Um zu zeigen, dass unsere Werte der Boyle-Mariotte Bedingung genügen, also ihr Produkt konstant ist, haben wir $$pV~l\cdot (\frac{p_A}{1.33}+\Delta p)$$ für jedes Paar berechnet und mit seinem jeweils eigenen Unsicherheitsbereich geplottet. Der Unsicherheitsbereich wird dabei nach dem Gaußschen Fehlerfortpflanzungesetz bei höherem Druck größer. Dabei wird ersichtlich, dass wir durch alle Bereiche eine Gerade legen können - also liegen die Werte der Konstanten in ihren jeweiligen Vertrauensbereichen! Boyle-Mariotte gilt!\\
 \begin{center}
 \begin{figure}
 \caption{Demonstration der Gültigkeit von Boyle-Mariotte, mit Gerade zur Anschaulichkeit}
 \includegraphics[scale=0.7]{Graph1.eps}
 \end{figure}
 \end{center}
-<<<<<<< HEAD
-\subsubsection{Spannungskoeffizient}
-Wir stellen den Druckanstieg mit der Erwärmung grafisch dar und legen eine Gerade durch die gemessenen Drücke, um zu zeigen, dass der Anstieg, wie erwartet, linear erfolgt. 
-=======
 
-\subsection{Diskussion}
->>>>>>> 9d0d806be5cfcd49b239957206a9590541594ab6
+\subsubsection{Spannungskoeffizient}
+Wir stellen den Druckanstieg mit der Erwärmung grafisch dar und legen eine Gerade durch die gemessenen Drücke, um zu zeigen, dass der Anstieg, wie erwartet, linear erfolgt.
+
+
 
 \begin{center}
 \begin{figure}
@@ -213,14 +201,12 @@ Wir stellen den Druckanstieg mit der Erwärmung grafisch dar und legen eine Gera
 Die Gleichung der Gerade ist laut qtiplot  $$y=(0.6 \pm 0.1)x+(500\pm5)$$
 Das Gesetz, das wir dabei untersuchen, ist 
 $$p_{\vartheta}=p_0*(1+\beta\cdot\vartheta)$$
-Wenn wir unsere Gerade also nun am Punkt x=0 untersuchen, entspricht das dem Druck $p_0$ des Gases bei Temperatur=0°C. Diesen setzen wir in das Gay-Lussacsche Gesetz \ref{gay-lussac}  ein und formen es um:
-$$\frac{p_{\vartheta}-p_0}{p_0(\vartheta-\vartheta_0}=\frac{1}{p_0}\cdot \frac{\Delta p}{\Delta \vartheta}=\beta$$
+Wenn wir unsere Gerade also nun am Punkt x=0 untersuchen, entspricht das dem Druck $p_0$ des Gases bei Temperatur=0°C. Diesen setzen wir in (\ref{beta}) ein. \\
 Dabei erhalten wir:
-$$\beta=0.0012$$
-B (y-intercept) = 4.99039474e+02 +/- 5.44832181e+00
-A (slope) = 5.95805921e-01 +/- 1.07299384e-01
+$$\beta=0.0012 \pm 0.0003 $$
 \subsection{Diskussion}
 Wir beginnen nicht bei Raumtemperatur weil die Druckänderung zu gering war um sie sicher zu messen. 
+
 \newpage
 \section{Bestimmung des Adiabatenexponenten der Luft nach Rüchardt}
 \subsection{Aufgabenstellung}
