@@ -105,9 +105,9 @@ pV=const
 und das \textbf{Gay-Lussac'sche Gesetz:}
 \begin{equation}
 \label{gay-lussac}
-p_{\vartheta}=p_0\cdot (1+\beta \cdot \vartheta)
+p(t_C)=p(0)(1+\gamma_p t_C)
 \end{equation}
-erfüllt sind. 
+Wobei $\gamma$=$\frac{1}{273.15^\circ}$, erfüllt sind. (Aus \textit{Wagner, Reischl, Steiner: Einführung in die Physik})\\
 \\
 Hier ist $n$ die Anzahl der Moleküle der vorliegenden Substanzmenge in Mol und weiters
 \begin{flushleft}
@@ -132,35 +132,45 @@ Loschmidt'sche Zahl & $N_A=6.02214179*10^{23}$\\
 \newpage
 \section{Gasthermometer}
 \subsection{Aufgabenstellung}
-Wir zeigen die Gültigkeit des Boyle-Mariotte'schen Gesetzes (\ref{boyle-mariotte}) und bestimmen den Spannungskoeffizienten der Luft $\beta$ und den Druck $p_0$ bei $T_0$= $0^\circ C$.\\
+Wir zeigen die Gültigkeit des Boyle-Mariotte'schen Gesetzes (\ref{boyle-mariotte}) und bestimmen den Spannungskoeffizienten der Luft $\beta$ und die absolute Temperatur $T_0$ bei $0^\circ C$.\\
 Dabei ermitteln wir auch den Zusammenhang zwischen Druck, Volumen und Temperatur der eingeschlossenen Luftmenge.
 \subsection{Grundlagen}
-Aus der allgemeinen Gasgleichung erhalten wir:
-\begin{gather*}
-\frac{p_{\vartheta}V_{\vartheta}}{T}=\frac{p_0V_0}{T_0}=nR
-\end{gather*}
-Und daraus:
-$$p_{\vartheta}=p_0 (1+\beta \vartheta)$$
-\begin{equation}
-\label{beta}
-\beta=\frac{1}{p_0}\frac{\Delta p}{\Delta \vartheta}=\frac{p_{\vartheta}-p_0}{p_0(\vartheta - \vartheta_0)}
-\end{equation}
-Theoretischer Wert für ideale Gase:\\
-$$\beta=\frac{1}{T_0}=\frac{1}{273.15K}$$
-
+<<<<<<< HEAD
+Wir überprüfen die Beziehung von Boyle-Mariotte (\ref{boyle-mariotte}).
 \subsection{Versuchsaufbau und Methoden}
-\subsubsection*{Boyle-Mariotte}
-Nachweis des Boyle-Mariotte'schen Gesetzes:\\
-
+\subsubsection{Boyle-Mariotte}
 Wir verändern die Höhe eines Quecksilbervorratsgefäßes, das mit einer Luftkammer verbunden ist, und ändern damit den Druck in der Luftkammer - dabei verändert sich nach (\ref{boyle-mariotte}) das Volumen der Luft. Dabei ist die Höhendifferenz der beiden Quecksilberpegel dem Druck in der Kammer proportional. Wir lesen diese Differenz ab und die Länge der Luftkammer, die ihrem Volumen proportional ist. \\
 Wir halten die Temperatur konstant (Raumtemperatur) und ändern schrittweise h. Dabei ist h dem Druck p proportional und l dem Volumen der Luftsäule, also:
 $$p\cdot V=const \Rightarrow h \cdot l=const$$
 
-\subsubsection*{Spannungskoeffizient der Luft}
+\subsubsection{Spannungskoeffizient der Luft}
 Wir halten das Volumen der Luftkammer konstant und verändern ihre Temperatur durch die Kammer umspülendes Wasser, von 39°C bis 60°C. Dabei messen wir den Druck in der Kammer an der Quecksilbersäule. 
-
-
 \subsection{Ergebnisse}
+\subsubsection{Boyle-Mariotte}
+Nachweis des Boyle-Mariotte'schen Gesetzes:\\
+
+$$p_{\vartheta}=p_0 (1+\beta \vartheta)$$
+$$\beta=\frac{1}{p_0}\frac{\Delta p}{\Delta \vartheta}=\frac{p_{\vartheta}-p_0}{p_0(\vartheta - \vartheta_0)}$$
+$$T_0=$$
+\\
+Theoretischer Wert für ideale Gase:\\
+$$\beta=\frac{1}{T_0}=\frac{1}{273.15K}$$
+
+
+
+=======
+Zusätzlich zu den allgemeinen Grundlagen schreiben wir hier noch folgendes Gesetz:\\
+\textbf{Amonton'sches Gesetz:} $p_\vartheta=p_0 (1+\beta\vartheta)$\\
+Es bedeutet, dass sich bei konstantem Volumen der Druck eines idealen Gases linear mit der Temperatur und proportional zur absoluten Temperatur ändert. \\
+Durch Umformen erhält man den Spannungskoeffizienten der Luft $\beta$.
+$$\beta=\frac{p_\vartheta-p_0}{p_0(\vartheta-\vartheta_0)}=\frac{1}{p_0}\frac{\Delta p}{\Delta \vartheta}$$
+außerdem: $\beta=\frac{1}{T_0}$
+\subsection{Versuchsaufbau und Methoden}
+Wir halten die Temperatur konstant (Raumtemperatur) und ändern schrittweise h (Höhendifferenz des Quecksilberpegels). Wir lesen dabei die zugehörigen Längen l der Luftsäule ab und multiplizieren diese mit den Gesamtdrücken p.\\
+p ist dabei $p=P_a + \Delta p$
+$$pV=const \Rightarrow pl=const$$
+\subsection{Ergebnisse}
+>>>>>>> 9d0d806be5cfcd49b239957206a9590541594ab6
 Atmosphärischer Druck: $P_a=994.5mbar$\\
 \\
 Messung von l~V, h~$\Delta p$
@@ -178,18 +188,20 @@ l in mm & h in mmHg & $\Delta p$ in mbar\\
 \end{tabular}
 \end{center}
 %178953 178148 179628 178318 177024 177830 177328\\
-Um zu zeigen, dass unsere Werte der Boyle-Mariotte Bedingung genügen, also ihr Produkt konstant ist, haben wir $$pV~l\cdot (\frac{p_A}{1.33}+\Delta p)$$ für jedes Paar berechnet und mit seinem jeweils eigenen Unsicherheitsbereich geplottet. Der Unsicherheitsbereich wird dabei nach dem Gaußschen Fehlerfortpflanzungesetz bei höherem Druck größer. Dabei wird ersichtlich, dass wir durch alle Bereiche eine Gerade legen können - also liegen die Werte der Konstanten in ihren jeweiligen Vertrauensbereichen! Boyle-Mariotte gilt!\\
+Um zu zeigen, dass unsere Werte der Boyle-Mariotte Bedingung genügen, also ihr Produkt konstant ist, haben wir dieses pV~$l(\frac{P_A}{1.33}+\Delta p)$ für jedes Paar berechnet und mit seinem jeweils eigenen Unsicherheitsbereich geplottet. Dabei wird ersichtlich, dass wir durch alle Bereiche eine Gerade legen können - also liegen die Werte der Konstanten in ihren jeweiligen Vertrauensbereichen! Boyle-Mariotte gilt!\\
 \begin{center}
 \begin{figure}
 \caption{Demonstration der Gültigkeit von Boyle-Mariotte, mit Gerade zur Anschaulichkeit}
 \includegraphics[scale=0.7]{Graph1.eps}
 \end{figure}
 \end{center}
-
+<<<<<<< HEAD
 \subsubsection{Spannungskoeffizient}
-Wir stellen den Druckanstieg mit der Erwärmung grafisch dar und legen eine Gerade durch die gemessenen Drücke, um zu zeigen, dass der Anstieg, wie erwartet, linear erfolgt.
+Wir stellen den Druckanstieg mit der Erwärmung grafisch dar und legen eine Gerade durch die gemessenen Drücke, um zu zeigen, dass der Anstieg, wie erwartet, linear erfolgt. 
+=======
 
-
+\subsection{Diskussion}
+>>>>>>> 9d0d806be5cfcd49b239957206a9590541594ab6
 
 \begin{center}
 \begin{figure}
@@ -199,14 +211,18 @@ Wir stellen den Druckanstieg mit der Erwärmung grafisch dar und legen eine Gera
 \end{figure}
 \end{center}
 Die Gleichung der Gerade ist laut qtiplot  $$y=(0.6 \pm 0.1)x+(500\pm5)$$
-Wenn wir unsere Gerade also nun am Punkt x=0 untersuchen, entspricht das dem Druck $p_0$ des Gases bei Temperatur=0°C. Diesen setzen wir in (\ref{beta}) ein. \\
+Das Gesetz, das wir dabei untersuchen, ist 
+$$p_{\vartheta}=p_0*(1+\beta\cdot\vartheta)$$
+Wenn wir unsere Gerade also nun am Punkt x=0 untersuchen, entspricht das dem Druck $p_0$ des Gases bei Temperatur=0°C. Diesen setzen wir in das Gay-Lussacsche Gesetz \ref{gay-lussac}  ein und formen es um:
+\begin{equation*}
+\frac{p_{\vartheta}-p_0}{p_0(\vartheta-\vartheta_0}=\frac{1}{p_0}\cdot}\frac{\Delta p}{\Delta \vartheta}=\beta
+\end{equation*}
 Dabei erhalten wir:
-$$\beta=0.0012 \pm 0.0003 $$
+$$\beta=0.0012$$
+B (y-intercept) = 4.99039474e+02 +/- 5.44832181e+00
+A (slope) = 5.95805921e-01 +/- 1.07299384e-01
 \subsection{Diskussion}
-Wir beginnen den zweiten Teil des Experiments nicht bei Raumtemperatur sondern 39°C, weil die Druckänderung anfangs zu gering war um sie sicher zu messen. \\
-Die Messungen gestalten sich als schwierig, weil die Höhe der Quecksilbersäule schlecht zu sehen ist. Aber wir sehen das Gesetz von Boyle-Mariotte dennoch in unseren Messungen bestätigt. \\
-Unser $\beta$ liegt mit 0.0012 $\pm$ 0.0003 leider weit weg vom Vergleichswert von 1/273.15=0.0036. Wir haben uns wirklich schwer getan, die Druckänderungen genau zu messen - sie waren sehr gering und schwer zu sehen. 
-
+Wir beginnen nicht bei Raumtemperatur weil die Druckänderung zu gering war um sie sicher zu messen. 
 \newpage
 \section{Bestimmung des Adiabatenexponenten der Luft nach Rüchardt}
 \subsection{Aufgabenstellung}
@@ -259,38 +275,32 @@ Umrechnung für ideale Gase, falls $T\neq 0$:
 \begin{equation}
 \frac{V_Dp}{T}=\frac{V_Np_N}{T_N}
 \end{equation}
-wobei $V_D$, $p$, $T$ bei Messbedingungen, $V_N$, $p_N$, $T_N$ bei Normalbedingungen.
+wobei $V_D$, $p$, $T$ bei Messbedingungen, $V_N$, $p_N$, $T_N$ bei Normalbedingungen.\\
+\\
+\textbf{Relative Dampfdichte:}
+\begin{equation}
+\label{dampfdichte_rel}
+\alpha=\frac{\rho_N}{\rho_{L,N}}=\frac{\rho_D}{\rho_{L,N}}\frac{p_NT}{pT_N}
+\end{equation}
+
 \subsection{Versuchsaufbau und Methoden}
 Wir bringen eine Flüssigkeit in einem Glaszylinder bei $90^\circ C$ zum Verdampfen; es handelt sich dem Geruch zu folgern vermutlich um Aceton. \\
 Zuvor notieren wir uns die Höhe des Wasserstandes im Messrohr und können bei der Messung das Volumen der verdrängten Luft anhand des neuen Wasserstandes ablesen.\\
-In unserem Fall müssen wir  improvisieren, da das Kölbchen, in dem sich die Probeflüssigkeit befindet, bei jedem Versuch im Rohr des Glaszylinders stecken bleibt. Wir helfen also mit einem Stock nach, es bis ganz hinunter fallen zu lassen, verlieren dabei aber vermutlich bereits etwas an Flüssigkeit. 
+In unserem Fall müssen wir  improvisieren, da das Kölbchen, in dem sich die Probeflüssigkeit befindet, bei jedem Versuch im Rohr des Glaszylinders stecken bleibt. Wir helfen also mit einem Stock nach, es bis ganz hinunter fallen zu lassen, verlieren dabei aber vermutlich bereits etwas an Flüssigkeit. Dies müssen wir bei unserem Messergebnis berücksichtigen.
 \subsection{Ergebnisse}
-
-Dichte der Luft bei Normalbedingungen: $\rho_{L,N}=1.2931kg/m^3$\\
-Volumen der verdrängten Luft: $V=(38.8 \pm 0.2)cm^3=(38800 \pm 200)mm^3$\\
-Raumtemperatur: $22^\circ C$\\
-Atmosphärischer Druck: $H=(0.9945 \pm 0.0001)bar=747.744mmHg$\\
-Dampfdruck des gesättigten Wasserdampfes: $p_w=19.8Torr=19.8mmHg$\\
-Masse der Flüssigkeit: $m=0.1560g$\\
-Höhe der Wassersäule\footnote{Unsicherheiten für m, h unklar, siehe Diskussion}: $h=459mm$\\
+Dichte der Luft bei Normalbedingungen ($0^\circ C$, 1.01325 bar):
+$$\rho_{L,N}=1.2931kg/m^3$$
 \\
-Partialdruck der Luft im Messzylinder:
-\begin{equation}
-p=H-\frac{h}{13.6}-p_w=694.120
-\end{equation}
-
-Setzen wir in folgende Formel ein, erhalten wir für die Dampfdichte:\\
-\begin{equation}
-\alpha=\frac{m}{V}\frac{760}{p}\frac{1+\frac{1}{237.15}\vartheta}{0.001293}=3.6605
-\end{equation}
-
+Masse der Flüssigkeit:
+$$m_{Fl}=(0.1560 \pm 0.0003)g$$
+\\
+Volumen der verdrängten Luft:
+$$V=(38.8 \pm 0.2)cm^3$$
+\\
+Setzen wir in (\ref{dampfdichte_rel}) ein, erhalten wir für die Dampfdichte:\\
+%\alpha=\frac{\rho_N}{\rho_{L,N}}=\frac{\rho_D}{\rho_{L,N}}\frac{p_NT}{pT_N}\\
+\\
 Daraus die Molekularmasse:\\
-$$M_{Gas}=\alpha*M_L=\alpha*28.98=106.081g/mol$$
-
-
+$$M_{Gas}=\alpha*M_L=\alpha*28.98$$
 \subsection{Diskussion}
-Anmerkung zu den Unsicherheiten: Für die Masse konnten wir keine zuverlässige Unsicherheit angeben, weil uns unbekannt ist, wie viel der Flüssigkeit tatsächlich bei dem Manöver mit dem Stock-Nachschieben bereits verdampft ist. \\
-Außerdem haben wir im Nachhinein festgestellt, dass wir die Höhe der Wassersäule nicht gemessen haben und haben den verwendeten Wert berechnet, indem wir die Verhältnisse von Höhe und Volumen der Wassersäule aus anderen Protokollen verglichen und auf unser Volumen angewandt haben. Wir wissen also auch hier nicht, wie groß unsere Unsicherheit ist.\\
-In diesem Fall können wir also sogar schon von Fehler anstatt von Unsicherheit sprechen und aufgrund dieser Umstände sind unsere Dampfdichte und Molekularmasse offensichtlich weit vom erwarteten Wert entfernt.\\
-Allerdings sehen wir, dass zumindest die Größenordnung von $\alpha$ richtig ist, was ein kleiner Trost ist.
 \end{document}
