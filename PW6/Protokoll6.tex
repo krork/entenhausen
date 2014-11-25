@@ -58,7 +58,7 @@
 \end{verbatim}	
 							%Eintragen des Abgabedatums, oder des Erstelldatums des Protokolls
 			\begin{flushleft}
-			\textbf{\Large{Datum:21.11.}} \Large{2014}
+			\textbf{\Large{Datum:}} \Large{21.11.2014}
 			\end{flushleft}
 			
 \begin{verbatim}
@@ -114,7 +114,7 @@ Wir haben eine Schiene mit verschiebbaren Linsen. Darauf ist eine Lichtquelle, v
 \subsection{Durchführung}
 Bei der Durchführung gelang es uns trotz Hilfe nicht, ein scharfes Bild mit der Konkavlinse zu erzeugen. Wir müssen diesen Punkt daher streichen	, da sich keine Ergebnisse präsentierten, die im Reich der Vernunft anzusiedeln wären.
 \subsection{Ergebnisse}
-\subsubsection*{Brennweite einer Konvexlinse}
+\subsubsection*{Brennweite und Brechkraft einer Konvexlinse}
 \paragraph{Bei einer Gegenstandsweite}
 
 Wir messen 5 Mal die Bildweite b bei fixer Gegenstandsweite und berechnen den Mittelwert sowie seine Standardabweichung.
@@ -129,21 +129,26 @@ Mittels (\ref{linsengleichung}) erhalten wir:\\
 Wir messen 5 Paare von Distanzen zwischen den beiden scharfen Positionen der Linse, d, und zwischen Schirm und Gegenstand, e. Daraus berechnen wir mittels (\ref{bessel}) die 5 zugehörigen Brennweiten und ermitteln ihren Mittelwert.\\
 \boxed{$$\bar{f}=(0.0963\pm 0.002)m$$}\\
 \boxed{$$\frac{1}{\bar{f}}=(10.4 \pm 0.3) Dioptrien $$}
-\subsubsection*{Brennweite einer Konkavlinse}
-Mit Konvexlinse g1 und b1 festsetzen. Abstand d der beiden Linsen. \\
-Abstand vergrößern, zweite Bildweite b2 messen und Gegenstandsweiter g2 durch g2=-(b1-d) bestimmen.\\
-in linsengleichung einsetzen
-
-\subsubsection*{Brechkraft der Linsen}
+\begin{center}
+\begin{figure}
+\caption{Strahlengang bei der Konkavlinse}
+\includegraphics[scale=0.5]{graph3.eps}
+\end{figure}
+\end{center}
 \subsection{Diskussion}
-
+Das Besselverfahren liefert ein genaueres Ergebnis. Es liegt aber im Vertrauensbereich unseres anderen Ergebnisses - also können wir vertrauen dass wir mit beiden Methoden gut gemessen haben!\\
+Für die Konkavlinse können wir wie schon erwähnt leider kein glaubwürdiges Ergebnis angeben - unser einziger Messwert legt uns eine Brennweite von -2mm nahe, was uns als sehr falsch erklärt wurde. 
 \section{Linsenfehler}
 
 \subsection{Aufgabenstellung}
 Wir bestimmen die sphärische Aberration einer dicken Linse in den Durchgangsrichtungen plan-konvex und konvex-plan.
 \subsection{Grundlagen}
+Dadurch, dass achsennahe und achsenferne Strahlen in unterschiedlichen Winkeln auf die Linsenzonen fallen, werden sie in unterschiedlichen Brennpunkten gebrochen. Diesen Fehler nennt man sphärische Aberration.
 \subsection{Versuchsaufbau und Methoden}
+Wir haben eine dicke, plankonvexe Linse auf die wir durch verschiedene Schlitzblenden Licht fallen lassen. Dieses Licht wurde zuvor mit einer Hilfslinse in annähernd parallele Lichtbündel gebrochen. Durch die unterschiedliche Entfernung von der Achse der einzelnen Schlitze werden die durchgelassenen Strahlen in unterschiedlichen Brennpunkten zusammengeführt. Wir beobachten dies auf einem verschiebbaren Schirm - und messen die Position des Schirms, bei der die Strahlen aus einer Schlitzkonfiguration scharf zusammenfallen. \\
+Wir drehen nach dem ersten Durchgang die Linse aus plankonvexer Durchgangsrichtung zu konvexplaner um.
 \subsection{Durchführung}
+Bei der Durchführung ergaben sich keine Schwierigkeiten.
 \subsection{Ergebnisse}
 plan-konvex:\\
 Die Hauptebene der Linse befindet sich im Punkt: $(0.615 \pm 0.005)mm$\\
@@ -158,11 +163,24 @@ Die Hauptebene der Linse befindet sich im Punkt: $(0.615 \pm 0.002)mm$\\
 Enge Schlitze: $(0.695 \pm 0.001)mm$\\
 Mittlere Schlitze: $(0.689 \pm 0.001)mm$\\
 Weite Schlitze: $(0.683 \pm 0.001)$\\
+\begin{center}
+\begin{figure}
+\caption{Plan-Konvexe Richtung}
+\includegraphics[scale=0.7]{graph1.eps}
+\end{figure}
+\end{center}
+\begin{center}
+\begin{figure}
+\caption{Konvex-Plane Richtung}
+\includegraphics[scale=0.7]{graph2.eps}
+\end{figure}
+\end{center}
 \subsection{Diskussion}
 Aus den Messungen zeigt sich, dass die Durchgangsrichtung konvex-plan weniger Fehler aufweist. Dies liegt daran, dass das Licht in diesem Fall zweimal gebrochen wird: Einmal durch die konvexe, einmal durch die plane Ebene. \\
 In die andere Richtung ist das nicht so, da das Licht im Anfang durch die plane Ebene geht und hier nicht gebrochen wird. Dadurch stellt sich ein größerer Fehler aufgrund der konvexen Ebene ein. \\
+In unseren beiden Abbildungen haben wir die Ordinaten im selben Bereich von 0.68 m bis 0.75 m geplotted, damit man sofort sehen kann, dass bei konvex-planer Durchgangsrichtung die Brennpunkte näher an der Linse und näher aneinander liegen als bei plan-konvexer Richtung - wie erwartet. Dabei zeigt vor allem die geringere Distanz zwischen den Punkten selbst dass der Fehler geringer ist, da das bedeutet dass die Brennpunkte näher aneinander liegen. 
 
-EINFLUSS ANDERER LINSENFEHLER DISKUTIEREN?
+
 
 \section{Mikroskop}
 
@@ -173,7 +191,10 @@ Außerdem messen wir die Dicke eines Haares mit unserem Aufbau.
 Berechnung der Tubuslänge aus den Brennweiten und des Abstands der Linsen: $t=d-f_{Ob}-f_{Ok}$\\
 Berechnung der Vergrößerung: $V_M=\frac{t_1}{f_{Ob}}\frac{s_0}{f_{Ok}}$
 \subsection{Versuchsaufbau und Methoden}
+Wir haben einen Bausatz mit verschiedenen Linsen. Wir wählen zwei aus und befestigen sie an dünnen Stangen in einem fixen Abstand zueinander. Dann bewegen wir die beiden Linsen gemeinsam hin und her, bis wir den Punkt finden, an dem sie ein scharfes Bild ergeben. Von dort messen wir dann ihre Vergrößerung durch Vergleich eines Millimetermaßstabs, gesehen durch das Mikroskop, mit Millimeterpapier, gleichzeitig unvergrößert gesehen mit dem anderen Auge. \\
+Dann verändern wir die Distanz der Linsen zueinander und damit die Tubuslänge und wir wiederholen die Messung.
 \subsection{Durchführung}
+Es war sehr mühsam die beiden verschiedenen Millimetermaße gleichzeitig anzuvisieren und genau abzulesen. 
 \subsection{Ergebnisse}
 Brennweite der als Objektiv verwendeten Linse: $f_{Ob}=25mm$\\
 Brennweite der als Okular verwendeten Linse: $f_{Ok}=40mm$\\
@@ -187,17 +208,15 @@ V_{M_3}=5
 \end{gather*}
 \\
 Gemessene Vergrößerung:\\
-Für die erste Tubuslänge entsprechen 5mm 20 Einheiten auf der Skala, die 10mm/200 Striche zählt. Daraus ergibt sich eine Vergrößerung: $$\boxed{V_{M_1}=5}$$
-Für die zweite Tubuslänge entsprechen 5mm 30 Einheiten auf der Skala. Daraus ergibt sich eine Vergrößerung: $$\boxed{V_{M_2}=3.3}$$
-Für die dritte Tubuslänge entsprechen 5mm 23 Einheiten auf der Skala. Daraus ergibt sich eine Vergrößerung: $$\boxed{V_{M_3}=4.3}$$
+Für die erste Tubuslänge entsprechen 20 Einheiten auf der Skala  unter dem Mikroskop, die 10mm/200 Einheiten zählt, 5mm auf dem Papier ohne Mikroskop. Daraus ergibt sich eine Vergrößerung: $$\boxed{V_{M_1}=5}$$
+Für die zweite Tubuslänge entsprechen 30 Einheiten auf der Skala  5mm. Daraus ergibt sich eine Vergrößerung: $$\boxed{V_{M_2}=3.3}$$
+Für die dritte Tubuslänge entsprechen 23 Einheiten auf der Skala  5mm. Daraus ergibt sich eine Vergrößerung: $$\boxed{V_{M_3}=4.3}$$
 \\
-UNSICHERHEITEN BEI DER MESSUNG??
-\\
-Messung der Dicke eines Haares von Erik Grafendorfer:\\
+Messung der Dicke eines Haares:\\
 Das Haar ist 2 Einheiten dick: Dies entspricht bei der Vergrößerung $V_{M_3}$ einer Dicke von: 
 $$\boxed{d=(0.1 \pm 0.05)mm}$$
 \subsection{Diskussion}
-
+Die Diskrepanzen zwischen den vorhergesagten und den gemessenen Vergrößerungen erklären wir aus der Schwierigkeit die beiden Maßstäbe gleichzeitig zu vergleichen. Aber sie folgen immerhin dem selben Trend: 7/3/5 zu 5/3.3/4.3 oder hoch/niedrig/mittel. 
 \section{Fernrohr}
 \subsection{Aufgabenstellung}
 Wir bauen ein Keplersches und ein Galileisches Fernrohr und bestimmen die erreichte Fernrohrvergrößerung.
