@@ -48,7 +48,7 @@
 \end{verbatim}
 
 			\begin{flushleft}
-			\textbf{\Large{Experiment (Nr.7 , Titel):} Brechung, Dispersion, Refraktometrie}\\
+			\textbf{\Large{Experiment Nr.7:} Brechung, Dispersion, Refraktometrie}\\
 							%Experiment Nr. und Titel statt den Punkten eintragen
 			\LARGE{}	
 			\end{flushleft}
@@ -87,7 +87,7 @@
 \end{verbatim}
 							%Name des Betreuers, das Praktikum betreute.
 			\begin{flushleft}
-			\LARGE{\textbf{Betreuer:}}	\Large{}	
+			\LARGE{\textbf{Betreuer:}}	\Large{WIECZOREK}	
 			\end{flushleft}
 \newpage	
 
@@ -136,18 +136,22 @@ rot & 142°45' $\pm$ 5' & 48°20' $\pm$ 10' & 1.621 $\pm$ 0.002 & (644$\pm$2)nm\
 \hline
 \end{tabular}
 \end{center}
-DISPERSIONSKURVE\\
-A = 2.35779015e-02 +/- 1.69150366e+00
-t = 7.73779547e+01 +/- 1.56603499e+04
-y0 = 1.61951932e+00 +/- 1.66204717e+00
-y(x)=y0+exp(-(x-430)/t)
+%DISPERSIONSKURVE\\
+%A = 2.35779015e-02 +/- 1.69150366e+00
+%t = 7.73779547e+01 +/- 1.56603499e+04
+%y0 = 1.61951932e+00 +/- 1.66204717e+00
+%y(x)=y0+exp(-(x-430)/t)
+Unsere mit qtiplot gefittete Kurve hat die Form:
+\begin{equation}
+n(\lambda)=1.6 +0.02 \cdot e^{-\frac{\lambda-430}{77}}
+\end{equation}
 \begin{center}
 \begin{figure}
 \caption{Gefittete Kurve durch die Messpunkte}
 \includegraphics[scale=0.7]{fit.eps}
 \end{figure}
 \end{center}
-CAUCHY-GLEICHUNG\\
+Diese Kurve beschreibt unsere Messpunkte so gut, dass wir auf eine Ausgleichung mit der Cauchy-Gleichung verzichten können.
 \subsection{Diskussion}
 Wir verwenden trotz der Genauigkeit des Goniometers eine Unsicherheit von $\Delta\varphi_{min}$=5', da zwei weitere Ungenauigkeitsquellen beim Experimentieren hinzukommen: Einmal durch das Einstellen des Umkehrpunktes einer Spektrallinie auf die Mitte des Fadenkreuzes im Fernrohr, was eine Fingerspitzenangelegenheit ist. Und weiters, viel schwerwiegender, können wir beim Ablesen der Winkel durch die Lupe oft beide nicht genau erkennen, welche Grad-Markierung nun wirklich die richtige ist.\\
 Die Unsicherheit der Brechungsindizes erhalten wir durch Größtfehlerabschätzung.\\
@@ -175,16 +179,36 @@ Ist weiterhin BC die Distanz entlang dem Lot auf der Platte zwischen dem Austrit
 \frac{tan\varepsilon}{tan\varepsilon '}=\frac{d}{b}\approx\frac{sin\varepsilon}{sin\varepsilon '} = n
 \end{equation}
 \subsection{Versuchsaufbau und Methoden}
-Wir verwenden ein Mikroskop im Durchlichtverfahren. Durch den Feintrieb der Hebung des Objektivtisches können wir den Abstand, um den wir die planparellele Platte heben müssen, damit wir von einem scharfen Bild auf der Oberseite zu einem scharfen Bild auf der Unterseite kommen, messen. Dieser Abstand ist die scheinbare Dicke \textit{b}. Wir messen sie an 5 verschiedenen Stellen und bilden den Mittelwert. Dann bestimmten wir die tatsächliche Dicke \textit{d} der Platte mit einer Mikrometerschraube. Aus (\ref{brechzahlplatte}) bestimmen wir dann die Brechzahl der Platte.
-\subsection{Durchführung}
+Wir verwenden ein Mikroskop im Durchlichtverfahren. Durch den Feintrieb der Hebung des Objektivtisches können wir den Abstand, um den wir die planparellele Platte heben müssen, damit wir von einem scharfen Bild auf der Oberseite zu einem scharfen Bild auf der Unterseite kommen, messen. Dieser Abstand ist die scheinbare Dicke \textit{b}. Wir messen sie an 5 verschiedenen Stellen und bilden den Mittelwert. Dann bestimmen wir die tatsächliche Dicke \textit{d} der Platte mit einer Mikrometerschraube. Aus (\ref{brechzahlplatte}) bestimmen wir dann die Brechzahl der Platte.
 \subsection{Ergebnisse}
 Scheinbare Dicke b:
+Wir messen die scheinbare Dicke b durch Abzählen der Drehungen am Feintrieb des Mikroskops, bis der Strich auf der gegenüberliegenden Seite der Platte scharf im Bild erscheint, 5 mal:\\
+\begin{center}
 
-Tatsächliche Dicke d:
 
+\begin{tabular}{|c|}
+
+b\\
+\hline
+1.985mm\\
+2.475mm\\
+3.225mm\\
+2.650mm\\
+2.625mm\\
+\end{tabular}
+Der Mittelwert ist $\bar{b}$=(2.6 $\pm$ 0.2)mm
+\end{center}
+
+Wir messen die tatsächliche Dicke d mit der Mikrometerschraube und erhalten 3 mal den Messwert 3.27mm, 1 mal 3.26mm und 1 mal 3.28mm. Ihr Mittelwert ist
+
+$$\bar{d}=(3.27 \pm 0.01) mm$$
+
+Das Verhältnis aus d und b ergibt den Brechungsindex n:
+
+$$\frac{d}{b}=n=1.3 \pm 0.1$$
 
 \subsection{Diskussion}
-
+Hierzu ist nicht viel zu sagen, außer dass es sehr mühsam war die Drehungen des Feintriebs am Mikroskop zu zählen und wir daher die große Abweichung der einzelnen Messwerte erklären.
 \section{Refraktometrie}
 
 \subsection{Aufgabenstellung}
@@ -198,26 +222,42 @@ N=\sqrt{(\frac{cos\varphi + sin i}{sin \varphi})^2+1}
 i ist der Winkel der Totalreflexion ohne Probeflüßigkeit. \\
 Daraus bekommen wir mit dem Winkel der Totalreflexion mit Probeflüßigkeit \textit{e}:
 \begin{align}
+\label{ns}
 n=N \cdot sin e \\
 sin i= N \cdot sin r \\
 \varphi = r + e
 \end{align}
 n ist der Brechungsindex der Probeflüßigkeit, N der des Messprismas und e der Winkel 
 \subsection{Versuchsaufbau und Methoden}
-Wir verwenden ein Abbe-Refraktometer
-\subsection{Durchführung}
+Wir verwenden ein Abbe-Refraktometer unter dem Licht einer Natriumdampflampe, das wir erst kalibrieren. Dann messen wir den Brechungsindex der Flüßigkeit direkt mit einem Handrefraktometer der Firma Krüss.
 \subsection{Ergebnisse}
-Wellenlänge: 590nm
+Wellenlänge des verwendeten Lichts: 590nm
 
+Wir messen:
 Nullpunkt:\\
-121°56'\\
-Winkel i ohne Flüßigkeit:\\
-161°16'\\
-Winkel e mit Flüßigkeit:\\
-128°34'
+121°56' $\pm 1'$\\
+Winkel i ohne Flüßigkeit + Nullpunkt:\\
+161°16'$\pm 1'$\\
+i=39°40'$\pm 1'$\\
+Winkel e mit Flüßigkeit + Nullpunkt:\\
+128°34'$\pm 1'$\\
+e=6°38'$\pm 1'$\\
 
-Brechungsindex (Krüss)\\
-n=1.357\\
 
+
+Mit (\ref{NMessprisma}) erhalten wir für den Brechungsindex des Messprismas
+
+$$ N = 1.624 \pm 0.0002 $$
+
+und mit (\ref{ns}) 
+
+
+$$ n = N \cdot \sin e = 0.20 \pm 0.03 $$
+
+für den Brechungsindex der Flüßigkeit. \\
+
+Direkt mit dem Handrefraktometer der Firma Krüss gemessen ergibt sich der Brechungsindex der Flüßigkeit zu:\\
+\\n=1.357 $\pm$ 0.0005\\
 \subsection{Diskussion}
+Offensichtlich ist unser mit dem Abbe-Refraktometer gemessener Brechungsindex n falsch - er ist viel zu niedrig. Trotz mehrmaliger Rechnung und Überprüfung des Rechenwegs kommen wir zu keinem anderen Ergebnis. Wir vermuten, dass wir den Winkel e falsch gemessen haben - er ist es, dessen Sinus den Index so klein macht. 
 \end{document}
