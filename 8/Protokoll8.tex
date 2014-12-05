@@ -104,19 +104,68 @@ Wir berechnen uns daraus jeweils die Spaltbreite und den Spaltabstand.
 Wir verwenden einen He-Ne-Laser (Wellenlänge = 632.8nm, Strahldivergenz = 1.2 mrad)
 \subsection{Durchführung}
 \subsection{Ergebnisse}
-Ordnung n, Wellenlänge $\lambda$, Spaltbreite a, Beugungswinkel $\alpha_n$ der n-ten Ordnung\\
-Diagramm mit Ordinate $n\lambda$ und Abszisse $\alpha_n$ für min. 6 Ordnungen. -> Lineare Regression, daraus erhalten wir die Spaltbreite a. (Einzelspalt)
+Wir verwenden einen Laser mit Wellenlänge $\lambda=632.8nm$.\\
+\\
+\textbf{Einzelspalt:}\\
+\\
+$\alpha_n=\frac{d}{D}$, wobei d der Abstand der Minima vom Nullpunkt und D der Abstand des Spalts vom Schirm. Hier ist $D=1019mm$\\
 
+\begin{tabular}{|r|l|l|}
+\hline
+n & d & $\alpha_n$\\
+\hline
+1 & 5.70mm & 0.0056\\
+2 & 11.35mm & 0.0111\\
+3 & 17.55mm & 0.0172\\
+4 & 22.90mm & 0.0225\\
+5 & 28.30mm & 0.0278\\
+\hline
+\end{tabular}
+\vspace{0.8cm}
+\\Um die Spaltbreite a zu erhalten verwenden wir folgende Beziehung:
 $$n\lambda=a sin(\alpha_n)$$\\
-Daraus die Spaltbreite a:
-$$a=\frac{n\lambda}{sin(\alpha_n)}$$
+Wir lassen uns nun a mithilfe einer linearen Regression in QTI-Plot berechnen:\\
+Dabei wird die Formel $Y=AX+B$ verwendet, wobei bei uns $Y=n\lambda$, $X=sin(\alpha_n)\approx\frac{d}{D}$ und A die gesuchte Spaltbreite.\\
 
+\begin{quote}
+From x = 5.5937193326790e-03 to x = 2.7772325809620e-02\\
+B (y-intercept) = -1.3683403922226e+01 +/- 3.2623800650797e+01\\
+A (slope) = 1.1354388045435e+05 +/- 1.7547210828639e+03\\
+\end{quote}
+
+Daraus die Spaltbreite: 
+$$\boxed{a=0.1135 \pm 0.0018mm}$$\\
+
+\textbf{Doppelspalt:}\\
+\\
+Distanz der Minima vom Nullpunkt:\\
+$\alpha_n=\frac{d}{D}$, wobei d der Abstand der Minima vom Nullpunkt und D der Abstand des Spalts vom Schirm. Hier ist $D=1000mm$\\
+\begin{tabular}{|r|l|l|}
+\hline
+n & d & $\alpha_n$\\
+\hline
+1 & 5.30mm & 0.0053\\
+2 & 10.90mm & 0.0109\\
+3 & 16.15mm & 0.0162\\
+4 & 21.10mm & 0.0211\\
+\hline
+\end{tabular}
+\vspace{0.8cm}
+\\Lasse die Spaltbreite a wieder von QTI-Plot berechnen:\\
+From x = 5.3000000000000e-03 to x = 2.1100000000000e-02\\
+B (y-intercept) = -2.2813544750395e+01 +/- 3.4253583389353e+01\\
+A (slope) = 1.2009830082323e+05 +/- 2.3457335286015e+03\\
+\\
+Also ist die Spaltbreite
+$$\boxed{a=0.1201 \pm 0.0024 mm}$$
+\\
+Berechnung von b: Setze folgende Formeln gleich:\\
 $$sin(\alpha_{min,k})=\frac{\lambda}{2b}(2k+1)$$
-$$\delta=2\pi\frac{\Delta x}{\lambda}=2\pi\frac{b sin(\alpha)}{\lambda}$$\\
-daher Spaltbreite b beim Doppelspalt:\\
-$$b=\frac{\lambda (2k+1)}{2sin(\alpha_{min,k})}$$
-oder
-$$b=\delta\lambda(2\pi sin(\alpha))^{-1}$$
+$$sin(\alpha_{min,n})=\frac{n\lambda}{a}$$
+Daraus erhalten wir für b:
+$$b=\frac{\lambda a}{2n\lambda}(2k+1)=\frac{a(2k+1)}{2n}=\frac{9a}{2}$$
+nun setzen wir k=4, da wir im Hauptmaximum 8 Subminima gezählt haben:
+$$\boxed{b=0.540 \pm 0.011 mm}$$
 \section{Wellenlängenmessung mit dem Gitter}
 
 \subsection{Aufgabenstellung}
@@ -125,10 +174,45 @@ Wir vermessen das Beugungsbild eines durch eine Spektrallampe beleuchteten Beugu
 \subsection{Versuchsaufbau und Methoden}
 \subsection{Durchführung}
 \subsection{Ergebnisse}
-1.,2.,3. Ordnung für 3 Spektrallinien vermessen.\\
-Beziehung zwischen Gitterkonstante, Ordnung & Beugungswinkel.\\
-Literaturwerte\\
-Um welches Emissionsspektrum handelt es sich?\\
+Die Beziehung zwischen Wellenlänge, Gitterkonstante, Ordnung und Beugungswinkel:\\
+$$\lambda=\frac{sin(\vartheta)d}{n}$$
+wobei die Gitterkonstante $d=10^{-5}$.\\
+\\
+\begin{center}
+\begin{tabular}{|r|r|l|l|}
+\hline
+& Ordnung & Winkel & $\lambda$\\
+\hline
+blau & & &\\
+& 1 & 2°30' & 436nm\\
+& 2 & 4°58' & 433nm\\
+& 3 & 7°32' & 436nm\\
+\hline
+grün & & &\\
+& 1 & 3°4' & 535nm\\
+& 2 & 6°16' & 546nm\\
+& 3 & 9°23' & 543nm\\
+\hline
+gelb & & &\\
+& 1 & 3°18' & 576nm\\
+& 2 & 6°39' & 579nm\\
+& 3 & 10°0' & 579nm\\
+\hline
+\end{tabular}
+\end{center}
+\vspace{0.8cm}
+Daraus die gemittelten Wellenlängen:\\
+blau: 435nm\\
+grün: 541nm\\
+gelb: 578nm\\
+
+\subsection{Diskussion}
+Es handelt sich um ein Hg-Emissionsspektrum.\\
+\\
+Literaturwerte für Hg:\\
+435.84nm bzw. 434.75nm bzw. 433.92 für blau\\
+546.07nm für grün\\
+576.96nm bzw. 579.07nm für gelb\\
 
 \section{Newtonsche Ringe}
 
@@ -137,5 +221,21 @@ Um welches Emissionsspektrum handelt es sich?\\
 \subsection{Versuchsaufbau und Methoden}
 \subsection{Durchführung}
 \subsection{Ergebnisse}
+Wellenlänge beim grünen Filter: $\lambda=518 \pm 3nm$
+$$R=\frac{r_k^2}{k\lambda}$$
+
+Die Newtonschen Ringe der Reflexion sind auf dem Schirm 2x vergrößert. Bei der Transmission sind sie 4x vergrößert.
+
+\begin{tabular}{r|c|l}
+k & $r_k$ & \\
+1 & &\\
+2 & &\\
+3 & &\\
+4 & &\\
+5 & &\\
+6 & &\\
+7 & &\\
+
+\end{tabular}
 
 \end{document}

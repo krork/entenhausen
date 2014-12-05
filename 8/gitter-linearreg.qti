@@ -1,0 +1,175 @@
+QtiPlot 0.9.8 project file
+<scripting-lang>	muParser
+<windows>	2
+<table>
+Table1	30	2	12/5/14 11:11 AM
+geometry	0	0	445	220	active
+header	1[X]	2[Y]
+ColWidth	100	100	
+<com>
+<col nr="0">
+10^-5
+</col>
+</com>
+ColType	0;0/13	0;0/13
+ReadOnlyColumn	0	0
+HiddenColumn	0	0
+Comments			
+WindowLabel		2
+<data>
+0	4.36e-07	1
+1	4.33e-07	2
+2	4.366666666667e-07	3
+3	1e-05	
+4	1e-05	
+5	1e-05	
+6	1e-05	
+7	1e-05	
+8	1e-05	
+9	1e-05	
+10	1e-05	
+11	1e-05	
+12	1e-05	
+13	1e-05	
+14	1e-05	
+15	1e-05	
+16	1e-05	
+17	1e-05	
+18	1e-05	
+19	1e-05	
+20	1e-05	
+21	1e-05	
+22	1e-05	
+23	1e-05	
+24	1e-05	
+25	1e-05	
+26	1e-05	
+27	1e-05	
+28	1e-05	
+29	1e-05	
+</data>
+</table>
+<multiLayer>
+Graph1	1	1	12/5/14 11:21 AM
+geometry	445	0	535	472	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	517	409
+<PageGeometry>0.00948767	0.0117925	0.981025	0.964623</PageGeometry>
+PlotTitle	Title	#000000	4228
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>1</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	1	1	1	
+AxesTitles	%(?X)	%(?Y)		%(?Y)	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	5124	5124	5124
+AxesTitleDistance	2	2	2	2
+InvertedTitle	0	0	0	0
+TitleFont	Sans	13	75	0	0	0
+ScaleFont0	Sans	11	75	0	0	0
+ScaleFont1	Sans	11	75	0	0	0
+ScaleFont2	Sans	11	75	0	0	0
+ScaleFont3	Sans	11	75	0	0	0
+AxisFont0	Sans	11	50	0	0	0
+AxisFont1	Sans	11	50	0	0	0
+AxisFont2	Sans	11	50	0	0	0
+AxisFont3	Sans	11	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#1a1a1a	#1a1a1a	#1a1a1a	#1a1a1a
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	0
+curve	Table1_1	Table1_2	1	0	#ff0000	0	1	5	3	#ff0000	#ff0000	0	#000000	14	1	2	0	0	29	1
+<Function>
+<Type>0</Type>
+<Title>LinearFit1</Title>
+<Expression>A*x+B</Expression>
+<Variable>x</Variable>
+<Range>4.36e-07	1.31e-06</Range>
+<Points>2</Points>
+<Constant>A	2288133.81830367</Constant>
+<Constant>B	0.00779815553026752</Constant>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#ff0000</Color>
+	<Style>0</Style>
+	<Width>1</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+scale	0	0.5	3.5	0	7	5	0	0
+scale	1	0.5	3.5	0	7	5	0	0
+scale	2	4e-07	1.4e-06	0	6	5	0	0
+scale	3	4e-07	1.4e-06	0	6	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1
+MinorTicks	1	1	1	1
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	1	1	1
+<Legend>
+<Frame>1</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>4.250626566416e-07</x>
+<y>3.3996655518395</y>
+<right>6.73182957393484e-07</right>
+<bottom>3.10869565217391</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+\l(1)%(1)
+\l(2)%(2)
+</Text>
+<Font>Sans	11	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<open>1</open>
+<log>
+[12/5/14 11:21 AM	Plot: ''Graph1'']
+Linear Regression of dataset: Table1_2, using function: A*x+B
+Weighting Method: No weighting
+From x = 4.3600000000000e-07 to x = 1.3100000000000e-06
+B (y-intercept) = 7.7981555302675e-03 +/- 1.9911465718084e-02
+A (slope) = 2.2881338183037e+06 +/- 2.1161058882326e+04
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1.7104280258868e-04
+R^2 = 0.9999144785987
+RMSE (Root Mean Squared Error) = 0.0130783333261
+RSS (Residual Sum of Squares) = 0.0001710428025887
+---------------------------------------------------------------------------------------
+</log>
