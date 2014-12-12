@@ -1,0 +1,91 @@
+SciDAVis 1.0.8 project file
+<scripting-lang>	muParser
+<windows>	2
+<table>
+2982
+<table creation_time="2014-12-12 10:17:52:202" caption_spec="%n%C{ - }%c" name="Table1" columns="2" rows="30"><comment><![CDATA[]]></comment><column creation_time="2014-12-12 10:17:52:202" caption_spec="%n%C{ - }%c" name="Spannung  V" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2014-12-12 10:17:52:202" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2014-12-12 10:17:52:202" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">1.4940000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">1.4940000000000000e+00</row><row type="TypeDouble" index="2" invalid="no">1.4920000000000000e+00</row><row type="TypeDouble" index="3" invalid="no">1.4910000000000001e+00</row><row type="TypeDouble" index="4" invalid="no">1.4890000000000001e+00</row><row type="TypeDouble" index="5" invalid="no">1.4870000000000001e+00</row><row type="TypeDouble" index="6" invalid="no">1.4830000000000001e+00</row><row type="TypeDouble" index="7" invalid="no">1.4770000000000001e+00</row><row type="TypeDouble" index="8" invalid="no">1.4660000000000000e+00</row><row type="TypeDouble" index="9" invalid="no">1.4450000000000001e+00</row></column><column creation_time="2014-12-12 10:17:52:204" caption_spec="%n%C{ - }%c" name="Strom mA" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2014-12-12 10:17:52:204" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2014-12-12 10:17:52:204" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">7.4299999999999997e+00</row><row type="TypeDouble" index="1" invalid="no">8.2599999999999998e+00</row><row type="TypeDouble" index="2" invalid="no">9.2699999999999996e+00</row><row type="TypeDouble" index="3" invalid="no">1.0590000000000000e+01</row><row type="TypeDouble" index="4" invalid="no">1.2320000000000000e+01</row><row type="TypeDouble" index="5" invalid="no">1.4730000000000000e+01</row><row type="TypeDouble" index="6" invalid="no">1.8329999999999998e+01</row><row type="TypeDouble" index="7" invalid="no">2.4270000000000000e+01</row><row type="TypeDouble" index="8" invalid="no">3.5939999999999998e+01</row><row type="TypeDouble" index="9" invalid="no">6.9200000000000003e+01</row></column><column_width column="0">120</column_width><column_width column="1">120</column_width></table>
+geometry	-1	-19	572	409	active
+
+</table>
+<multiLayer>
+Graph1	1	1	12/12/14 11:07 AM
+geometry	491	-14	508	428	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	419	296
+Alignement	0	0
+<graph>
+ggeometry	5	5	489	369
+PlotTitle	Stromspannungskennlinie	#000000	4
+<Antialiasing>1</Antialiasing>
+Background	#ffffff	255
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0	#a0a0a4	2	0	#0000ff	0	0	#a0a0a4	2	0	0	0	2	0
+EnabledAxes	1	0	1	0	
+AxesTitles	Strom [mA]	Spannung [V]			
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	4	4	4	4
+TitleFont	Sans	13	75	0	0	0
+ScaleFont0	Sans	11	75	0	0	0
+ScaleFont1	Sans	11	75	0	0	0
+ScaleFont2	Sans	11	75	0	0	0
+ScaleFont3	Sans	11	75	0	0	0
+AxisFont0	Sans	11	50	0	0	0
+AxisFont1	Sans	11	50	0	0	0
+AxisFont2	Sans	11	50	0	0	0
+AxisFont3	Sans	11	50	0	0	0
+EnabledTickLabels	1	1	1	1	
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#1a1a1a	#1a1a1a	#1a1a1a	#1a1a1a
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	255
+curve	Table1_Strom mA	Table1_Spannung  V	1	0	0	0	1	7	1	0	0	0	0	0	1	2	0	0	29	1
+FunctionCurve	0,NonLinearFit1,x,7.43,35.94	100			0	1	1	0	1	0	0	0	19	0	0	0	0	2	0	152985296	-343597384	1
+<formula>
+a=-0.000995923244695565
+b=1.50150717852848
+
+a*x+b
+</formula>
+scale	0	1.44	1.5	0	8	5	0	0
+scale	1	1.44	1.5	0	8	5	0	0
+scale	2	0	80	0	8	5	0	0
+scale	3	0	80	0	8	5	0	0
+LabelsFormat	0	4	0	4	0	4	0	4	
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1	
+MinorTicks	1	1	1	1	
+TicksLength	5	9
+DrawAxesBackbone	1
+AxesLineWidth	1
+LabelsRotation	0	0
+</graph>
+</multiLayer>
+<log>
+[12/12/14 11:07 AM	Plot: ''Graph1'']
+Linear Regression fit of dataset: Table1_Spannung  V, using function: A*x+B
+Y standard errors: Unknown
+From x = 7.43 to x = 69.2
+B (y-intercept) = 1.49890467152454 +/- 0.000944514417003102
+A (slope) = -0.000813191571956962 +/- 3.40476347755812e-05
+--------------------------------------------------------------------------------------
+Chi^2/doF = 3.79225274765318e-06
+R^2 = 0.98616975657311
+---------------------------------------------------------------------------------------
+[12/12/14 11:09 AM	Plot: ''Graph1'']
+Non-linear fit of dataset: Table1_Spannung  V, using function: a*x+b
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 7.43 to x = 35.94
+a  = -0.000995923244695565 +/- 1.3967318979964e-05
+b  = 1.50150717852848 +/- 0.000251022348272116
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1.35308792311826e-07
+R^2 = 0.998625088078122
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+</log>
