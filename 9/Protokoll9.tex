@@ -213,9 +213,43 @@ Die Quellenspannung entspricht wie erwartet etwa der gemessenen Leerlaufspannung
 \section{Belasteter Spannungsteiler}
 
 \subsection{Aufgabenstellung}
+Wir bestimmen aus einer einfachen Schaltung, dem Spannungsteiler, die elektrischen Widerstände von drei Lastwiderständen mit zwei Spannungsmessgeräten.
 \subsection{Grundlagen}
+Wenn ein Potentiometer seinen Gesamtwiderstand R aufteilt in $R_1$ und (R-$R_1$), erhält man mittels der Kirchhoffschen Regeln für einen Lastwiderstand $R_L$ der zu $R_1$ parallel geschalten ist folgende Beziehung: 
+\begin{equation}
+\label{spannungsteiler}
+\frac{U_L}{U}=\frac{R_1R_L}{R_LR+R_1(R-R_1)}
+\end{equation}
+$U_L$ bezeichnet die Klemmenspannung am Lastwiderstand $R_L$, U die Gesamtspannung. Wir führen weitere Bezeichnungen ein:
+\begin{align*}
+r_L=\frac{R_L}{R} \\
+r_1=\frac{R_1}{R} \\
+u = \frac{U_L}{U}
+\end{align*}
+Mit diesen erhalten wir schließlich für den Lastwiderstand $R_L$:
+\begin{equation*}
+r_L=-\frac{u\cdot r_1(1-r_1)}{u-r_1}
+\end{equation*}
+\begin{equation}
+\label{spannungsteiler_umgeformt}
+R_L=-R\cdot \frac{u\cdot r_1(1-r_1)}{u-r_1}
+\end{equation}
+
 \subsection{Versuchsaufbau und Methoden}
+Wir schalten einen Lastwiderstand parallel zu einem Teilwiderstand eines Potentiometer und in Serie zu seinem anderen Teilwiderstand und messen mit zwei gleichen Spannungsmessgeräten die Spannungen am Teilwiderstand und an allen Widerständen. Mit (\ref{spannungsteiler}) und dem Verhältnis der Teilwiderstände am Potentiometer ermitteln wir dann den Lastwiderstand. 
 \subsection{Durchführung}
+Wir verwenden zwei Fluke 183 Multimeter, die im Bereich von 5V Gleichspannung mit 5000 Zählimpulsen zu 1 mV auf $\pm (0.07\%$ +1 Zählimpuls) genau messen.
 \subsection{Ergebnisse}
+\begin{center}
+\begin{figure}
+\includegraphics[scale=0.5,angle=-90]{spannungsteiler.eps}
+\end{figure}
+\end{center}
+Mit  (\ref{spannungsteiler_umgeformt}) und Größtfehlerabschätzung:
+
+$$R_A=(1221\pm6) \Omega$$
+$$R_B=(3321 \pm 11) \Omega $$
+$$R_C=(6831 \pm 31) \Omega $$
+
 \subsection{Diskussion}
 \end{document}
