@@ -103,41 +103,38 @@ CFF=\frac{P_{max}}{I_{KS}\cdot U_{LL}}
 \end{equation}
 Die Leistung ergibt sich nach dem Ohmschen Gesetz. 
 \subsection{Versuchsaufbau und Methoden}
-An eine künstlich beleuchtete Solarzelle werden ein Potentiometer und ein Messwiderstand in Serie geschlossen. Zwei Spannungsmessgeräte messen die Gesamtspannung sowie die Spannung am Messwiderstand, um den fließenden Strom zu ermitteln. Diese Methode wird verwendet um uns nicht um den interessanten Fall des Kurzschlusses bei 0 $\Omega$ durch den Innenwiderstand eines Strommessgerätes zu betrügen. Dann wird der Widerstand am Potentiometer in Schritten verändert, bei denen ähnlich große Spannungsänderungen beobachtet werden. Schließlich werden nahe der Leerlaufspannung starke Stromänderungen beobachtet, und nahe des Kurzschlussstroms starke Gesamtspannungsänderungen.
+An eine künstlich beleuchtete Solarzelle werden ein Potentiometer und ein Messwiderstand in Serie geschlossen. Zwei Spannungsmessgeräte messen die Gesamtspannung sowie die Spannung am Messwiderstand, um den fließenden Strom zu ermitteln. Diese Methode wird verwendet um uns nicht um den interessanten Fall des Kurzschlusses bei 0 $\Omega$ durch den Innenwiderstand eines Strommessgerätes zu betrügen. Dann wird der Widerstand am Potentiometer in Schritten verändert, bei denen ähnlich große Spannungsänderungen beobachtet werden. Schließlich werden nahe der Leerlaufspannung starke Stromänderungen beobachtet, und nahe des Kurzschlussstroms starke Gesamtspannungsänderungen.\\
+Aus dem Plot der Strom-Spannungs-Kennlinie können wir durch Extrapolation den Kurzschlussstrom wenn der Spannung 0 und die Leerlaufspannung wenn der Strom 0 wird ermitteln.\\
+Ermitteln wir aus dem Strom und der Spannung die Leistung und plotten diese, finden wir die maximale Leistung und den dazugehörigen Lastwiderstand - durch Vergleich dieser maximalen Leistung mit der Leistung aus dem Produkt des Kurzschlussstroms und der Leerlaufspannung bekommen wir schließlich den Kurvenfüllfaktor CFF.
 \subsection{Durchführung}
 Wir verwenden zwei Fluke 183 Messgeräte die im Bereich von 5V Gleichspannung mit 5000 Zählimpulsen zu 1 mV auf $\pm (0.07\%$ +1 Zählimpuls) genau messen.
 \subsection{Ergebnisse}
 Distanz der Solarzelle von der Lichtquelle: 21.5 cm\\
+Maximalwiderstand des Potentiometers $R_L$: 1k$\Omega$ \\
+Verwendeter Messwiderstand: $R_1$ = 0.517$\Omega$\\
+Durch Extrapolation mit SciDaVis, einem qtiplot-fork, konnten wir den Kurzschlussstrom und die Leerlaufspannung ermitteln. \\
+In der folgenden Tabelle sind der Kurzschlussstrom $I_{KS}$, die Leerlaufspannung $U_{LL}$, der Kurvenhüllfaktor CFF, der optimale Lastwiderstand $R_L$, sowie die maximale Leistung $P_{max}$ der Solarzelle angegeben.\\
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline 
+$I_{KS}$ & $U_{LL}$ & CFF & $R_L$ & $P_{max}$ \\
+\hline \hline
+(0.049$\pm $0.001)A & (0.93 $\pm$ 0.02)V & (0.661 $\pm$ 0.008) & (17.9 $\pm $0.6) $\Omega$ &(0.030 $\pm$ 0.001) W \\
+\hline
+\end{tabular}\\
+\end{center}
 \begin{center}
 \begin{figure}
 \includegraphics[scale=0.7,angle=-90]{stromspannungsolar.eps}
 \end{figure}
 \end{center}
-
 \begin{center}
 \begin{figure}
 \includegraphics[scale=0.7,angle=-90]{leistung.eps}
 \end{figure}
 \end{center}
-
-
-RL 1kOhm +- 5%, +- 0.25% Lin
-RI 0.517 Ohm
-
-
-a  = -1.9478565821757e-06 +/- 7.28264049637319e-07
-b  = 0.0471846650417822 +/- 0.000305897009666383
-d  = 10.8805826107384 +/- 0.414394714820632
---------------------------------------------------------------------------------------
-
-R2 = 0.997576576697476
-
-Wolfram Alpha: $U_{LL}$=0.927807
-$i_{KS}=(0.049\pm0.001)A$
-Optimaler Lastwiderstand:
-$$R_L=(17.9 \pm 0.6) \Omega $$
 \subsection{Diskussion}
-
+Dadurch, dass bei der Berechnung von CFF die Ausdrücke in Zähler und Nenner mit dem selben Messgerät bestimmt wurden sind ihre Unsicherheiten korreliert und ihre relativen Unsicherheiten konnten subtrahiert werden. Dadurch haben wir ein schön genaues Ergebnis erhalten.
 \section{Widerstandsbestimmung mittels Wheatstone Brücke}
 
 \subsection{Aufgabenstellung}
