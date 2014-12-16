@@ -87,20 +87,55 @@
 \end{verbatim}
 							%Name des Betreuers, das Praktikum betreute.
 			\begin{flushleft}
-			\LARGE{\textbf{Betreuer:}}	\Large{}	
+			\LARGE{\textbf{Betreuer:}}	\Large{KLEPP}	
 			\end{flushleft}
 \newpage	
 
 \section{Photovoltaische Solarzellen als Gleichstromquelle}
 
 \subsection{Aufgabenstellung}
+Verschiedene Kenndaten einer Solarzelle werden durch Spannungsmessungen an verschiedenen Stellen in einem Stromkreis ermittelt: Der Kurzschlussstrom $I_{KS}$, die Leerlaufspannung $U_{LL}$, der Kurvenfüllfaktor $CFF$ sowie der optimale Verbraucherwiderstand $R_L$.
 \subsection{Grundlagen}
+Eine Solarzelle liefert Gleichstrom, was bedeutet das bei wachsendem Verbraucherwiderstand $R_L$ die Spannung ebenfalls wächst - was bei $R_L \rightarrow \infty$ problematisch wird. Die Spannung wächst dann gleichermaßen. Um das zu verhindern werden in Solarzellen intern Dioden eingebaut, die ab einer gewissen Leerlaufspannung $U_{LL}$ beginnen, den Kurzschlussstrom $I_{KS}$ intern abfließen zu lassen. Durch die Konstruktion fließt ständig Strom ab. Man will diesen Verluststrom natürlich gering halten. Dazu wird versucht, den Kurzschlussstrom erst sprungartig ab der Leerlaufspannung abfließen zu lassen. Der Faktor, mit dem dieser Sprung gelingt, wird Kurvenfüllfaktor $CFF$ genannt. Er beschreibt das Verhältnis aus maximal mit der Zelle erreichbaren Leistung und der Leistung zum Kurzzschluss.\\
+\begin{equation}
+\label{Kurvenfaktor}
+CFF=\frac{P_{max}}{I_{KS}\cdot U_{LL}}
+\end{equation}
+Die Leistung ergibt sich nach dem Ohmschen Gesetz. 
 \subsection{Versuchsaufbau und Methoden}
+An eine künstlich beleuchtete Solarzelle werden ein Potentiometer und ein Messwiderstand in Serie geschlossen. Zwei Spannungsmessgeräte messen die Gesamtspannung sowie die Spannung am Messwiderstand, um den fließenden Strom zu ermitteln. Diese Methode wird verwendet um uns nicht um den interessanten Fall des Kurzschlusses bei 0 $\Omega$ durch den Innenwiderstand eines Strommessgerätes zu betrügen. Dann wird der Widerstand am Potentiometer in Schritten verändert, bei denen ähnlich große Spannungsänderungen beobachtet werden. Schließlich werden nahe der Leerlaufspannung starke Stromänderungen beobachtet, und nahe des Kurzschlussstroms starke Gesamtspannungsänderungen.
 \subsection{Durchführung}
+Wir verwenden zwei Fluke 183 Messgeräte die im Bereich von 5V Gleichspannung mit 5000 Zählimpulsen zu 1 mV auf $\pm (0.07\%$ +1 Zählimpuls) genau messen.
 \subsection{Ergebnisse}
+Distanz der Solarzelle von der Lichtquelle: 21.5 cm\\
+\begin{center}
+\begin{figure}
+\includegraphics[scale=0.7,angle=-90]{stromspannungsolar.eps}
+\end{figure}
+\end{center}
+
+\begin{center}
+\begin{figure}
+\includegraphics[scale=0.7,angle=-90]{leistung.eps}
+\end{figure}
+\end{center}
+
+
 RL 1kOhm +- 5%, +- 0.25% Lin
 RI 0.517 Ohm
 
+
+a  = -1.9478565821757e-06 +/- 7.28264049637319e-07
+b  = 0.0471846650417822 +/- 0.000305897009666383
+d  = 10.8805826107384 +/- 0.414394714820632
+--------------------------------------------------------------------------------------
+
+R2 = 0.997576576697476
+
+Wolfram Alpha: $U_{LL}$=0.927807
+$i_{KS}=(0.049\pm0.001)A$
+Optimaler Lastwiderstand:
+$$R_L=(17.9 \pm 0.6) \Omega $$
 \subsection{Diskussion}
 
 \section{Widerstandsbestimmung mittels Wheatstone Brücke}
@@ -112,7 +147,10 @@ Außerdem messen wir den Gesamtwiderstand zweier Widerstände einmal in einer Re
 \subsection{Versuchsaufbau und Methoden}
 \subsection{Durchführung}
 \subsection{Ergebnisse}
+
 Testwiderstand R0: 1kOhm
+in der Reihenschaltung für die Widerstände G und M: 8.10 k$\Omega$
+in der Parallelschaltung für G und M: 1.026 k$\Omega$
 \subsection{Diskussion}
 
 \section{Reale Spannungsquelle}
@@ -240,16 +278,19 @@ Wir schalten einen Lastwiderstand parallel zu einem Teilwiderstand eines Potenti
 \subsection{Durchführung}
 Wir verwenden zwei Fluke 183 Multimeter, die im Bereich von 5V Gleichspannung mit 5000 Zählimpulsen zu 1 mV auf $\pm (0.07\%$ +1 Zählimpuls) genau messen.
 \subsection{Ergebnisse}
+Wir präsentieren unsere Messergebnisse in der Grafik mit Fehlerbalken:
 \begin{center}
-\begin{figure}
+\begin{figure} [H]
 \includegraphics[scale=0.5,angle=-90]{spannungsteiler.eps}
 \end{figure}
 \end{center}
-Mit  (\ref{spannungsteiler_umgeformt}) und Größtfehlerabschätzung:
+Daraus erhalten wir mit der Formel (\ref{spannungsteiler_umgeformt}) und Größtfehlerabschätzung für die getesteten Widerstände, wobei wir annehmen dass $\Delta r_1$=0.001 ist:
 
 $$R_A=(1221\pm6) \Omega$$
 $$R_B=(3321 \pm 11) \Omega $$
 $$R_C=(6831 \pm 31) \Omega $$
 
+Die relative Unsicherheit aller Messwerte beträgt $\approx$ 0.5 \%.
 \subsection{Diskussion}
+Wenn wir eine Unsicherheit für $\Delta r_1$ von 0.01 annehmen, was wegen dem Bestimmen des von der Mediane fernsten Punkts durch Augenmaß möglicherweise sinnvoll ist, wird die relative Unsicherheit der getesteten Lastwiderstände 8\% groß, im Vergleich zu  0.5 \%. \\
 \end{document}
