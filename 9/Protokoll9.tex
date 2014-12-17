@@ -2,7 +2,7 @@
 \usepackage{amsmath}
 \usepackage[utf8]{inputenc}
 \usepackage{float}
-\usepackage{epsfig,graphicx}
+\usepackage{graphicx}
 \usepackage{xcolor,import}
 \usepackage[german]{babel}
 \usepackage{textcomp}
@@ -112,7 +112,8 @@ Wir verwenden zwei Fluke 183 Messgeräte die im Bereich von 5V Gleichspannung mi
 Distanz der Solarzelle von der Lichtquelle: 21.5 cm\\
 Maximalwiderstand des Potentiometers $R_L$: 1k$\Omega$ \\
 Verwendeter Messwiderstand: $R_1$ = 0.517$\Omega$\\
-Durch Extrapolation mit SciDaVis, einem qtiplot-fork, konnten wir den Kurzschlussstrom und die Leerlaufspannung ermitteln. \\
+\\
+Durch Extrapolation mit SciDaVis, einem qtiplot-fork, konnten wir den Kurzschlussstrom und die Leerlaufspannung ermitteln. (Grafiken auf der nächsten Seite)\\
 In der folgenden Tabelle sind der Kurzschlussstrom $I_{KS}$, die Leerlaufspannung $U_{LL}$, der Kurvenhüllfaktor CFF, der optimale Lastwiderstand $R_L$, sowie die maximale Leistung $P_{max}$ der Solarzelle angegeben.\\
 \begin{center}
 \begin{tabular}{|c|c|c|c|c|}
@@ -125,20 +126,17 @@ $I_{KS}$ & $U_{LL}$ & CFF & $R_L$ & $P_{max}$ \\
 \end{center}
 \begin{center}
 \begin{figure}
-\includegraphics[scale=0.7,angle=-90]{stromspannungsolar.eps}
+\includegraphics[scale=0.6,angle=-90]{stromspannungsolar.eps}
 \end{figure}
 \end{center}
 \begin{center}
 \begin{figure}
-\includegraphics[scale=0.7,angle=-90]{leistung.eps}
+\includegraphics[scale=0.6,angle=-90]{leistung.eps}
 \end{figure}
 \end{center}
 \subsection{Diskussion}
-Dadurch, dass bei der Berechnung von CFF die Ausdrücke in Zähler und Nenner mit dem selben Messgerät bestimmt wurden sind ihre Unsicherheiten korreliert und ihre relativen Unsicherheiten konnten subtrahiert werden. Dadurch haben wir ein schön genaues Ergebnis erhalten.
-
-
+Dadurch, dass bei der Berechnung von CFF die Ausdrücke in Zähler und Nenner mit dem selben Messgerät bestimmt wurden sind ihre Unsicherheiten korreliert und ihre relativen Unsicherheiten konnten subtrahiert werden. Dadurch haben wir ein schön genaues Ergebnis erhalten.\\
 \newpage
-
 
 
 \section{Widerstandsbestimmung mittels Wheatstone Brücke}
@@ -147,7 +145,8 @@ Dadurch, dass bei der Berechnung von CFF die Ausdrücke in Zähler und Nenner mi
 Wir messen drei unbekannte Widerstände mit Hilfe einer Brückenschaltung.
 Außerdem messen wir den Gesamtwiderstand zweier Widerstände einmal in einer Reihenschaltung und einmal in einer Parallelschaltung und vergleichen unsere Messungen mit berechneten Ergebnissen.
 \subsection{Grundlagen}
-Eine Wheatstone Brücke ist eine Messungsmethode zur Bestimmung von Widerständen. Sie besteht aus vier Widerständen, die zueinander parallel geschalten werden. 
+Eine Wheatstone Brücke ist eine Messungsmethode zur Bestimmung von Widerständen. Sie ist deswegen sinnvoll, weil Strom und Spannung nicht gemessen werden müssen und daher keine zusätzlichen Unsicherheiten auftreten.\\
+Sie besteht aus vier Widerständen, die zueinander parallel geschalten werden. 
 Von den Widerständen ist einer bereits bekannt ($R_0$), einer wird gesucht ($R_x$) und von den restlichen zweien wird nur das Verhältnis benötigt ($R_a$, $R_b$).\\
 Ist dieses Verhältnis genau so groß wie das Verhältnis des unbekannten zum bekannten Widerstand, gibt es keinen Potentialunterschied zwischen den beiden Zweigen. Also ist dort die Spannung gleich null.\\
 Mathematisch bedeutet das: $I_1 R_a = I_2 R_x$ und $I_1 R_b = I_2 R_0$. Daraus erhält man: \\
@@ -156,22 +155,68 @@ und hat so also den gesuchten Widerstand gefunden.
  
 \subsection{Versuchsaufbau und Methoden}
 In unserem Experiment handelt es sich bei $R_a$ und $_b$ um einen Schleifdrahtwiderstand. Das Verhältnis der Widerstände $R_a : R_b$ kann man nun auch schreiben als das Verhältnis der Längen $a : b$, da der Draht über die gesamte Länge konstanten Querschnitt und konstanten spezifischen Widerstand hat.\\
+Der Widerstand kann nun also bestimmt werden durch:\\
+\begin{equation}
+\label{Widerstand}
+R_X=R_0 \frac{a}{b}
+\end{equation}
+\
 \\
-Außerdem benötigen wir ein Gleichspannungsnetzgerät (2.3V), ein Ampèremeter, eine Widerstandsdekade (stellt unseren $R_0$ dar) und einen unbekannten Widerstand. 
+Außerdem benötigen wir ein Gleichspannungsnetzgerät (2.3V); ein Ampèremeter, um zu sehen, wann kein Strom mehr fließt; eine Widerstandsdekade (unser $R_0$) mit Unsicherheit: 1\% Herstellerangabe; und einen unbekannten Widerstand. 
 
 \subsection{Durchführung}
 \subsection{Ergebnisse}
-In der Brücke:
-RM: 494mm, 7060 Ohm
-RF: 475mm, 360 Ohm
-RG: 463mm, 1360 Ohm
+In der Brücke:\\
+$R_M=7060 \Omega$ bei x=494mm.\\ 
+$R_F=360 \Omega$ bei x=475mm.\\
+$R_G=1360 \Omega$ für x=463mm.\\
+\\
+Dies sind allerdings noch nicht die richtigen Werte für unsere Widerstände, da es nicht jedes Mal möglich war, den Schieber genau in die Mitte zu schieben und gleichzeitig keinen Stromfluss zu haben. \\
+\\
+Wir schreiben hier zwei Versionen der möglichen Ergebnisse für die Widerstände (Erklärung in der Diskussion): \\
+\\
+Für angegebene Distanz x=a in Formel \ref{Widerstand}:\\
+$R_M=R_0 (x/b)=7060*0.976=(6891 \pm 69)\Omega$\\
+$R_F=R_0 (x/b)=360*0.905=(325.8 \pm 3.3)\Omega$\\
+$R_G=R_0 (x/b)=1360*0.862=(1172 \pm 12)\Omega$\\
+\\
+Für angegebene Distanz x=b in Formel \ref{Widerstand}:\\
+$R_M=R_0 (a/x)=7060*1.024=(7229 \pm 73)\Omega$\\
+$R_F=R_0 (a/x)=360*1.105=(397.8 \pm 4.0)\Omega$\\
+$R_G=R_0 (a/x)=1360*1.160=(1577 \pm 16)\Omega$\\
+\\
+\\
+In der Serienschaltung für die Widerstände G und M: 
+$$(8100 \pm 81)\Omega$$\\
+In der Parallelschaltung für G und M: 
+$$(1026 \pm 11)\Omega$$
 
-Testwiderstand R0: 1kOhm
-in der Reihenschaltung für die Widerstände G und M: 8.10 k$\Omega$
-in der Parallelschaltung für G und M: 1.026 k$\Omega$
+
 \subsection{Diskussion}
 \textbf{Zu Fehlerrechnung / Genauigkeit:}
-Das Ergebnis wird deswegen genauer, wenn sich der Schieberegler in der Mitter der Widerstandsleiste befindet, weil die Unsicherheit auf der Längenskala eine fixe Größe hat. Prozentuell wird die relative Unsicherheit dann aber umso größer, je kleiner die gemessene Länge ist. 
+Das Ergebnis wird deswegen genauer, wenn sich der Schieberegler in der Mitte der Widerstandsleiste befindet, weil die Unsicherheit auf der Längenskala eine fixe Größe hat. Prozentuell wird die relative Unsicherheit dann aber umso größer, je kleiner die gemessene Länge ist. Befindet sich der Regler (nahezu) in der Mitte, muss diese Unsicherheit aber nicht mehr beachtet werden, da sie beidseitig gleich groß ist und im Verhältnis verschwindet.\\
+
+
+\newpage
+
+\textbf{Ergebnisse:}\\
+Es ergibt sich der ungeschickte Zustand, dass jene Praktikumsteilnehmerin diesen Teil des Protokolls schreibt, die genau zur Zeitpunkt des Messens bei der Grundlagenüberprüfung des Betreuers war. Dadurch ist hier nicht sicher, ob die von ihrem Partner niedergeschriebenen Längen die Länge a oder die Länge b bezeichnen. Es werden daher beide Möglichkeiten in Betracht gezogen.\\
+Wir beachten nun zusätzlich noch die Ergebnisse aus der in Serienschaltung bzw. Parallelschaltung durchgeführten Messung für die Widerstände $R_M$ und $R_G$. Diese vergleichen wir mit berechneten Werten aus der Messung der Einzelwiderstände:\\
+\\
+Serienschaltung, mit x=a: $R_M+R_G=(8063 \pm 81)\Omega$\\
+Serienschaltung, mit x=b: $R_M+R_G=(8806 \pm 88)\Omega$\\
+Parallelschaltung, mit x=a: $(\frac{1}{R_M}+\frac{1}{R_G})^{-1}=(1002 \pm 10)\Omega$\\
+Parallelschaltung, mit x=b: $(\frac{1}{R_M}+\frac{1}{R_G})^{-1}=(1295 \pm 13)\Omega$\\
+\\
+Gemessener Wert in Serienschaltung: $(8100 \pm 81)\Omega$\\
+Gemessener Wert in Parallelschaltung: $(1026 \pm 11)\Omega$\\
+\\
+Aus dem Vergleich mit der Messung ist leicht ersichtlich, dass die Werte mit angenommener Länge x=a sehr gut zu unseren experimentell ermittelten Werten passen.\\
+Wir können nun also feststellen, dass unsere Einzelwiderstände die folgenden Ergebnisse bringen:\\
+$$R_M=(6891 \pm 69)\Omega$$
+$$R_F=(325.8 \pm 3.3)\Omega$$
+$$R_G=(1172 \pm 12)\Omega$$
+
 
 
 
