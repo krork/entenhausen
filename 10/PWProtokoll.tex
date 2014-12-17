@@ -1,0 +1,183 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage{float}
+\usepackage{epsfig,graphicx}
+\usepackage{xcolor,import}
+\usepackage[german]{babel}
+\usepackage{textcomp}
+\usepackage{mathtools}
+
+\begin{document}
+\thispagestyle{empty}
+			\begin{center}
+			\Large{Fakultät für Physik}\\
+			\end{center}
+\begin{verbatim}
+
+
+\end{verbatim}
+							%Eintrag des Wintersemesters
+			\begin{center}
+			\textbf{\LARGE WINTERSEMESTER 2014/15}
+			\end{center}
+\begin{verbatim}
+
+
+\end{verbatim}
+			\begin{center}
+			\textbf{\LARGE{Physikalisches Praktikum 1}}
+			\end{center}
+\begin{verbatim}
+
+
+
+
+\end{verbatim}
+
+			\begin{center}
+			\textbf{\LARGE{PROTOKOLL}}
+			\end{center}
+			
+\begin{verbatim}
+
+
+
+
+
+\end{verbatim}
+
+			\begin{flushleft}
+			\textbf{\Large{Experiment Nr. 10:}} \Large{Wechselstrom I:
+Temperaturabhängigkeit des elektrischen Widerstandes,
+Transformator}\\
+							%Experiment Nr. und Titel statt den Punkten eintragen
+			\LARGE{}	
+			\end{flushleft}
+
+\begin{verbatim}
+
+\end{verbatim}	
+							%Eintragen des Abgabedatums, oder des Erstelldatums des Protokolls
+			\begin{flushleft}
+			\textbf{\Large{Datum:}} \Large{19.12.2014}
+			\end{flushleft}
+			
+\begin{verbatim}
+\end{verbatim}
+							%Namen der Protokollschreiber
+		\begin{flushleft}
+			\textbf{\Large{Namen:}} \Large{Veronika Bachleitner, Erik Grafendorfer}
+			\end{flushleft}
+
+\begin{verbatim}
+
+
+\end{verbatim}
+							%Kurstag und Gruppennummer, zb. Fr/5
+			\begin{flushleft}
+			\textbf{\Large{Kurstag/Gruppe:}} \Large{Fr/1}
+			\end{flushleft}
+
+\begin{verbatim}
+
+
+
+
+
+
+\end{verbatim}
+							%Name des Betreuers, das Praktikum betreute.
+			\begin{flushleft}
+			\LARGE{\textbf{Betreuer:}}	\Large{KLEPP}	
+			\end{flushleft}
+\newpage	
+
+\section{Temperaturabhängigkeit des elektrischen Widerstandes}
+
+\subsection{Aufgabenstellung}
+Wir bestimmen Eigenschaften verschiedener eines Metalls, eines Halbleiters und eines elektrolytischen Leiters durch Messen ihrer Stromleitungseigenschaften unter verschiedenen Temperaturen.
+\subsection{Grundlagen}
+\subsubsection*{Metallischer Leiter}
+Der temperaturabhängige Widerstand R(T) eines Metallischen Leiters verläuft bei mittleren Temperaturen näherungsweise linear:
+\begin{equation}
+\label{MetallWiderstand}
+R(T) = R_{T0} (1+ \alpha (T-T_0))
+\end{equation}
+Wobei $ R_{T0}$ der Ausgangs- bzw. Referenzwiderstand ist,
+T die Temperatur, und 
+$T_0$ die Ausgangs- bzw. Referenztemperatur. 
+$\alpha$ ist der Temperaturkoeffizient.\\
+
+\subsubsection*{Halbleiter}
+Der Widerstand von Halbleitern bei höheren Temperaturen kann mit einer Exponentialfunktion beschrieben werden.
+
+\begin{equation}
+\label{HalbleiterWiderstand}
+R(T)=R_{T0}e^{-b(\frac{1}{T_0}-\frac{1}{T})}
+\end{equation}
+
+\subsubsection*{Elektrolytischer Leiter}
+
+Die Viskosität $\eta$ einer Flüßigkeit sinkt mit steigender Temperatur - dabei nimmt die Beweglichkeit $\mu$ der Ladungsträger zu, also steigt die Leitfähigkeit $\sigma$.
+
+\begin{equation}
+\label{Viskositaet}
+\eta = \eta_0 \cdot e^{\frac{E_A}{k_B \cdot T}}
+\end{equation}
+$E_A$ bezeichnet die Aktivierungsenergie.
+\begin{equation}
+\label{LeitfaehigkeitElektrolyt}
+\sigma  \propto \mu \propto \frac{1}{\eta} \propto e^{-\frac{E_A}{k_B \cdot T}}
+\end{equation}
+
+Die Leitfähigkeit $\sigma$ ist indirekt proportional zum Widerstand, also sinkt dieser bei steigender Temperatur.
+
+\begin{equation}
+\label{WiderstandElektrolyt}
+R(T) \propto \frac{1}{\sigma} \propto e^{\frac{E_A}{k_B \cdot T}}
+\end{equation}
+
+\subsection{Versuchsaufbau und Methoden}
+\subsubsection*{Metall}
+Beim metallischen Leiter formen wir (\ref{MetallWiderstand}) um zu 
+\begin{equation}
+\label{alpha-metall}
+\frac{R(T)}{R_0}-1=\alpha(T-T_0)
+\end{equation}
+Durch eine lineare Regression können wir den Temperaturkoeffizienten $\alpha$ ermitteln.
+\subsubsection*{Halbleiter}
+Zur Bestimmung der Lückenenergie $E_g$ wird (\ref{HalbleiterWiderstand}) umgeformt und wir können daraus durch eine lineare Regression den Faktor b ermitteln.
+
+\begin{equation}
+\label{LueckenEnergieEg}
+f(\frac{1}{T})=\ln\frac{R(T)}{R_{T0}}=b\cdot \frac{1}{T}+d
+\end{equation}
+
+\begin{equation}
+\label{b-halbleiter}
+b=\frac{E_g}{2k_B}
+\end{equation}
+Mit $k_{B}=8.616*10^{-5}eV/K$ erhalten wir $E_g$.
+
+\subsubsection*{Elektrolyt}
+Analog zum Halbleiter ermitteln wir eine Regressionsgerade, deren Steigung die Aktivierungsenergie $E_A$ beschreibt. Wir können die Gleichung (\ref{LueckenEnergieEg}) direkt verwenden. Nur b lautet jetzt
+\begin{equation}
+\label{b-elektrolyt}
+b=\frac{E_A}{k_B}
+\end{equation}
+
+\subsection{Durchführung}
+\subsection{Ergebnisse}
+0 < EA < 20kJ/mol (Sollwert)
+\subsection{Diskussion}
+
+\section{Transformator}
+
+\subsection{Aufgabenstellung}
+\subsection{Grundlagen}
+\subsection{Versuchsaufbau und Methoden}
+\subsection{Durchführung}
+\subsection{Ergebnisse}
+\subsection{Diskussion}
+\end{document}
