@@ -135,13 +135,30 @@ $I_{KS}$ & $U_{LL}$ & CFF & $R_L$ & $P_{max}$ \\
 \end{center}
 \subsection{Diskussion}
 Dadurch, dass bei der Berechnung von CFF die Ausdrücke in Zähler und Nenner mit dem selben Messgerät bestimmt wurden sind ihre Unsicherheiten korreliert und ihre relativen Unsicherheiten konnten subtrahiert werden. Dadurch haben wir ein schön genaues Ergebnis erhalten.
+
+
+\newpage
+
+
+
 \section{Widerstandsbestimmung mittels Wheatstone Brücke}
 
 \subsection{Aufgabenstellung}
 Wir messen drei unbekannte Widerstände mit Hilfe einer Brückenschaltung.
 Außerdem messen wir den Gesamtwiderstand zweier Widerstände einmal in einer Reihenschaltung und einmal in einer Parallelschaltung und vergleichen unsere Messungen mit berechneten Ergebnissen.
 \subsection{Grundlagen}
+Eine Wheatstone Brücke ist eine Messungsmethode zur Bestimmung von Widerständen. Sie besteht aus vier Widerständen, die zueinander parallel geschalten werden. 
+Von den Widerständen ist einer bereits bekannt ($R_0$), einer wird gesucht ($R_x$) und von den restlichen zweien wird nur das Verhältnis benötigt ($R_a$, $R_b$).\\
+Ist dieses Verhältnis genau so groß wie das Verhältnis des unbekannten zum bekannten Widerstand, gibt es keinen Potentialunterschied zwischen den beiden Zweigen. Also ist dort die Spannung gleich null.\\
+Mathematisch bedeutet das: $I_1 R_a = I_2 R_x$ und $I_1 R_b = I_2 R_0$. Daraus erhält man: \\
+$$R_X=R_0 \frac{R_a}{R_b}$$
+und hat so also den gesuchten Widerstand gefunden. 
+ 
 \subsection{Versuchsaufbau und Methoden}
+In unserem Experiment handelt es sich bei $R_a$ und $_b$ um einen Schleifdrahtwiderstand. Das Verhältnis der Widerstände $R_a : R_b$ kann man nun auch schreiben als das Verhältnis der Längen $a : b$, da der Draht über die gesamte Länge konstanten Querschnitt und konstanten spezifischen Widerstand hat.\\
+\\
+Außerdem benötigen wir ein Gleichspannungsnetzgerät (2.3V), ein Ampèremeter, eine Widerstandsdekade (stellt unseren $R_0$ dar) und einen unbekannten Widerstand. 
+
 \subsection{Durchführung}
 \subsection{Ergebnisse}
 In der Brücke:
@@ -153,6 +170,14 @@ Testwiderstand R0: 1kOhm
 in der Reihenschaltung für die Widerstände G und M: 8.10 k$\Omega$
 in der Parallelschaltung für G und M: 1.026 k$\Omega$
 \subsection{Diskussion}
+\textbf{Zu Fehlerrechnung / Genauigkeit:}
+Das Ergebnis wird deswegen genauer, wenn sich der Schieberegler in der Mitter der Widerstandsleiste befindet, weil die Unsicherheit auf der Längenskala eine fixe Größe hat. Prozentuell wird die relative Unsicherheit dann aber umso größer, je kleiner die gemessene Länge ist. 
+
+
+
+\newpage
+
+
 
 \section{Reale Spannungsquelle}
 
