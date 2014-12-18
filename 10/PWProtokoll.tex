@@ -172,12 +172,114 @@ b=\frac{E_A}{k_B}
 0 < EA < 20kJ/mol (Sollwert)
 \subsection{Diskussion}
 
+
+\newpage
 \section{Transformator}
 
 \subsection{Aufgabenstellung}
+Wir untersuchen das Verhalten eines Tranformators:\\
+Wir bestimmen das Spannungsübersetzungsverhältnis Ü eines unbelasteten Transformators. Anschließend die Abhängigkeit des Primärstroms und der sekundären Klemmenspannung von der Belastung. \\
+Schließlich berechnen wir die Primärinduktivität und führen eine Fehlerabschätzung durch.
+
+
 \subsection{Grundlagen}
+Ein Transformator besteht aus einem Eisenkern, um den zwei getrennte Spulen (unterschiedlicher Windungszahlen) gewickelt sind. Wird an der Primärspule eine Spannungsänderung vorgenommen, wirkt sich diese auch auf die Sekundärspule aus. Wenn die beiden Spulen unterschiedliche Windungszahlen besitzen, kann der Transformator verwendet werden, um Spannungen zu übersetzen.\\
+\\
+Solange kein Verbraucher angeschlossen ist, ist der Transformator unbelastet. Wir führen hier die folgenden Gleichungen ein: \\
+$$\dot{\Phi}=-\frac{U_1}{n_1}$$
+$$\dot{\Phi}=-\frac{U_2}{n_2}$$
+wobei $\Phi$ der Fluss im Eisenkern, $U_i$ die Amplituden und $n_i$ die Windungszahlen der beiden Spulen sind. \\
+Aus diesen Gleichungen folgt das Übersetzungsverhältnis ü:\\
+
+\begin{equation}
+\label{uebersetzungsverhaeltnis}
+\frac{U_1}{U_2}=\frac{n_1}{n_2}=\begin{cases}\textrm{ü}<1 \rightarrow\textrm{Spannung hinauftransformiert}\\\textrm{ü}>1 \rightarrow\textrm{Spannung hinuntertransformiert}\end{cases}
+\end{equation}
+\\
+\textbf{Die Lenz'sche Regel:}\\
+Eine Folgerung aus dem Faraday'schen Induktionsgesetz, besagt die Lenz'sche Regel, dass die Änderung des magnetischen Flusses in der Spule eine Spannung $U_{ind}$ induziert. Der dadurch fließende Strom erzeugt ein Magnetfeld, das entgegen der Änderung des magnetischen Flusses wirkt.\\
+\begin{equation}
+\label{lenzsche regel}
+U_{ind}=-U_1(t)=-L_1\frac{dI_1(t)}{dt}
+\end{equation}
+und löst diese Gleichung durch:
+\begin{equation}
+\label{primaerspannung}
+U_1(t)=i\omega L_1 I_1 e^{i\omega t}=\omega L_1 I_1 e^{i(\omega t + \pi / 2)}
+\end{equation}
+\\
+
+
+\textbf{Belasteter Transformator:}
+\begin{equation}
+\label{belastet}
+I_2(t)=\frac{U_2(t)}{R}
+\end{equation}
+wobei R ein ohmscher Widerstand, $I_2$, $U_2$ Strom und Spannung in der Sekundärspule.\\
+Als Folge des erzeugten magnetischen Flusses in der Sekundärspule steigt der Primärstrom an. \\
+Die von uns messbaren Werte sind effektive(r) Spannung und Strom:
+$$U_1^{\textrm{eff}}I_1^{\textrm{eff}}cos(\varphi)=U_2^{\textrm{eff}}I_2^{\textrm{eff}}$$
+$$\frac{I_1^{\textrm{eff}}}{I_2^{\textrm{eff}}}cos(\varphi)=\frac{n_2}{n_1}$$
+% wie umständlich, dass man das so schreiben muss
+
+
 \subsection{Versuchsaufbau und Methoden}
+Wir verwenden ein Netzgerät, einen Transformator mit fest verdrahteten Digitalmultimetern zur Messung von Spannung/Strom an der Primärseite und zwei zusätzliche Digitalmultimeter zur Messung an der Sekundärseite.\\
+\\
+\textbf{Berechnungen:}\\
+Für die Primärinduktivität verwenden wir, dass allgemein die Impedanz der Spule:
+$$Z_L=\omega L = \frac{U}{I}$$
+und erhalten daraus:
+\begin{equation}
+\label{Induktivitaet}
+L_p=\frac{U_1}{I_1 \omega}
+\end{equation}
+
+
 \subsection{Durchführung}
+
+
 \subsection{Ergebnisse}
+\textbf{Übersetzungsverhältnis:}\\
+Spannungen beim unbelasteten Transformator:\\
+$U_1=$\\
+$U_2=$\\
+Aus Gleichung \ref{uebersetzungsverhaeltnis}:\\
+$$\textrm{ü}=\frac{U_1}{U_2}=\frac{•}{•}=$$
+\\
+\textbf{Primärstrom}\\
+$$I_p=I_1^{\textrm{eff}}=$$
+Diagramm!\\
+\\
+\textbf{Klemmenspannung}\\
+$$U_s=U_2^{\textrm{eff}}=$$
+Diagramm!\\
+\\
+\textbf{Primärinduktivität:}\\
+$$L_p=\frac{U_1}{I_1 \omega}=$$
+
+
 \subsection{Diskussion}
+\textbf{Belastung:}\\
+%Was können Sie über den Phasenwinkel eines unbelasteten Transformators sagen?
+Der Phasenwinkel eines unbelasteten Transformators ist $\frac{\pi}{2}=90^\circ$.\\
+\\
+%Überlegen Sie: welche physikalische Größe stellt die Belastung dar? -> einen Widerstand?! is that too easy?
+\\
+%Welche (Mess-)Größe existiert nur bei Belastung?
+Der Strom in der Sekundärspule existiert nur bei Belastung, da ohne Belastungswiderstand der Stromkreis der Sekundärseite nicht geschlossen ist. \\
+\\
+%Für welchen Belastungswiderstand ist die Leistungsanpassung optimal?
+\textbf{Primärimpedanz:}\\
+%Wann ist die Primärimpedanz rein induktiv, wenn man vom Ohm'schen Widerstand der Primärspule absieht?
+Die Primärimpedanz ist (abgesehen vom Ohm'schen Widerstand der Primärspule) rein induktiv, wenn der Transformator unbelastet ist. (Kein Lastwiderstand an der Sekundärseite).\\
+\\
+\textbf{Fehlerabschätzung:}\\
+%Welche Fehlerquellen beeinflussen unsere Messungen?
+Unvermeidbare Fehlerquellen sind solche Fehlerquellen, die durch die verwendeten Teile unseres Versuchsaufbaus auftreten: Nicht-lineares Verhalten des Regelwiderstandes, Schwankungen der Netzspannung und Verluste am Transformator (da wir Ohm'sche Verluste, Entstehung von Wirbelströmen, Streufelder, Hysterese nicht miteinbeziehen).
+%Wie gehen die Fehler der beiden Messgeräte in die Messung ein?
+
+
+
+
 \end{document}
