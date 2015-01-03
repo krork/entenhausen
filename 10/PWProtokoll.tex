@@ -237,16 +237,58 @@ L_p=\frac{U_1}{I_1 \omega}
 
 
 \subsection{Durchführung}
-
+\textbf{Verwendete Geräte:}
+Für die Primärspannung im belasteten Transformater das PeakTech4375 mit Genauigkeit: $\pm$ (1\% + 3 Stellen)\\
+Sonst Fluke 175:\\
+Als Ampèremeter; Auflösung: 0.01mA Genauigkeit: $\pm$ (1.5\% + 3 Zählimpulse)\\
+Als Voltmeter; Auflösung: 10mV bzw. 100mV, Genauigkeit: $\pm$ (1\% + 3 Zählimpulse)\\
 
 \subsection{Ergebnisse}
-\textbf{Übersetzungsverhältnis:}\\
-Spannungen beim unbelasteten Transformator:\\
-$U_1=$\\
-$U_2=$\\
-Aus Gleichung \ref{uebersetzungsverhaeltnis}:\\
-$$\textrm{ü}=\frac{U_1}{U_2}=\frac{•}{•}=$$
+\textbf{Unbelasteter Transformator:}\\
+$U_1=(232.2 \pm 2.7)V$\\
+$U_2=(26.46 \pm 0.30)V$\\
+$I_1=(5.18 \pm 0.11)mA$\\
 \\
+\textbf{Übersetzungsverhältnis:}\\
+$$\textrm{ü}=\frac{U_1}{U_2}=8.776 \pm 0.017$$
+Die Spannung wird nach unten transformiert, da $|u|>1$ \\
+\\
+\textbf{Primärinduktivität:}\\
+%Gaußsche Fehlerfortpflanzung: $\frac{\Delta L}{L}=\sqrt{\frac{\Delta U_1}{U_1}^2 + \frac{\Delta I_1}{I_1}^2}=0.02421$
+
+$$\boxed{L_p=\frac{U_1}{I_1 \omega}=(142.686 \pm 0.025)H}$$\\
+wobei $\omega =2\pi f=2\pi*50s^{-1}$, $[H]=[\frac{Vs}{A}]=[\Omega s]$\\
+\\
+\\
+\textbf{Belasteter Transformator:}\\
+Sekundärstrom $I_2=(0.03 \pm 0.03)mA$.\\
+Primärspannung $U_1=(232.1 \pm 2.7)V$.\\
+\\
+\begin{tabular}{|l|l|r|r|}
+\hline
+$I_1$ [mA] & $\Delta I_1$ & $U_2$ & $\Delta U_2$[V]\\
+\hline
+6.43 & 0.13 & 23.67 & 0.27\\
+6.61 & 0.13 & 23.42 & 0.27 \\
+6.70 & 0.13 & 23.31 & 0.27 \\
+6.87 & 0.14 & 23.04 & 0.26 \\
+7.07 & 0.14 & 22.74 & 0.26 \\
+7.35 & 0.14 & 22.37 & 0.26 \\
+7.80 & 0.15 & 21.82 & 0.25 \\
+8.16 & 0.16 & 21.38 & 0.25 \\
+8.69 & 0.16 & 20.79 & 0.24 \\
+9.55 & 0.18 & 19.82 & 0.23 \\
+10.60 & 0.19 & 18.68 & 0.22 \\
+11.30 & 0.20 & 17.90 & 0.21 \\
+12.29 & 0.22 & 16.87 & 0.20 \\
+14.94 & 0.26 & 14.17 & 0.18 \\
+\hline
+\end{tabular}
+
+Leistung:\\
+$P_1=P_2=U_2^{eff}I_2^{eff}$
+
+
 \textbf{Primärstrom}\\
 $$I_p=I_1^{\textrm{eff}}=$$
 Diagramm!\\
@@ -254,9 +296,7 @@ Diagramm!\\
 \textbf{Klemmenspannung}\\
 $$U_s=U_2^{\textrm{eff}}=$$
 Diagramm!\\
-\\
-\textbf{Primärinduktivität:}\\
-$$L_p=\frac{U_1}{I_1 \omega}=$$
+
 
 
 \subsection{Diskussion}
